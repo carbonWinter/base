@@ -9,7 +9,7 @@ layout: default
       {% if block.width %}
         <div class="{% if block.width %}uk-container uk-container-{{ block.width | default: 'default' }}{% endif %}">
       {% endif %}
-        {% include block-{{ block.block }}.html %}
+        {% include blocks/{{ block.block }}.html %}
       {% if block.width %}
       </div>
       {% endif %}
