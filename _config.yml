@@ -8,6 +8,8 @@ logo:
 logo_light: 
 permalink: "/:title/"
 
+template:               mordecai
+
 author:
   email: info@blacompany.com
   phone: +1-800-354-3434
