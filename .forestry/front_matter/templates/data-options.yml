@@ -10,6 +10,9 @@ fields:
     options:
     - mordecai
     - wolfy
+    - razorfish
+    - wintergreen
+    - halcyon
     source:
       type: simple
       section: 
