@@ -10,5 +10,31 @@ fields:
 - type: text
   name: title
   label: Title
+- name: header
+  type: field_group
+  config: {}
+  fields:
+  - name: background
+    type: field_group
+    config: {}
+    fields:
+    - name: background_style
+      type: select
+      default: color
+      config:
+        required: false
+        options:
+        - color
+        - image
+        - video
+        - slider
+        source:
+          type: simple
+          section: 
+          file: 
+          path: 
+      label: Background
+    label: Background
+  label: Header
 pages:
 - index.md
