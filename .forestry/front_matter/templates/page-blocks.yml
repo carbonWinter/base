@@ -83,6 +83,53 @@ fields:
       showOnly:
         field: background_style
         value: slider
+    - name: overlay
+      type: select
+      default: none
+      config:
+        required: false
+        options:
+        - none
+        - gradient
+        - color
+        source:
+          type: simple
+          section: 
+          file: 
+          path: 
+      label: Overlay
+    - name: gradient
+      type: text
+      config:
+        required: false
+      label: Gradient
+      description: Enter gradient style.
+      showOnly:
+        field: overlay
+        value: gradient
+    - name: overlay_color
+      type: color
+      label: Overlay color
+      config:
+        required: false
+        color_format: Hex
+      default: "#000000"
+      showOnly:
+        field: overlay
+        value: color
+    - name: overlay_opacity
+      type: number
+      label: Overlay opacity
+      description: ''
+      default: 0.7
+      required: true
+      config:
+        min: 0.1
+        max: 1
+        step: 
+      showOnly:
+        field: overlay
+        value: color
     label: Background
   - name: layout
     type: select
