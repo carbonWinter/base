@@ -14,6 +14,22 @@ fields:
   type: field_group
   config: {}
   fields:
+  - name: height
+    type: select
+    default: default
+    config:
+      required: false
+      options:
+      - default
+      - medium
+      - large
+      - viewport
+      source:
+        type: simple
+        section: 
+        file: 
+        path: 
+    label: Height
   - name: background
     type: field_group
     config: {}
