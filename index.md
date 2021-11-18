@@ -18,5 +18,24 @@ blocks:
   button:
     text: Contact Us
     url: "/contact/"
+header:
+  height: default
+  background:
+    background_style: ''
+    background_color: ''
+    background_image: ''
+    background_video_file: ''
+    background_slider: []
+    overlay: ''
+    gradient: ''
+    overlay_color: ''
+    overlay_opacity: 
+  layout: centered
+  col_one:
+    heading: ''
+    text: ''
+  col_two:
+    heading: ''
+    text: ''
 
 ---
