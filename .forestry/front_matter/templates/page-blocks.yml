@@ -34,6 +34,39 @@ fields:
           file: 
           path: 
       label: Background
+    - name: background_color
+      type: color
+      label: Background color
+      config:
+        required: false
+        color_format: Hex
+      default: "#E2E2E2"
+      showOnly:
+        field: background_style
+        value: color
+    - name: background_image
+      type: file
+      config:
+        maxSize: 64
+      label: Background image
+      showOnly:
+        field: background_style
+        value: image
+    - name: background_video_file
+      type: file
+      config:
+        maxSize: 64
+      label: Background video file
+      showOnly:
+        field: background_style
+        value: video
+    - name: background_slider
+      type: image_gallery
+      config: {}
+      label: Background slider
+      showOnly:
+        field: background_style
+        value: slider
     label: Background
   label: Header
 pages:
