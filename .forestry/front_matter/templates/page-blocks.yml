@@ -120,7 +120,7 @@ fields:
     - name: overlay_opacity
       type: number
       label: Overlay opacity
-      description: ''
+      description: Enter a value between 0.1 and 1.
       default: 0.7
       required: true
       config:
@@ -145,6 +145,20 @@ fields:
         file: 
         path: 
     label: Layout
+  - name: color
+    type: select
+    default: dark
+    config:
+      required: false
+      options:
+      - dark
+      - light
+      source:
+        type: simple
+        section: 
+        file: 
+        path: 
+    label: Color
   - name: col_one
     type: field_group
     config: {}
