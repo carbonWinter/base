@@ -1,0 +1,57 @@
+---
+label: Page blocks
+hide_body: true
+fields:
+- type: text
+  name: layout
+  label: layout
+- type: text
+  name: title
+  label: title
+- type: text
+  name: background
+  label: background
+- type: text
+  name: color
+  label: color
+- type: field_group
+  name: navbar
+  label: navbar
+  fields:
+  - type: text
+    name: color
+    label: color
+- type: field_group_list
+  name: blocks
+  label: blocks
+  fields:
+  - type: text
+    name: template
+    label: template
+  - type: text
+    name: block
+    label: block
+  - type: text
+    name: width
+    label: width
+  - type: text
+    name: style
+    label: style
+  - type: text
+    name: title
+    label: title
+  - type: textarea
+    name: content
+    label: content
+  - type: field_group
+    name: button
+    label: button
+    fields:
+    - type: text
+      name: text
+      label: text
+    - type: text
+      name: url
+      label: url
+pages:
+- index.md
