@@ -68,6 +68,61 @@ fields:
         field: background_style
         value: slider
     label: Background
+  - name: layout
+    type: select
+    default: centered
+    config:
+      required: false
+      options:
+      - centered
+      - left
+      source:
+        type: simple
+        section: 
+        file: 
+        path: 
+    label: Layout
+  - name: col_one
+    type: field_group
+    config: {}
+    fields:
+    - name: heading
+      type: text
+      config:
+        required: false
+      label: Heading
+    - name: text
+      type: textarea
+      default: ''
+      config:
+        required: false
+        wysiwyg: true
+        schema:
+          format: markdown
+      label: Text
+    label: Col one
+  - name: col_two
+    type: field_group
+    config: {}
+    fields:
+    - name: heading
+      type: text
+      config:
+        required: false
+      label: Heading
+    - name: text
+      type: textarea
+      default: ''
+      config:
+        required: false
+        wysiwyg: true
+        schema:
+          format: markdown
+      label: Text
+    label: Col two
+    showOnly:
+      field: layout
+      value: left
   label: Header
 pages:
 - index.md
