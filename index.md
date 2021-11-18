@@ -12,7 +12,7 @@ blocks:
   width: xsmall
   # height: full
   style: muted
-  title: Start a project
+  title: Start a project now
   content: | 
     Dramatically transform corporate solutions and cooperative methods of empowerment. Globally engineer web-enabled testing procedures.
   button:
