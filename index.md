@@ -19,11 +19,11 @@ blocks:
     text: Contact Us
     url: "/contact/"
 header:
-  height: default
+  height: viewport
   background:
     background_style: image
     background_color: ''
-    background_image: ''
+    background_image: "/uploads/image-large.jpg"
     background_video_file: ''
     background_slider: []
     overlay: color
@@ -32,10 +32,12 @@ header:
     overlay_opacity: 0.75
   layout: centered
   col_one:
-    heading: ''
-    text: ''
+    heading: Lorem ipsum dolor sit amet
+    text: Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+      eu fugiat nulla pariatur.
   col_two:
     heading: ''
     text: ''
+  color: light
 
 ---
