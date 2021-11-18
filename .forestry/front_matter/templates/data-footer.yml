@@ -1,0 +1,25 @@
+---
+label: Data footer
+hide_body: true
+fields:
+- name: layout
+  type: select
+  default: []
+  config:
+    required: false
+    options: []
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Layout
+- name: copyright
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Copyright

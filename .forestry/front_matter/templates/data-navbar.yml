@@ -1,0 +1,205 @@
+---
+label: Data navbar
+hide_body: true
+fields:
+- name: layout
+  type: select
+  default: default
+  config:
+    required: false
+    options:
+    - default
+    - center
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Layout
+- name: phone
+  type: text
+  config:
+    required: false
+  label: Phone
+- name: menu_left
+  type: field_group_list
+  fields:
+  - name: text
+    type: text
+    config:
+      required: false
+    label: Text
+  - name: url
+    type: text
+    config:
+      required: false
+    label: URL
+  - name: style
+    type: select
+    default: link
+    config:
+      required: false
+      options:
+      - link
+      - button-primary
+      - button-secondary
+      source:
+        type: simple
+        section: 
+        file: 
+        path: 
+    label: Style
+  - name: blank
+    type: boolean
+    label: Blank
+    description: Open link in new window.
+  - name: dropdown
+    type: field_group_list
+    fields:
+    - name: text
+      type: text
+      config:
+        required: false
+      label: Text
+    - name: url
+      type: text
+      config:
+        required: false
+      label: URL
+    - name: blank
+      type: boolean
+      label: Blank
+      description: Open link in new window.
+    config:
+      min: 
+      max: 
+      labelField: 
+    label: Dropdown
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: Menu left
+- name: menu_center
+  type: field_group_list
+  fields:
+  - name: text
+    type: text
+    config:
+      required: false
+    label: Text
+  - name: url
+    type: text
+    config:
+      required: false
+    label: URL
+  - name: style
+    type: select
+    default: link
+    config:
+      required: false
+      options:
+      - link
+      - button-primary
+      - button-secondary
+      source:
+        type: simple
+        section: 
+        file: 
+        path: 
+    label: Style
+  - name: blank
+    type: boolean
+    label: Blank
+    description: Open link in new window.
+  - name: dropdown
+    type: field_group_list
+    fields:
+    - name: text
+      type: text
+      config:
+        required: false
+      label: Text
+    - name: url
+      type: text
+      config:
+        required: false
+      label: URL
+    - name: blank
+      type: boolean
+      label: Blank
+      description: Open link in new window.
+    config:
+      min: 
+      max: 
+      labelField: 
+    label: Dropdown
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: Menu center
+  showOnly:
+    field: layout
+    value: default
+- name: menu_right
+  type: field_group_list
+  fields:
+  - name: text
+    type: text
+    config:
+      required: false
+    label: Text
+  - name: url
+    type: text
+    config:
+      required: false
+    label: URL
+  - name: style
+    type: select
+    default: link
+    config:
+      required: false
+      options:
+      - link
+      - button-primary
+      - button-secondary
+      source:
+        type: simple
+        section: 
+        file: 
+        path: 
+    label: Style
+  - name: blank
+    type: boolean
+    label: Blank
+    description: Open link in new window.
+  - name: dropdown
+    type: field_group_list
+    fields:
+    - name: text
+      type: text
+      config:
+        required: false
+      label: Text
+    - name: url
+      type: text
+      config:
+        required: false
+      label: URL
+    - name: blank
+      type: boolean
+      label: Blank
+      description: Open link in new window.
+    config:
+      min: 
+      max: 
+      labelField: 
+    label: Dropdown
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: Menu right
+pages:
+- _data/navbar.yml

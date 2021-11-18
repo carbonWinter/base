@@ -1,0 +1,37 @@
+---
+label: Data options
+hide_body: true
+fields:
+- name: theme
+  type: select
+  default: mordecai
+  config:
+    required: false
+    options:
+    - mordecai
+    - wolfy
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Theme
+- name: color_primary
+  type: color
+  label: Color primary
+  config:
+    required: false
+    color_format: Hex
+  default: "#15DDB5"
+- name: logo_dark
+  type: file
+  config:
+    maxSize: 64
+  label: Logo dark
+- name: logo_light
+  type: file
+  config:
+    maxSize: 64
+  label: Logo light
+pages:
+- _data/options.yml
