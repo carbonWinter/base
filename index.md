@@ -21,15 +21,15 @@ blocks:
 header:
   height: default
   background:
-    background_style: ''
+    background_style: image
     background_color: ''
     background_image: ''
     background_video_file: ''
     background_slider: []
-    overlay: ''
+    overlay: color
     gradient: ''
-    overlay_color: ''
-    overlay_opacity: 
+    overlay_color: "#000000"
+    overlay_opacity: 0.75
   layout: centered
   col_one:
     heading: ''
