@@ -24,12 +24,14 @@ fields:
       - medium
       - large
       - viewport
+      - none
       source:
         type: simple
         section: 
         file: 
         path: 
     label: Height
+    description: Se to "none" to disable header.
   - name: background
     type: field_group
     config: {}
