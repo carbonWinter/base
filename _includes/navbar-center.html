@@ -53,12 +53,12 @@
           </div>
 
           <a class="uk-navbar-item uk-logo" href="{{ "/" | relative_url }}">
-            {% if site.logo_light or site.logo %}
-              {% if site.logo_light %}
-                <img class="uk-logo-inverse" src="{{ site.uploads | absolute_url }}{{ site.logo_light }}" alt="{{ site.title }}">
+            {% if site.data.options.logo_light != '' or site.data.options.logo_dark != '' %}
+              {% if site.data.options.logo_light != '' %}
+                <img class="uk-logo-inverse" src="{{ site.data.options.logo_light | absolute_url }}" alt="{{ site.title }}">
               {% endif %}
-              {% if site.logo %}
-                <img src="{{ site.uploads | absolute_url }}{{ site.logo }}" alt="{{ site.title }}">
+              {% if site.data.options.logo_dark != '' %}
+                <img src="{{ site.data.options.logo_dark | absolute_url }}" alt="{{ site.title }}">
               {% endif %}
             {% else %}
               {{ site.title }}
