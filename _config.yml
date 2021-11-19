@@ -14,17 +14,14 @@ author:
   email: info@blacompany.com
   phone: +1-800-354-3434
   address: 2030 West River St. <br> New York 52304
-
-navbar:
-  sticky: true
   
-footer:
-  background: secondary
-  social: true
-  address: true
-  phone: true
-  email: true
-  copyright: Made by <a href="https://unbound.studio/">Unbound Studio</a> in Mexico City.
+# footer:
+#   background: secondary
+#   social: true
+#   address: true
+#   phone: true
+#   email: true
+#   copyright: Made by <a href="https://unbound.studio/">Unbound Studio</a> in Mexico City.
 
 google_analytics: 
 

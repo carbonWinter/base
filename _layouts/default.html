@@ -3,10 +3,10 @@
 
   {% include head.html %}
 
-  <body
-    class="{% unless page.background contains '#' %}uk-background-{{ page.background }}{% endunless %}" 
-    style="{% if page.background contains '#' %}background-color: {{ page.background }};{% endif %}"  
-  >
+  <body>
+    
+    {% include cta-sticky.html %}
+  
     {% include header.html %}
 
     {% if page.layout == 'blocks' %}

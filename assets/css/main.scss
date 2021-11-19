@@ -15,3 +15,8 @@
 
 // 4. Import UIkit.
 @import "theme/uikit";
+
+
+.uk-navbar-container:not(.uk-navbar-transparent) {
+  background: {{ site.data.navbar.background | default: '#ffffff' }};
+}

@@ -1,9 +1,27 @@
 ---
 layout: blocks
 title: Home
-background: secondary
-color: light
-navbar:
+header:
+  height: viewport
+  background:
+    background_style: video
+    background_color: ''
+    background_image: "/uploads/image-large.jpg"
+    background_video_file: '/uploads/lagoon.mp4'
+    background_slider: []
+    overlay: gradient
+    gradient: 'linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 50%);'
+    overlay_color: "#ffffff"
+    overlay_opacity: 0.1
+  transparent_navbar: true
+  layout: centered
+  col_one:
+    heading: Lorem ipsum dolor sit amet
+    text: Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+      eu fugiat nulla pariatur.
+  col_two:
+    heading: ''
+    text: ''
   color: light
 blocks:
 - template: cta
@@ -18,26 +36,5 @@ blocks:
   button:
     text: Contact Us
     url: "/contact/"
-header:
-  height: viewport
-  background:
-    background_style: image
-    background_color: ''
-    background_image: "/uploads/image-large.jpg"
-    background_video_file: ''
-    background_slider: []
-    overlay: color
-    gradient: ''
-    overlay_color: "#000000"
-    overlay_opacity: 0.75
-  layout: centered
-  col_one:
-    heading: Lorem ipsum dolor sit amet
-    text: Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
-      eu fugiat nulla pariatur.
-  col_two:
-    heading: ''
-    text: ''
-  color: light
 
 ---

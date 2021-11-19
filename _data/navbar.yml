@@ -1,9 +1,54 @@
-
-- title: Projects
-  url: "/"
-- title: How
-  url: "/how/"
-- title: About
-  url: "/about/"
-- title: Contact
-  url: "/contact/"
+---
+layout: center
+sticky: false
+color: light
+background: '#000'
+menu_left:
+- text: Our Doctors
+  url: "#"
+  style: link
+  blank: false
+  dropdown: []
+- url: "#"
+  style: link
+  blank: false
+  dropdown: []
+  text: Our Practice
+- text: The Specialties
+  url: ''
+  style: link
+  blank: false
+  dropdown:
+  - text: porcelain veneers
+    url: "#"
+    blank: false
+  - text: pro teeth whitening
+    url: "#"
+    blank: false
+  - text: dental implants
+    url: "#"
+    blank: false
+  - text: dental crowns
+    url: "#"
+    blank: false
+  - text: full reconstruction
+    url: "#"
+    blank: false
+  - text: metal-free fillings
+    url: "#"
+    blank: false
+  - text: dental inlays/onlays
+    url: "#"
+    blank: false
+menu_center: []
+menu_right:
+- text: Our Services
+  url: "#"
+  style: link
+  blank: false
+  dropdown: []
+- text: Additional Resources
+  url: "#"
+  style: link
+  blank: false
+  dropdown: []

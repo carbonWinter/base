@@ -4,7 +4,7 @@
           <div class="uk-navbar-center-left">
             <div>
               <ul class="uk-navbar-nav uk-visible@m">
-                  {% for link in site.data.[site.template].navbar.left %}
+                  {% for link in site.data.navbar.menu_left %}
                       {% if link.url contains 'http' %}
                           {% assign domain = '' %}
                       {% else %}
@@ -15,14 +15,14 @@
                       {% else %}
                           {% assign current = null %}
                       {% endif %}
-                      {% if link.title %}
+                      {% if link.text %}
                           <li{{ current }}>
                             {% if link.url %}
-                              <a href="{{ domain }}{{ link.url }}" {% if link.url contains 'http' %}target="_blank" rel="noopener" {% endif %}>{{ link.title }}</a>
+                              <a href="{{ domain }}{{ link.url }}" {% if link.url contains 'http' %}target="_blank" rel="noopener" {% endif %}>{{ link.text }}</a>
                             {% else %}
-                              <a href="#">{{ link.title }}</a>
+                              <a href="#">{{ link.text }}</a>
                             {% endif %}
-                            {% if link.dropdown != null %}
+                            {% if link.dropdown and link.dropdown.size != 0 %}
                               <div class="uk-navbar-dropdown">
                                   <ul class="uk-nav uk-navbar-dropdown-nav">
                                     {% for child in link.dropdown %}
@@ -37,9 +37,9 @@
                                         {% else %}
                                             {% assign current = null %}
                                         {% endif %}
-                                        <li{{ current }}><a href="{{ domain }}{{ child.url }}">{{ child.title }}</a></li>
+                                        <li{{ current }}><a href="{{ domain }}{{ child.url }}">{{ child.text }}</a></li>
                                       {% else %}
-                                        <li class="uk-nav-header">{{ child.title }}</li>
+                                        <li class="uk-nav-header">{{ child.text }}</li>
                                       {% endif %}
                                     {% endfor %}
                                   </ul>
@@ -68,7 +68,7 @@
           <div class="uk-navbar-center-right">
             <div>
               <ul class="uk-navbar-nav uk-visible@m">
-                  {% for link in site.data.[site.template].navbar.right %}
+                  {% for link in site.data.navbar.menu_right %}
                       {% if link.url contains 'http' %}
                           {% assign domain = '' %}
                       {% else %}
@@ -79,14 +79,14 @@
                       {% else %}
                           {% assign current = null %}
                       {% endif %}
-                      {% if link.title %}
+                      {% if link.text %}
                           <li{{ current }}>
                             {% if link.url %}
-                              <a href="{{ domain }}{{ link.url }}" {% if link.url contains 'http' %}target="_blank" rel="noopener" {% endif %}>{{ link.title }}</a>
+                              <a href="{{ domain }}{{ link.url }}" {% if link.url contains 'http' %}target="_blank" rel="noopener" {% endif %}>{{ link.text }}</a>
                             {% else %}
-                              <a href="#">{{ link.title }}</a>
+                              <a href="#">{{ link.text }}</a>
                             {% endif %}
-                            {% if link.dropdown != null %}
+                            {% if link.dropdown and link.dropdown.size != 0 %}
                               <div class="uk-navbar-dropdown">
                                   <ul class="uk-nav uk-navbar-dropdown-nav">
                                     {% for child in link.dropdown %}
@@ -101,9 +101,9 @@
                                         {% else %}
                                             {% assign current = null %}
                                         {% endif %}
-                                        <li{{ current }}><a href="{{ domain }}{{ child.url }}">{{ child.title }}</a></li>
+                                        <li{{ current }}><a href="{{ domain }}{{ child.url }}">{{ child.text }}</a></li>
                                       {% else %}
-                                        <li class="uk-nav-header">{{ child.title }}</li>
+                                        <li class="uk-nav-header">{{ child.text }}</li>
                                       {% endif %}
                                     {% endfor %}
                                   </ul>
@@ -113,35 +113,6 @@
                       {% endif %}
                   {% endfor %}
               </ul>
-
-              {% unless page.header.search or site.navbar.search == false %}
-                <div>
-                    <a class="uk-navbar-toggle" aria-label="Search" uk-search-icon href="#"></a>
-                    <div class="uk-drop uk-background-default uk-border-rounded" uk-drop="mode: click; pos: left-center; offset: 0">
-                        <form class="uk-search uk-search-navbar uk-width-1-1" onsubmit="return false;">
-                            <input id="search-input" class="uk-search-input" type="search" placeholder="Search..." autofocus>
-                            <ul id="search-results" class="uk-position-absolute uk-width-1-1 uk-list"></ul>
-                        </form>
-                    </div>
-                </div>
-                <script>
-                  SimpleJekyllSearch({
-                    searchInput: document.getElementById('search-input'),
-                    resultsContainer: document.getElementById('search-results'),
-                    noResultsText: '<li>No results found</li>',
-                    searchResultTemplate: '<li><a href="{url}">{title}</a></li>',
-                    limit: 100,
-                    json: '/search.json'
-                  });
-                </script>
-              {% endunless %}
-
-              {% if site.donations.paypal.navbar %}
-                <div class="uk-navbar-item">
-                    {% include donations-paypal.html %}
-                </div>
-              {% endif %}
-
               <a class="uk-navbar-toggle uk-hidden@m" href="#nav-mobile" aria-label="Mobile Navigation" data-uk-navbar-toggle-icon data-uk-toggle></a>
             </div>
           </div>
