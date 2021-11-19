@@ -3,3 +3,13 @@ theme: mordecai
 color_primary: "#15DDB5"
 logo_dark: ''
 logo_light: ''
+sticky_cta:
+  button_secondary:
+    text: Appointments
+    url: "#"
+    blank: true
+  button_primary:
+    text: Dental Offers
+    url: "#"
+    blank: true
+  phone: ''
