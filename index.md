@@ -7,10 +7,10 @@ header:
     background_style: video
     background_color: ''
     background_image: "/uploads/image-large.jpg"
-    background_video_file: '/uploads/lagoon.mp4'
+    background_video_file: "/uploads/lagoon.mp4"
     background_slider: []
     overlay: gradient
-    gradient: 'linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 50%);'
+    gradient: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 50%);
     overlay_color: "#ffffff"
     overlay_opacity: 0.1
   transparent_navbar: true
@@ -36,5 +36,6 @@ blocks:
   button:
     text: Contact Us
     url: "/contact/"
+sticky_cta: true
 
 ---
