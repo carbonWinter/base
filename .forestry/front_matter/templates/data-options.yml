@@ -49,6 +49,7 @@ fields:
       config:
         required: false
       label: Text
+      default: Appointments
     - name: url
       type: text
       config:
@@ -68,6 +69,7 @@ fields:
       config:
         required: false
       label: Text
+      default: Dental Offers
     - name: url
       type: text
       config:
