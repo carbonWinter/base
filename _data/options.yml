@@ -1,8 +1,8 @@
 ---
 theme: mordecai
 color_primary: "#15DDB5"
-logo_dark: ''
-logo_light: ''
+logo_dark: 'https://via.placeholder.com/150x70'
+logo_light: 'https://via.placeholder.com/150x70'
 sticky_cta:
   button_secondary:
     text: Appointments
