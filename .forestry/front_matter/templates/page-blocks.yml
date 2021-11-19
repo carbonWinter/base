@@ -10,6 +10,10 @@ fields:
 - type: text
   name: title
   label: Title
+- name: sticky_cta
+  type: boolean
+  label: Sticky CTA
+  description: Display sticky call to action on the page.
 - name: header
   type: field_group
   config: {}
