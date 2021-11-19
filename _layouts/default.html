@@ -4,8 +4,9 @@
   {% include head.html %}
 
   <body>
-    
-    {% include cta-sticky.html %}
+    {% if page.sticky_cta %}
+      {% include cta-sticky.html %}
+    {% endif %}
   
     {% include header.html %}
 

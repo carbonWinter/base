@@ -1,11 +1,17 @@
 <div class="uk-position-fixed uk-position-center-right uk-text-center" style="z-index: 980;">
-  <div>
-    <a class="uk-button uk-button-default" href="#">Appointments</a>
-  </div>
-  <div class="uk-margin-small-top">
-    <a class="uk-button uk-button-primary" href="#">Dental Offers</a>
-  </div>
-  <div class="uk-margin-small-top">
-    <a class="" href="tel: 000-000-0000">000-000-0000</a>
-  </div>
+  {% if site.data.options.sticky_cta.button_secondary.url != '' %}
+    <div class="uk-margin-small-bottom">
+      <a class="uk-button uk-button-default" href="{{ site.data.options.sticky_cta.button_secondary.url }}"{% if site.data.options.sticky_cta.button_secondary.blank %} target="_blank" rel="noopener noreferrer" {% endif %}>{{ site.data.options.sticky_cta.button_secondary.text }}</a>
+    </div>
+  {% endif %}
+  {% if site.data.options.sticky_cta.button_primary.url != '' %}
+    <div>
+      <a class="uk-button uk-button-primary" href="{{ site.data.options.sticky_cta.button_primary.url }}"{% if site.data.options.sticky_cta.button_primary.blank %} target="_blank" rel="noopener noreferrer" {% endif %}>{{ site.data.options.sticky_cta.button_primary.text }}</a>
+    </div>
+  {% endif %}
+  {% if site.data.options.sticky_cta.phone != '' %}
+    <div class="uk-margin-top">
+      <a class="" href="tel: {{ site.data.options.sticky_cta.phone }}">{{ site.data.options.sticky_cta.phone }}</a>
+    </div>
+  {% endif %}
 </div>
