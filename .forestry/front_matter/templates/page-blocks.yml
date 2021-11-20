@@ -214,6 +214,7 @@ fields:
   template_types:
   - cards-1
   - cards-2
+  - map
   - testimonials-1
   - text-1
   - video-1
