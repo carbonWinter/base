@@ -1,1 +1,25 @@
 ---
+layout: layout-1
+phone: 000-000-0000
+address: ''
+hours: []
+copyright: ''
+privacy_link:
+  text: ''
+  url: ''
+button_primary:
+  text: ''
+  url: ''
+  blank: false
+button_secondary:
+  text: ''
+  url: ''
+  blank: false
+menus: []
+color: ''
+background: ''
+background_color: ''
+background_gradient: ''
+subfooter:
+  background: ''
+  color: ''
