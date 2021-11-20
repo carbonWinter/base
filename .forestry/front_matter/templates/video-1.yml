@@ -1,4 +1,31 @@
 ---
 label: Video 1
 hide_body: true
-fields: []
+fields:
+- name: block
+  type: text
+  config:
+    required: false
+  label: Block
+  hidden: true
+  default: video-1
+- name: heading
+  type: text
+  config:
+    required: false
+  label: Heading
+- name: text
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: true
+    schema:
+      format: markdown
+  label: Text
+- name: video_file
+  type: text
+  config:
+    required: false
+  label: Video file
+  description: Upload self hosted video.
