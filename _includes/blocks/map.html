@@ -1,3 +1,105 @@
 <section>
-  <iframe class="uk-width-1-1 uk-height-large" src="{{ block.src }}" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+  {% if block.style == 'multi-location' %}
+    {% comment %}
+    map-2:
+      api-key: AIzaSyDve884DbypGJpJAXyyXThxz0A9SY77vMo
+      locations:
+      - name: Gold Coast Dental - Yorba Linda
+        address-1: 20395 Yorba Linda Blvd.
+        address-2: Yorba Linda, CA 92886
+        latitude: 33.89304
+        longitude: -117.77653
+      - name: Gold Coast Dental - Tustin
+        address-1: 275 Centennial Way Ste. 109
+        address-2: Tustin, CA 92780
+        latitude: 33.74354
+        longitude: -117.81838
+      - name: Gold Coast Dental - Orange
+        address-1: 1122 E. Lincoln Ave. Ste. 104
+        address-2: Orange, CA 92865
+        latitude: 33.83587
+        longitude: -117.84144
+      - name: Gold Coast Dental - La Habra
+        address-1: 951 W. Whittier Blvd.
+        address-2: La Habra, CA 90631
+        latitude: 33.93936
+        longitude: -117.95686
+      - name: Gold Coast Dental - Buena Park
+        address-1: '4600 Beach Blvd #A'
+        address-2: Buena Park, CA 90621
+        latitude: 33.89453
+        longitude: -117.98783
+      - name: Gold Coast Dental - Brea
+        address-1: 330 N. Brea Blvd. Suite B
+        address-2: Brea, CA 92821
+        latitude: 33.92342
+        longitude: -117.89567
+      - name: Gold Coast Dental - Riverside
+        address-1: 4595 La Sierra Avenue
+        address-2: Riverside, CA 92505
+        latitude: 33.91544
+        longitude: -117.48562
+    {% endcomment %}
+    <a name="map-link"></a>
+    <section class="section section-map full-width">
+      <div id="map" style="height: 600px;" class="map_sec width"></div>
+      <script src="https://maps.googleapis.com/maps/api/js?key={{page.map-2.api-key}}&callback=initMap&libraries=&v=weekly" defer></script>
+      </script>
+      <script>
+    let map;
+
+    function initMap() {
+      map = new google.maps.Map(document.getElementById("map"), {
+        center: { lat: 33.8415, lng: -117.7367 },
+        zoom: 11,
+      });
+
+      let markerURL = "https://try.goldcoastdental.com/grouped/emergency/img/favicon_64.png";
+      
+      {% for location in page.map-2.locations %}
+      
+      {% assign parent_index = forloop.index %}
+      
+      const contentString{{forloop.index}} =
+        '<div id="content">' +
+        '<div id="siteNotice">' +
+        "</div>" +
+        '<h4 id="firstHeading" class="firstHeading">{{ location.name }}</h4>' +
+        '<div id="bodyContent">' +
+        "<p><b>Address</b><br>" +
+        "{{ location.address-1 }}<br> {{ location.address-2 }}" +
+        "</p>" +
+        "</div>" +
+        "</div>";
+      const infowindow{{forloop.index}} = new google.maps.InfoWindow({
+        content: contentString{{forloop.index}},
+      });
+      
+      let latLng{{forloop.index}} = new google.maps.LatLng({{ location.latitude }}, {{ location.longitude }});
+      let marker{{forloop.index}} = new google.maps.Marker({
+        position: latLng{{forloop.index}},
+        map: map,
+        icon: markerURL,
+        title: "{{ location.name }}",
+      });
+      
+        marker{{forloop.index}}.addListener("click", ()=>{
+        infowindow{{forloop.index}}.open(map, marker{{forloop.index}});
+        {% for closeLocation in page.map-2.locations %}
+          {% if parent_index == forloop.index %}
+            {% continue %}
+          {% endif %}
+          infowindow{{forloop.index}}.close();
+        {% endfor %}
+      }); 
+
+
+      {% endfor %}
+      
+      
+      }
+      </script>
+  {% else %}
+    <iframe class="uk-width-1-1 uk-height-large" src="{{ block.src }}" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+  {% endif %}
 </section>
