@@ -207,5 +207,13 @@ fields:
       field: layout
       value: left
   label: Header
+- name: blocks
+  type: blocks
+  label: Blocks
+  template_types:
+  - cards-1
+  config:
+    min: 
+    max: 
 pages:
 - index.md
