@@ -85,15 +85,21 @@ blocks:
       nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in
       hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu.
     author: Carl Redburg, Bakersfield, CA
-    image: ''
-  - heading: ''
-    text: ''
-    author: ''
-    image: ''
-  - heading: ''
-    text: ''
-    author: ''
-    image: ''
+    image: 'https://via.placeholder.com/400x600'
+  - heading: Awesome cosmetic dentist in Bakersfield
+    text: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+      nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi
+      enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis
+      nisl ut aliquip ex ea commodo consequat.
+    author: Johm Redburg, Bakersfield, CA
+    image: 'https://via.placeholder.com/400x600'
+  - heading: Top cosmetic dentist in Bakersfield
+    text: Ut wisi
+      enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis
+      nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in
+      hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu.
+    author: Tom Redburg, Bakersfield, CA
+    image: 'https://via.placeholder.com/400x600'
 sticky_cta: true
 
 ---

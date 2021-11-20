@@ -1,0 +1,49 @@
+<section class="uk-section uk-section-large uk-section-muted">
+  <div class="uk-container">
+    <div data-uk-slider>
+
+      <div class="uk-position-relative">
+
+        <div class="uk-slider-container">
+          <ul class="uk-slider-items uk-child-width-1-1">
+            {% for slide in block.testimonials %}
+              <li>
+                <div class="uk-grid-large uk-flex uk-flex-middle" data-uk-grid>
+                  <div class="uk-width-1-3 uk-visible@m">
+                    <img src="{% if slide.image contains 'http' %}{{ slide.image }}{% else %}{{ slide.image | absolute_url }}{% endif %}" alt="{{ slide.heading }}">
+                  </div>
+                  <div class="uk-width-expand">
+                    <img src="{{ '/assets/img/stars.svg' | absolute_url }}" width="200" alt="Rating">
+                    {% if slide.heading != empty %}
+                      <h3>{{ slide.heading }}</h3>
+                    {% endif %}                    
+                    {% if slide.text != empty %}
+                      <div class="uk-margin-top">{{ slide.text }}</div>
+                    {% endif %} 
+                    {% if slide.author != empty %}
+                      <div class="uk-margin-top uk-margin-left">&#8212; {{ slide.author }}</div>
+                    {% endif %}                    
+                  </div>
+                </div>
+              </li>
+            {% endfor %}
+          </ul>
+        </div>
+
+        <div class="uk-hidden@m">
+          <a class="uk-position-center-left uk-position-small" href="#" data-uk-slidenav-previous data-uk-slider-item="previous"></a>
+          <a class="uk-position-center-right uk-position-small" href="#" data-uk-slidenav-next data-uk-slider-item="next"></a>
+        </div>
+
+        <div class="uk-visible@m">
+          <a class="uk-position-center-left-out uk-position-small" href="#" data-uk-slidenav-previous data-uk-slider-item="previous"></a>
+          <a class="uk-position-center-right-out uk-position-small" href="#" data-uk-slidenav-next data-uk-slider-item="next"></a>
+        </div>
+
+      </div>
+
+      <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
+
+    </div>
+  </div>
+</section>
