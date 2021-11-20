@@ -7,7 +7,7 @@
           <h2 class="uk-margin-remove">{{ block.heading }}</h2>
         {% endif %}
         {% if block.text != empty %}
-          <div class="{% if block.heading %}uk-margin-top{% endif %}">{{ block.text }}</div>
+          <div class="uk-text-lead{% if block.heading %} uk-margin-top{% endif %}">{{ block.text | markdownify  }}</div>
         {% endif %}
       </div>
     {% endif %}
