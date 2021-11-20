@@ -113,7 +113,7 @@ blocks:
       nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in
       hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat
       nulla facilisis at vero eros et accumsan et iusto odio
-    image: ''
+    image: 'https://via.placeholder.com/600'
   - heading: Sarah R. \ Hygienist
     text: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
       nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi
@@ -121,7 +121,7 @@ blocks:
       nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in
       hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat
       nulla facilisis at vero eros et accumsan et iusto odio.
-    image: ''
+    image: 'https://via.placeholder.com/600'
   button:
     text: Request an Appointment
     url: "#"
