@@ -82,6 +82,7 @@ fields:
       showOnly:
         field: background_style
         value: video
+      description: Upload self hosted video.
     - name: background_slider
       type: image_gallery
       config: {}
