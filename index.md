@@ -161,6 +161,24 @@ blocks:
     vero eros et accumsan et iusto odio dignissim. Lorem ipsum dolor sit amet, consectetuer
     adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna
     aliquam erat volutpat.
+- template: before-after-1
+  block: before-after-1
+  align: left
+  heading: Before & after
+  text: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+  cards:
+  - heading: Invisalign
+    before: ''
+    after: ''
+  - heading: Braces
+    before: ''
+    after: ''
+  - heading: Invisalign
+    before: ''
+    after: ''
+  - heading: Braces
+    before: ''
+    after: ''
 - template: map
   block: map
   style: default
