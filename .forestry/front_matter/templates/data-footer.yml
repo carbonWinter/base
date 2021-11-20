@@ -19,15 +19,11 @@ fields:
       file: 
       path: 
   label: Layout
-- name: copyright
-  type: textarea
-  default: ''
+- name: phone
+  type: text
   config:
     required: false
-    wysiwyg: false
-    schema:
-      format: markdown
-  label: Copyright
+  label: Phone
 - name: address
   type: textarea
   default: ''
@@ -37,6 +33,22 @@ fields:
     schema:
       format: markdown
   label: Address
+- name: hours
+  type: list
+  config:
+    use_select: false
+    min: 
+    max: 
+  label: Hours
+- name: copyright
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Copyright
 - name: privacy_link
   type: field_group
   config: {}
@@ -52,18 +64,6 @@ fields:
       required: false
     label: URL
   label: Privacy link
-- name: phone
-  type: text
-  config:
-    required: false
-  label: Phone
-- name: hours
-  type: list
-  config:
-    use_select: false
-    min: 
-    max: 
-  label: Hours
 - name: button_primary
   type: field_group
   config: {}
@@ -128,3 +128,49 @@ fields:
     max: 
     labelField: 
   label: Menus
+- name: color
+  type: select
+  default: dark
+  config:
+    required: false
+    options:
+    - dark
+    - light
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Color
+- name: background
+  type: select
+  default: color
+  config:
+    required: false
+    options:
+    - color
+    - gradient
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Background
+- name: background_color
+  type: color
+  config:
+    required: false
+    color_format: Hex
+  label: Background color
+  default: "#D4D4D4"
+  showOnly:
+    field: background
+    value: color
+- name: background_gradient
+  type: text
+  config:
+    required: false
+  label: Background gradient
+  showOnly:
+    field: background
+    value: gradient
