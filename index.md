@@ -85,21 +85,44 @@ blocks:
       nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in
       hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu.
     author: Carl Redburg, Bakersfield, CA
-    image: 'https://via.placeholder.com/400x600'
+    image: https://via.placeholder.com/400x600
   - heading: Awesome cosmetic dentist in Bakersfield
     text: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
       nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi
       enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis
       nisl ut aliquip ex ea commodo consequat.
     author: Johm Redburg, Bakersfield, CA
-    image: 'https://via.placeholder.com/400x600'
+    image: https://via.placeholder.com/400x600
   - heading: Top cosmetic dentist in Bakersfield
-    text: Ut wisi
-      enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis
-      nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in
-      hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu.
+    text: Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit
+      lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure
+      dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore
+      eu.
     author: Tom Redburg, Bakersfield, CA
-    image: 'https://via.placeholder.com/400x600'
+    image: https://via.placeholder.com/400x600
+- template: cards-2
+  block: cards-2
+  align: left
+  heading: ''
+  text: ''
+  cards: []
+  button:
+    text: ''
+    url: ''
+    blank: false
+- template: video-1
+  block: video-1
+  align: left
+  heading: ''
+  text: ''
+  video_file: ''
+- template: text-1
+  block: text-1
+  align: left
+  columns: '3'
+  heading: ''
+  text: ''
+  content: ''
 sticky_cta: true
 
 ---
