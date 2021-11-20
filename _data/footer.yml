@@ -34,10 +34,10 @@ menus:
     url: "#"
   - text: dental inlays/onlays
     url: "#"
-color: ''
-background: ''
-background_color: ''
+color: dark
+background: color
+background_color: "#EEE4E4"
 background_gradient: ''
 subfooter:
-  background: ''
-  color: ''
+  background: "#000000"
+  color: light
