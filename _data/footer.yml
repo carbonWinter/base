@@ -2,11 +2,14 @@
 layout: layout-1
 phone: 000-000-0000
 address: "5060 California Ave. Suite 200  \nBakersfield, CA 93309"
-hours: []
-copyright: ''
+hours:
+- Monday-Friday
+- 9am-6pm
+copyright: "© 2021 salin dentistry bakersfield, ca  general and Cosmetic Dentistry.
+  All Rights Reserved. "
 privacy_link:
-  text: ''
-  url: ''
+  text: Privacy
+  url: "#"
 button_primary:
   text: ''
   url: ''
@@ -15,7 +18,22 @@ button_secondary:
   text: ''
   url: ''
   blank: false
-menus: []
+menus:
+- menu:
+  - text: porcelain veneers
+    url: "#"
+  - text: pro teeth whitening
+    url: "#"
+  - text: dental implants
+    url: "#"
+  - text: dental crowns
+    url: "#"
+  - text: full reconstruction
+    url: "#"
+  - text: metal-free fillings
+    url: "#"
+  - text: dental inlays/onlays
+    url: "#"
 color: ''
 background: ''
 background_color: ''
