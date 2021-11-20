@@ -103,12 +103,28 @@ blocks:
 - template: cards-2
   block: cards-2
   align: left
-  heading: ''
-  text: ''
-  cards: []
+  heading: Our Bakersfield Team
+  text: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+  cards:
+  - heading: Dr. Dimitry Salin
+    text: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+      nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi
+      enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis
+      nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in
+      hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat
+      nulla facilisis at vero eros et accumsan et iusto odio
+    image: ''
+  - heading: Sarah R. \ Hygienist
+    text: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+      nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi
+      enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis
+      nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in
+      hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat
+      nulla facilisis at vero eros et accumsan et iusto odio.
+    image: ''
   button:
-    text: ''
-    url: ''
+    text: Request an Appointment
+    url: "#"
     blank: false
 - template: video-1
   block: video-1
