@@ -200,3 +200,5 @@ fields:
         path: 
     label: Color
   label: Subfooter
+pages:
+- _data/footer.yml
