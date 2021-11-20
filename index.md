@@ -28,9 +28,47 @@ blocks:
   block: cards-1
   align: left
   columns: '3'
-  heading: ''
-  text: ''
-  cards: []
+  heading: Featured Services
+  text: Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+    eu fugiat nulla pariatur.
+  cards:
+  - heading: Dental implants
+    text: ''
+    icon: ''
+    button:
+      text: ''
+      url: ''
+  - heading: Tooth restoration
+    text: ''
+    icon: ''
+    button:
+      text: ''
+      url: ''
+  - heading: Dental crowns
+    text: ''
+    icon: ''
+    button:
+      text: ''
+      url: ''
+  - heading: Cosmetic dentistry
+    text: ''
+    icon: ''
+    button:
+      text: ''
+      url: ''
+  - heading: Ortho & braces
+    text: ''
+    icon: ''
+    button:
+      text: ''
+      url: ''
+  - heading: Teeth cleaning
+    text: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+      nibh euismod tincidunt.
+    icon: ''
+    button:
+      text: ''
+      url: ''
 sticky_cta: true
 
 ---
