@@ -131,7 +131,7 @@ blocks:
   align: left
   heading: Video headline
   text: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-  video_file: ''
+  video_file: '/uploads/lagoon.mp4'
 - template: text-1
   block: text-1
   align: left

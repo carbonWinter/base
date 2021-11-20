@@ -1,0 +1,21 @@
+<section class="uk-section uk-section-muted">
+  <div class="uk-container">
+
+    {% if block.heading != empty or block.text != empty %}
+      <div class="uk-margin-medium-bottom uk-container-small{% if block.align == 'center' %} uk-margin-auto{% endif %} uk-text-{{ block.align | default: 'left' }}">
+        {% if block.heading != empty %}
+          <h2 class="uk-margin-remove">{{ block.heading }}</h2>
+        {% endif %}
+        {% if block.text != empty %}
+          <div class="{% if block.heading %}uk-margin-top{% endif %}">{{ block.text }}</div>
+        {% endif %}
+      </div>
+    {% endif %}
+
+    {% if block.video_file != empty %}
+      <div>
+        <video src="{% if block.video_file contains 'http' %}{{ block.video_file }}{% else %}{{ block.video_file | absolute_url }}{% endif %}" playsinline controls></video>
+      </div>
+    {% endif %}    
+  </div>
+</section>
