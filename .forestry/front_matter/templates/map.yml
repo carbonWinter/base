@@ -1,4 +1,38 @@
 ---
 label: Map
 hide_body: true
-fields: []
+fields:
+- name: block
+  type: text
+  config:
+    required: false
+  label: Block
+  hidden: true
+  default: map
+- name: style
+  type: select
+  default: default
+  config:
+    required: false
+    options:
+    - default
+    - multi-location
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Style
+- name: src
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Src
+  description: Enter iframe source.
+  showOnly:
+    field: style
+    value: default
