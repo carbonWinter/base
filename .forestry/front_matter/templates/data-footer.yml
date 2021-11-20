@@ -102,3 +102,29 @@ fields:
     label: Blank
     description: Open in new window.
   label: Button secondary
+- name: menus
+  type: field_group_list
+  fields:
+  - name: menu
+    type: field_group_list
+    fields:
+    - name: text
+      type: text
+      config:
+        required: false
+      label: Text
+    - name: url
+      type: text
+      config:
+        required: false
+      label: URL
+    config:
+      min: 
+      max: 
+      labelField: 
+    label: Links
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: Menus
