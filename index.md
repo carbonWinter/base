@@ -24,18 +24,6 @@ header:
     text: ''
   color: light
 blocks:
-- template: cta
-  block: cta
-  width: xsmall
-  style: muted
-  title: Start a project now
-  content: 'Dramatically transform corporate solutions and cooperative methods of
-    empowerment. Globally engineer web-enabled testing procedures.
-
-'
-  button:
-    text: Contact Us
-    url: "/contact/"
 - template: cards-1
   block: cards-1
   align: left
