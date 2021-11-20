@@ -5,12 +5,12 @@
       <div data-uk-navbar>
         <div class="uk-navbar-left">
           <a class="uk-navbar-item uk-logo" href="{{ "/" | relative_url }}">
-            {% if site.logo_light or site.logo %}
-              {% if site.logo_light %}
-                <img class="uk-logo-inverse" src="{{ site.logo_light | absolute_url }}" alt="{{ site.title }}">
+            {% if site.data.options.logo_light != '' or site.data.options.logo_dark != '' %}
+              {% if site.data.options.logo_light != '' %}
+                <img class="uk-logo-inverse" src="{{ site.data.options.logo_light | absolute_url }}" alt="{{ site.title }}">
               {% endif %}
-              {% if site.logo %}
-                <img src="{{ site.logo | absolute_url }}" alt="{{ site.title }}">
+              {% if site.data.options.logo_dark != '' %}
+                <img src="{{ site.data.options.logo_dark | absolute_url }}" alt="{{ site.title }}">
               {% endif %}
             {% else %}
               {{ site.title }}
@@ -23,10 +23,10 @@
       </div>
     </div>
     <div class="uk-container uk-container-xsmall">
-      <div class="uk-flex uk-flex-middle" data-uk-height-viewport>
+      <div class="uk-margin-large-top" data-uk-height-viewport>
         <div>
-          <ul class="uk-nav uk-nav-mobile">
-            {% for link in site.data.mobile %}
+          <ul class="uk-nav uk-nav-parent-icon" data-uk-nav>
+            {% for link in site.data.navbar.menu_mobile %}
               {% if link.url contains 'http' %}
                   {% assign domain = '' %}
               {% else %}
@@ -34,12 +34,35 @@
               {% endif %}
 
               {% if link.url == page.url %}
-                  {% assign current = ' class="uk-active"' %}
+                  {% assign current = 'uk-active' %}
               {% else %}
                   {% assign current = null %}
               {% endif %}
 
-              <li{{ current }}><a class="uk-h3 uk-heading-medium" href="{{ domain }}{{ link.url }}">{{ link.title }}</a></li>
+              <li class="{{ current }}{% if link.dropdown and link.dropdown.size != 0 %} uk-parent{% endif %}">
+                {% if link.url %}
+                  <a{% if link.style != 'link' %} class="uk-button{% if link.style == 'button-primary' %} uk-button-primary{% endif %}{% if link.style == 'button-secondary' %} uk-button-secondary{% endif %}"{% endif %} href="{{ domain }}{{ link.url }}" {% if link.blank %}target="_blank" rel="noopener" {% endif %}>{{ link.text }}</a>
+                {% else %}
+                  <a href="#">{{ link.text }}</a>
+                {% endif %}
+                {% if link.dropdown and link.dropdown.size != 0 %}
+                  <ul class="uk-nav-sub">
+                    {% for child in link.dropdown %}
+                      {% if child.url contains 'http' %}
+                          {% assign domain = '' %}
+                      {% else %}
+                          {% assign domain = '' | relative_url %}
+                      {% endif %}
+                      {% if child.url == page.url %}
+                          {% assign current = ' class="uk-active"' %}
+                      {% else %}
+                          {% assign current = null %}
+                      {% endif %}
+                      <li{{ current }}><a href="{{ domain }}{{ child.url }}">{{ child.text }}</a></li>
+                    {% endfor %}
+                  </ul>
+                {% endif %}
+              </li>
             {% endfor %}
           </ul>
           <div class="uk-margin-xlarge-top uk-text-uppercase uk-h5 uk-text-spacing">

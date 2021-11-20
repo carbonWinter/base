@@ -52,3 +52,45 @@ menu_right:
   style: link
   blank: false
   dropdown: []
+menu_mobile:
+- text: Our Doctors
+  url: "#"
+  style: link
+  blank: false
+  dropdown: []
+- url: "#"
+  style: link
+  blank: false
+  dropdown: []
+  text: Our Practice
+- text: The Specialties
+  url: ''
+  style: link
+  blank: false
+  dropdown:
+  - text: porcelain veneers
+    url: "#"
+    blank: false
+  - text: pro teeth whitening
+    url: "#"
+    blank: false
+  - text: dental implants
+    url: "#"
+    blank: false
+  - text: dental crowns
+    url: "#"
+    blank: false
+  - text: full reconstruction
+    url: "#"
+    blank: false
+  - text: metal-free fillings
+    url: "#"
+    blank: false
+  - text: dental inlays/onlays
+    url: "#"
+    blank: false
+- url: "#"
+  style: button-primary
+  blank: false
+  dropdown: []
+  text: Contact

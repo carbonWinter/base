@@ -18,7 +18,7 @@
                       {% if link.text %}
                           <li{{ current }}>
                             {% if link.url %}
-                              <a href="{{ domain }}{{ link.url }}" {% if link.url contains 'http' %}target="_blank" rel="noopener" {% endif %}>{{ link.text }}</a>
+                              <a href="{{ domain }}{{ link.url }}" {% if link.blank %}target="_blank" rel="noopener" {% endif %}>{{ link.text }}</a>
                             {% else %}
                               <a href="#">{{ link.text }}</a>
                             {% endif %}
@@ -82,7 +82,7 @@
                       {% if link.text %}
                           <li{{ current }}>
                             {% if link.url %}
-                              <a href="{{ domain }}{{ link.url }}" {% if link.url contains 'http' %}target="_blank" rel="noopener" {% endif %}>{{ link.text }}</a>
+                              <a href="{{ domain }}{{ link.url }}" {% if link.blank %}target="_blank" rel="noopener" {% endif %}>{{ link.text }}</a>
                             {% else %}
                               <a href="#">{{ link.text }}</a>
                             {% endif %}
