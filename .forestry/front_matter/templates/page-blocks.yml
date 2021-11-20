@@ -212,6 +212,7 @@ fields:
   label: Blocks
   template_types:
   - cards-1
+  - testimonials-1
   config:
     min: 
     max: 
