@@ -40,7 +40,11 @@
       </div>
     {% endif %}
 
-    {% include footer.html %}
+    {% if site.data.footer.layout == 'layout-2' %}
+      {% include footer-2.html %}
+    {% else %}
+      {% include footer-1.html %}
+    {% endif %}
 
     {% include nav-mobile.html %}
 
