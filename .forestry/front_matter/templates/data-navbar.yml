@@ -259,6 +259,6 @@ fields:
     min: 
     max: 
     labelField: 
-  label: Menu mobile  
+  label: Menu mobile
 pages:
 - _data/navbar.yml

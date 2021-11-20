@@ -4,10 +4,15 @@ hide_body: true
 fields:
 - name: layout
   type: select
-  default: []
+  default: layout-1
   config:
     required: false
-    options: []
+    options:
+    - layout-1
+    - layout-2
+    - layout-3
+    - layout-4
+    - layout-5
     source:
       type: simple
       section: 
