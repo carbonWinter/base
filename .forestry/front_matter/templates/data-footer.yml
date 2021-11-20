@@ -174,3 +174,29 @@ fields:
   showOnly:
     field: background
     value: gradient
+- name: subfooter
+  type: field_group
+  config: {}
+  fields:
+  - name: background
+    type: color
+    label: Background
+    config:
+      required: false
+      color_format: Hex
+    default: "#000000"
+  - name: color
+    type: select
+    default: light
+    config:
+      required: false
+      options:
+      - dark
+      - light
+      source:
+        type: simple
+        section: 
+        file: 
+        path: 
+    label: Color
+  label: Subfooter
