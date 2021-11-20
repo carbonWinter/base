@@ -33,42 +33,47 @@ blocks:
     eu fugiat nulla pariatur.
   cards:
   - heading: Dental implants
-    text: ''
-    icon: ''
+    text: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+      nibh euismod tincidunt.
+    icon: 'https://via.placeholder.com/40'
     button:
-      text: ''
-      url: ''
+      text: Read More
+      url: '#'
   - heading: Tooth restoration
-    text: ''
-    icon: ''
+    text: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+      nibh euismod tincidunt.
+    icon: 'https://via.placeholder.com/40'
     button:
-      text: ''
-      url: ''
+      text: Read More
+      url: '#'
   - heading: Dental crowns
-    text: ''
-    icon: ''
+    text: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+      nibh euismod tincidunt.
+    icon: 'https://via.placeholder.com/40'
     button:
-      text: ''
-      url: ''
+      text: Read More
+      url: '#'
   - heading: Cosmetic dentistry
-    text: ''
-    icon: ''
+    text: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+      nibh euismod tincidunt.
+    icon: 'https://via.placeholder.com/40'
     button:
-      text: ''
-      url: ''
+      text: Read More
+      url: '#'
   - heading: Ortho & braces
-    text: ''
-    icon: ''
+    text: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+      nibh euismod tincidunt.
+    icon: 'https://via.placeholder.com/40'
     button:
-      text: ''
-      url: ''
+      text: Read More
+      url: '#'
   - heading: Teeth cleaning
     text: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
       nibh euismod tincidunt.
-    icon: ''
+    icon: 'https://via.placeholder.com/40'
     button:
-      text: ''
-      url: ''
+      text: Read More
+      url: '#'
 sticky_cta: true
 
 ---

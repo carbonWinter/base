@@ -1,26 +1,40 @@
 <section class="uk-section">
   <div class="uk-container uk-text-{{ block.align | default: 'left' }}">
 
-    {% if block.heading or block.text %}
-      <div class="uk-margin-large-bottom uk-container-small">
-        {% if block.heading %}
+    {% if block.heading != empty or block.text != empty %}
+      <div class="uk-margin-large-bottom uk-container-small{% if block.align == 'center' %} uk-margin-auto{% endif %}">
+        {% if block.heading != empty %}
           <h2 class="uk-margin-remove">{{ block.heading }}</h2>
         {% endif %}
-        {% if block.text %}
+        {% if block.text != empty %}
           <div class="{% if block.heading %}uk-margin-top{% endif %}">{{ block.text }}</div>
         {% endif %}
       </div>
     {% endif %}
 
-    <div class="uk-margin-large-top uk-text-center uk-flex-center uk-grid-large uk-child-width-1-2  uk-child-width-1-3@s uk-child-width-1-4@m" data-uk-grid>
-      {% for logo in block.logos %}
+    <div class="uk-flex-center uk-grid-large uk-child-width-1-2 uk-child-width-1-{{ block.columns | default: '3' }}@m" data-uk-grid>
+      {% for card in block.cards %}
         <div>
-          <img src="{% if logo contains 'http' %}{{ logo }}{% else %}{{ logo | absolute_url }}{% endif %}" alt="Logo">
+          <div class="uk-grid-small uk-flex uk-flex-middle" data-uk-grid>
+            {% if card.icon != empty %}
+              <div class="{% if block.align == 'center' %} uk-width-1-1{% else %}uk-width-auto{% endif %}">
+                <img src="{% if card.icon contains 'http' %}{{ card.icon }}{% else %}{{ card.icon | absolute_url }}{% endif %}" alt="{{ card.heading }}">
+              </div>
+            {% endif %}
+            <div class="uk-width-expand">
+              <h3 class="uk-margin-remove">{{ card.heading }}</h3>
+            </div>
+          </div>
+          {% if card.text != empty %}
+            <div class="uk-margin-top">{{ card.text }}</div>
+          {% endif %}
+          {% if card.button.url != empty %}
+            <div class="uk-margin-top">
+              <a class="uk-button uk-button-default" href="{% if card.button.url contains 'http' %}{{ card.button.url }}{% else %}{{ card.button.url | relative_url }}{% endif %}">{{ card.button.text }}</a>
+            </div>
+          {% endif %}
         </div>
       {% endfor %}
     </div>
-    {% if block.button.url %}
-      <div class="uk-text-center uk-margin-mlarge-top"><a class="uk-button uk-button-default uk-border-pill uk-button-width-medium" href="{% if block.button.url contains 'http' %}{{ block.button.url }}{% else %}{{ block.button.url | relative_url }}{% endif %}">{{ block.button.text }}</a></div>
-    {% endif %}
   </div>
-</section>{{ block.heading }}
+</section>
