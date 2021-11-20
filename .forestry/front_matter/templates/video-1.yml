@@ -38,8 +38,8 @@ fields:
       path: 
   label: Align
 - name: video_file
-  type: text
+  type: file
   config:
-    required: false
+    maxSize: 64
   label: Video file
-  description: Upload self hosted video.
+  description: Upload șelf hosted video.
