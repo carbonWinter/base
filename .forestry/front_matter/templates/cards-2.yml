@@ -23,6 +23,20 @@ fields:
     schema:
       format: markdown
   label: Text
+- name: align
+  type: select
+  default: left
+  config:
+    required: false
+    options:
+    - left
+    - center
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Align
 - name: cards
   type: field_group_list
   fields:
