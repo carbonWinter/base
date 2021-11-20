@@ -1,60 +1,127 @@
-<footer id="footer" class="uk-section-xlarge uk-section-{{site.footer.background | default: 'default'}}">
-  <div class="uk-container">
-    <div class="uk-grid-large" data-uk-grid>
-      <div class="uk-width-1-2@m uk-flex uk-flex-column">
-        <ul class="uk-list uk-text-small uk-h2 uk-margin-large-bottom">
-          {% for link in site.data.footer %}
-            {% if link.url contains 'http' %}
-              {% assign domain = '' %}
-            {% else %}
-              {% assign domain = '' | relative_url %}
+<footer id="footer">
+  <div class="uk-section-large uk-section-{{site.footer.background | default: 'default'}}">
+    <div class="uk-container">
+      <div class="uk-text-center">
+        <a class="uk-navbar-item uk-logo" href="{{ "/" | relative_url }}">
+          {% if site.data.options.logo_light != '' or site.data.options.logo_dark != '' %}
+            {% if site.data.options.logo_light != '' %}
+              <img class="uk-logo-inverse" src="{{ site.data.options.logo_light | absolute_url }}" alt="{{ site.title }}">
             {% endif %}
-            {% if link.url == page.url %}
-              {% assign current = ' class="uk-active"' %}
-            {% else %}
-              {% assign current = null %}
+            {% if site.data.options.logo_dark != '' %}
+              <img src="{{ site.data.options.logo_dark | absolute_url }}" alt="{{ site.title }}">
             {% endif %}
-            {% if link.title %}
-              <li{{ current }}><a class="uk-h1 uk-text-serif" href="{{ domain }}{{ link.url }}" {% if link.url contains 'http' %}target="_blank" rel="noopener" {% endif %}>{{ link.title }}</a></li>
-            {% endif %}
-          {% endfor %}
-        </ul>
-        <div class="uk-margin-auto-top">
-          <a class="uk-logo uk-link-muted" href="{{ "/" | relative_url }}">
-            {% if site.logo_light or site.logo %}
-              {% if site.logo_light %}
-                <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" class="uk-logo-inverse" data-src="{{ site.logo_light | absolute_url }}" alt="{{ site.title }}" data-uk-img>
-              {% endif %}
-              {% if site.logo %}
-                <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="{{ site.logo | absolute_url }}" alt="{{ site.title }}" data-uk-img>
-              {% endif %}
-            {% else %}
-              {{ site.title }}
-            {% endif %}
-          </a>
+          {% else %}
+            {{ site.title }}
+          {% endif %}
+        </a>
+      </div>
+      {% if site.data.footer.phone != '' %}
+        <div class="uk-margin-top uk-text-center">
+          <a class="" href="tel: {{ site.data.footer.phone }}">{{ site.data.footer.phone }}</a>
+        </div>
+      {% endif %}
+      {% if site.data.footer.copyright != '' %}
+        <div class="uk-margin-top uk-text-center">
+          {{ site.data.footer.copyright }}
+        </div>
+      {% endif %}
+      
+      <div class="uk-margin-top uk-child-width-1-2@m" data-uk-grid>
+        <div>
+          {% if site.data.footer.menus.size != 0 %}
+            {% for menu in site.data.footer.menus %}
+              <ul class="uk-nav">
+                {% for item in menu.menu %}
+                  <li><a href="{% if item.url contains 'http' %}{{ item.url }}{% else %}{{ item.url | relative_url }}{% endif %}">{{ item.text }}</a></li>
+                {% endfor %}
+              </ul>
+            {% endfor %}
+          {% endif %}
+        </div>
+        <div>
+          {% if site.data.footer.address != '' %}
+            <address>{{ site.data.footer.address | markdownify }}</address>
+          {% endif %}
+          {% if site.data.footer.hours.size != 0 %}
+            <ul class="uk-list">
+              {% for item in site.data.footer.hours %}
+                <li>{{ item }}</li>
+              {% endfor %}
+            </ul>
+          {% endif %}
         </div>
       </div>
-      <div class="uk-width-1-2@m uk-h5 uk-text-spacing uk-text-uppercase">
-        {% if site.footer.address %}
-          <address class="uk-margin">{{ site.author.address }}</address>
-        {% endif %}
-        {% if site.footer.phone %}
-          <div class="uk-margin"><a href="tel:{{ site.author.phone }}">{{ site.author.phone }}</a></div>
-        {% endif %}
-        {% if site.footer.email %}
-          <div class="uk-margin"><a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a></div>
-        {% endif %}
-        {% if site.footer.social %}
-          <div class="uk-margin">
-            <div>
-              {% include social-networks.html %}
-            </div>
+      
+    
+      <div class="uk-grid-large" data-uk-grid>
+        <div class="uk-width-1-2@m uk-flex uk-flex-column">
+          <ul class="uk-list uk-text-small uk-h2 uk-margin-large-bottom">
+            {% for link in site.data.footer %}
+              {% if link.url contains 'http' %}
+                {% assign domain = '' %}
+              {% else %}
+                {% assign domain = '' | relative_url %}
+              {% endif %}
+              {% if link.url == page.url %}
+                {% assign current = ' class="uk-active"' %}
+              {% else %}
+                {% assign current = null %}
+              {% endif %}
+              {% if link.title %}
+                <li{{ current }}><a class="uk-h1 uk-text-serif" href="{{ domain }}{{ link.url }}" {% if link.url contains 'http' %}target="_blank" rel="noopener" {% endif %}>{{ link.title }}</a></li>
+              {% endif %}
+            {% endfor %}
+          </ul>
+          <div class="uk-margin-auto-top">
+            <a class="uk-logo uk-link-muted" href="{{ "/" | relative_url }}">
+              {% if site.logo_light or site.logo %}
+                {% if site.logo_light %}
+                  <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" class="uk-logo-inverse" data-src="{{ site.logo_light | absolute_url }}" alt="{{ site.title }}" data-uk-img>
+                {% endif %}
+                {% if site.logo %}
+                  <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="{{ site.logo | absolute_url }}" alt="{{ site.title }}" data-uk-img>
+                {% endif %}
+              {% else %}
+                {{ site.title }}
+              {% endif %}
+            </a>
           </div>
-        {% endif %}
-        {% if site.footer.copyright %}
-          <div class="uk-margin-large-top uk-text-xsmall uk-text-muted uk-link-muted">{{ site.footer.copyright }}</div>
-        {% endif %}
+        </div>
+        <div class="uk-width-1-2@m uk-h5 uk-text-spacing uk-text-uppercase">
+          {% if site.footer.address %}
+            <address class="uk-margin">{{ site.author.address }}</address>
+          {% endif %}
+          {% if site.footer.phone %}
+            <div class="uk-margin"><a href="tel:{{ site.author.phone }}">{{ site.author.phone }}</a></div>
+          {% endif %}
+          {% if site.footer.email %}
+            <div class="uk-margin"><a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a></div>
+          {% endif %}
+          {% if site.footer.social %}
+            <div class="uk-margin">
+              <div>
+                {% include social-networks.html %}
+              </div>
+            </div>
+          {% endif %}
+          {% if site.footer.copyright %}
+            <div class="uk-margin-large-top uk-text-xsmall uk-text-muted uk-link-muted">{{ site.footer.copyright }}</div>
+          {% endif %}
+        </div>
+      </div>
+    </div> 
+  </div>
+  <div class="uk-section-small{% if site.data.footer.subfooter.color == 'light' %} uk-light{% endif %}" style="background-color: {{ site.data.footer.subfooter.background | default: '#000' }};">
+    <div class="uk-container">
+      <div class="uk-text-center uk-text-left@m uk-text-uppercase" data-uk-grid>
+        <div class="uk-width-expand@m">
+          {{ site.data.footer.copyright }}
+          {% if site.data.footer.privacy_link.url != '' %}
+            | <a href="{% if site.data.footer.privacy_link.url contains 'http' %}{{ site.data.footer.privacy_link.url }}{% else %}{{ site.data.footer.privacy_link.url | relative_url }}{% endif %}">{{ site.data.footer.privacy_link.text }}</a>
+          {% endif %}
+        </div>
+        <div class="uk-width-1-3@m">site by dental game plan</div>
       </div>
     </div>
-  </div> 
+  </div>
 </footer>
