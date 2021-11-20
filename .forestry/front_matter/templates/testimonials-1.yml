@@ -1,4 +1,48 @@
 ---
 label: Testimonials 1
 hide_body: true
-fields: []
+fields:
+- name: block
+  type: text
+  config:
+    required: false
+  label: Block
+  hidden: true
+  default: testimonials-1
+- name: background_image
+  type: file
+  config:
+    maxSize: 64
+  label: Background image
+- name: testimonials
+  type: field_group_list
+  fields:
+  - name: heading
+    type: text
+    config:
+      required: false
+    label: Heading
+  - name: text
+    type: textarea
+    default: ''
+    config:
+      required: false
+      wysiwyg: true
+      schema:
+        format: markdown
+    label: Text
+  - name: author
+    type: text
+    config:
+      required: false
+    label: Author
+  - name: image
+    type: file
+    config:
+      maxSize: 64
+    label: Image
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: Testimonials
