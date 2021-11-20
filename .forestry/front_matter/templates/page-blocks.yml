@@ -212,6 +212,7 @@ fields:
   type: blocks
   label: Blocks
   template_types:
+  - before-after-1
   - cards-1
   - cards-2
   - map
