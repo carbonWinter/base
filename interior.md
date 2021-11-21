@@ -78,9 +78,9 @@ blocks:
 - template: video-1
   block: video-1
   align: left
-  heading: ''
-  text: ''
-  video_file: ''
+  heading: Video headline
+  text: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+  video_file: "/uploads/lagoon.mp4"
 - template: text-1
   block: text-1
   align: left
