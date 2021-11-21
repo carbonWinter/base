@@ -22,6 +22,20 @@ header:
     text: ''
 title: Interior
 sticky_cta: false
-blocks: []
+blocks:
+- template: text-1
+  block: text-1
+  align: left
+  columns: '3'
+  heading: ''
+  text: ''
+  content: ''
+- template: text-1
+  block: text-1
+  align: left
+  columns: '3'
+  heading: ''
+  text: ''
+  content: ''
 
 ---
