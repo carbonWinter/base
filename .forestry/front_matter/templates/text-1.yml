@@ -62,3 +62,18 @@ fields:
     schema:
       format: markdown
   label: Content
+- name: lists
+  type: field_group_list
+  fields:
+  - name: list
+    type: list
+    config:
+      use_select: false
+      min: 
+      max: 
+    label: List
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: Lists
