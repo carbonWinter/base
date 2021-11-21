@@ -5,9 +5,9 @@ header:
   background:
     background_style: image
     background_color: "#E2E2E2"
-    overlay: none
+    overlay: color
     overlay_color: "#000000"
-    overlay_opacity: 0.7
+    overlay_opacity: 0.2
     background_image: "/uploads/image-large.jpg"
     background_video_file: ''
     background_slider: []
