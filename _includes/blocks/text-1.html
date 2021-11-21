@@ -12,7 +12,7 @@
     {% endif %}
 
     {% if block.content != empty %}
-      <div class="uk-column-1-2@s uk-column-1-{{ block.columns | default: '3' }}@l">{{ block.content | markdownify }}</div>
+      <div class="{% if block.columns != '1' %}uk-column-1-2@s{% endif %} uk-column-1-{{ block.columns | default: '3' }}@l">{{ block.content | markdownify }}</div>
     {% endif %}    
   </div>
 </section>
