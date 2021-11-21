@@ -13,7 +13,7 @@ header:
     background_slider: []
     gradient: ''
   layout: left
-  color: dark
+  color: light
   col_one:
     heading: ''
     text: ''
