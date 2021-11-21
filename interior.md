@@ -53,6 +53,20 @@ blocks:
     adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna
     aliquam erat volutpat.
   lists: []
+- template: cta-1
+  block: cta-1
+  color: light
+  align: center
+  background:
+    image: "/uploads/image-large.jpg"
+  heading: We love what we do
+  text: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+    nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+  button:
+    text: Request an appointment
+    url: "#"
+    blank: true
+  image: ''
 - template: text-1
   block: text-1
   align: left
