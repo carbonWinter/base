@@ -86,5 +86,15 @@ fields:
       required: false
     label: Phone
   label: Sticky CTA
+- name: blocks
+  type: blocks
+  label: Blocks
+  template_types:
+  - contact-1
+  - map
+  config:
+    min: 
+    max: 
+  description: 'Globally displayed blocks pre-footer. '
 pages:
 - _data/options.yml
