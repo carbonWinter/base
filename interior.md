@@ -70,6 +70,20 @@ blocks:
 - template: text-1
   block: text-1
   align: left
+  columns: '3'
+  heading: ''
+  text: ''
+  content: ''
+  lists: []
+- template: video-1
+  block: video-1
+  align: left
+  heading: ''
+  text: ''
+  video_file: ''
+- template: text-1
+  block: text-1
+  align: left
   columns: '1'
   heading: Text 1 col. headline
   text: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
