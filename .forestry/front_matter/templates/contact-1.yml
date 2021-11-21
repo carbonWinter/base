@@ -59,6 +59,10 @@ fields:
       config:
         required: false
       label: URL
+    - name: blank
+      type: boolean
+      label: Blank
+      description: Open in new window.
     label: Button
   - name: phone
     type: text
