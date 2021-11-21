@@ -1,0 +1,31 @@
+<section class="uk-section">
+  <div class="uk-container uk-text-{{ block.align | default: 'left' }}">
+
+    {% if block.heading != empty or block.text != empty %}
+      <div class="uk-margin-large-bottom uk-container-small{% if block.align == 'center' %} uk-margin-auto{% endif %}">
+        {% if block.heading != empty %}
+          <h2 class="uk-margin-remove">{{ block.heading }}</h2>
+        {% endif %}
+        {% if block.text != empty %}
+          <div class="uk-text-lead{% if block.heading %} uk-margin-top{% endif %}">{{ block.text | markdownify  }}</div>
+        {% endif %}
+      </div>
+    {% endif %}
+
+    <div class="uk-flex-center uk-grid-large uk-child-width-1-2@m uk-text-center" data-uk-grid>
+      {% for card in block.cards %}
+        <div>
+          <div class="">
+            <img class="uk-border-circle" data-src="{% if card.before contains 'http' %}{{ card.before }}{% else %}{{ card.before | absolute_url }}{% endif %}" data-width data-height src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-uk-img alt="{{ card.heading }}">
+            <img class="uk-border-circle" data-src="{% if card.after contains 'http' %}{{ card.after }}{% else %}{{ card.after | absolute_url }}{% endif %}" data-width data-height src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-uk-img alt="{{ card.heading }}">
+          </div>
+          {% if card.heading != empty %}
+            <div class="uk-margin-top">
+              <h3 class="uk-margin-remove">{{ card.heading }}</h3>
+            </div>
+          {% endif %}
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

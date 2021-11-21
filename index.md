@@ -168,17 +168,17 @@ blocks:
   text: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
   cards:
   - heading: Invisalign
-    before: ''
-    after: ''
+    before: 'https://via.placeholder.com/600'
+    after: 'https://via.placeholder.com/600'
   - heading: Braces
-    before: ''
-    after: ''
+    before: 'https://via.placeholder.com/600'
+    after: 'https://via.placeholder.com/600'
   - heading: Invisalign
-    before: ''
-    after: ''
+    before: 'https://via.placeholder.com/600'
+    after: 'https://via.placeholder.com/600'
   - heading: Braces
-    before: ''
-    after: ''
+    before: 'https://via.placeholder.com/600'
+    after: 'https://via.placeholder.com/600'
 - template: map
   block: map
   style: default
