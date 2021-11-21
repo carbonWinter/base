@@ -15,8 +15,8 @@ header:
   layout: left
   color: light
   col_one:
-    heading: 'Dental Crowns'
-    text: 'bakersfield, California'
+    heading: Dental Crowns
+    text: bakersfield, California
   col_two:
     heading: ''
     text: ''
@@ -52,6 +52,7 @@ blocks:
     vero eros et accumsan et iusto odio dignissim. Lorem ipsum dolor sit amet, consectetuer
     adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna
     aliquam erat volutpat.
+  lists: []
 - template: text-1
   block: text-1
   align: left
@@ -81,5 +82,14 @@ blocks:
     vero eros et accumsan et iusto odio dignissim. Lorem ipsum dolor sit amet, consectetuer
     adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna
     aliquam erat volutpat.
+  lists:
+  - list:
+    - Lorem ipsum dolor sit amet
+    - Lorem ipsum dolor sit amet
+    - Lorem ipsum dolor sit amet
+  - list:
+    - Lorem ipsum dolor sit amet
+    - Lorem ipsum dolor sit amet
+    - Lorem ipsum dolor sit amet
 
 ---
