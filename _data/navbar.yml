@@ -2,7 +2,7 @@
 layout: center
 sticky: false
 color: light
-background: '#000'
+background: '#303d4f'
 menu_left:
 - text: Our Doctors
   url: "#"
