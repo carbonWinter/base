@@ -1,8 +1,8 @@
 ---
 theme: mordecai
 color_primary: "#15DDB5"
-logo_dark: 'https://via.placeholder.com/150x70'
-logo_light: 'https://via.placeholder.com/150x70'
+logo_dark: https://via.placeholder.com/150x70
+logo_light: https://via.placeholder.com/150x70
 sticky_cta:
   button_secondary:
     text: Appointments
@@ -13,3 +13,25 @@ sticky_cta:
     url: "#"
     blank: true
   phone: 000-000-0000
+blocks:
+- template: map
+  block: map
+  style: default
+  src: ''
+- template: contact-1
+  block: contact-1
+  background:
+    image: ''
+  hours:
+    heading: ''
+    hours: []
+  appointment:
+    heading: ''
+    button:
+      text: ''
+      url: ''
+      blank: false
+    phone: ''
+  address:
+    heading: ''
+    address: ''
