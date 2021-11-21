@@ -206,8 +206,8 @@ blocks:
       url: "#"
     phone: "(555) 666-6667"
   address:
-    heading: ''
-    address: ''
+    heading: Our Address
+    address: "5060 California Ave. Suite 200   \nBakersfield, CA 93309"
 sticky_cta: true
 
 ---
