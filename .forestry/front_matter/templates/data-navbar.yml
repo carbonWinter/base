@@ -16,6 +16,27 @@ fields:
       file: 
       path: 
   label: Layout
+- name: color
+  type: select
+  default: light
+  config:
+    required: false
+    options:
+    - light
+    - dark
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Color
+- name: background
+  type: color
+  label: Background
+  config:
+    required: false
+    color_format: Hex
+  default: "#000000"
 - name: phone
   type: text
   config:
