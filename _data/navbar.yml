@@ -2,7 +2,7 @@
 layout: center
 sticky: false
 color: light
-background: '#303d4f'
+background: "#303d4f"
 menu_left:
 - text: Our Doctors
   url: "#"
@@ -94,3 +94,4 @@ menu_mobile:
   blank: false
   dropdown: []
   text: Contact
+phone: 000-000-0000

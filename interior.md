@@ -3,17 +3,17 @@ layout: blocks
 header:
   height: default
   background:
-    background_style: color
+    background_style: image
     background_color: "#E2E2E2"
-    overlay: none
+    overlay: color
     overlay_color: "#000000"
-    overlay_opacity: 0.7
-    background_image: ''
+    overlay_opacity: 0.2
+    background_image: "/uploads/image-large.jpg"
     background_video_file: ''
     background_slider: []
     gradient: ''
   layout: left
-  color: dark
+  color: light
   col_one:
     heading: 'Dental Crowns'
     text: 'bakersfield, California'
@@ -22,6 +22,20 @@ header:
     text: ''
 title: Interior
 sticky_cta: false
-blocks: []
+blocks:
+- template: text-1
+  block: text-1
+  align: left
+  columns: '3'
+  heading: ''
+  text: ''
+  content: ''
+- template: text-1
+  block: text-1
+  align: left
+  columns: '3'
+  heading: ''
+  text: ''
+  content: ''
 
 ---
