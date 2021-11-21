@@ -1,4 +1,4 @@
-<section class="uk-section">
+<section class="uk-section uk-before-after-1">
   <div class="uk-container uk-text-{{ block.align | default: 'left' }}">
 
     {% if block.heading != empty or block.text != empty %}
@@ -15,9 +15,13 @@
     <div class="uk-flex-center uk-grid-large uk-child-width-1-2@m uk-text-center" data-uk-grid>
       {% for card in block.cards %}
         <div>
-          <div class="">
-            <img class="uk-border-circle" data-src="{% if card.before contains 'http' %}{{ card.before }}{% else %}{{ card.before | absolute_url }}{% endif %}" data-width data-height src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-uk-img alt="{{ card.heading }}">
-            <img class="uk-border-circle" data-src="{% if card.after contains 'http' %}{{ card.after }}{% else %}{{ card.after | absolute_url }}{% endif %}" data-width data-height src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-uk-img alt="{{ card.heading }}">
+          <div class="uk-flex uk-pointer" data-uk-toggle="target: #before-{{ forloop.index }}; cls: uk-position-z-index">
+            <div id="before-{{ forloop.index }}" class="">
+              <img class="uk-border-circle" data-src="{% if card.before contains 'http' %}{{ card.before }}{% else %}{{ card.before | absolute_url }}{% endif %}" data-width data-height src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-uk-img alt="{{ card.heading }}">
+            </div>
+            <div class="uk-after">
+              <img class="uk-border-circle" data-src="{% if card.after contains 'http' %}{{ card.after }}{% else %}{{ card.after | absolute_url }}{% endif %}" data-width data-height src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-uk-img alt="{{ card.heading }}">
+            </div>
           </div>
           {% if card.heading != empty %}
             <div class="uk-margin-top">

@@ -1,0 +1,16 @@
+
+
+@mixin hook-utility-misc() {
+  .uk-pointer {
+    cursor: pointer;
+  }
+  
+  .uk-before-after-1 {
+    .uk-after {
+      margin-left: -40%;
+    }
+  }
+
+
+
+}
