@@ -194,14 +194,17 @@ blocks:
   background:
     image: "/uploads/bg-1.svg"
   hours:
-    heading: ''
-    hours: []
+    heading: Office Hours
+    hours:
+    - Monday - Friday  9am - 5pm
+    - Saturday 9am - 3pm
+    - Sunday Closed
   appointment:
-    heading: ''
+    heading: Schedule an Appointment
     button:
-      text: ''
-      url: ''
-    phone: ''
+      text: Request an Appointment
+      url: "#"
+    phone: "(555) 666-6667"
   address:
     heading: ''
     address: ''
