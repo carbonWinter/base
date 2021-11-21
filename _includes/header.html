@@ -33,18 +33,37 @@
       </nav>
     {% endif %}
     
-    <div class="uk-container uk-text-center uk-position-relative uk-flex uk-flex-middle uk-flex-center{% if page.header.color == 'light' %} uk-light{% endif %}"{% if page.header.height %} data-uk-height-viewport="offset-top: true; offset-bottom: 40px"{% endif %}>
+    <div class="uk-container uk-position-relative uk-flex uk-flex-middle{% if page.header.layout == 'centered' %} uk-flex-center uk-text-center{% endif %}{% if page.header.color == 'light' %} uk-light{% endif %}"{% if page.header.height == 'viewport' %} data-uk-height-viewport="offset-top: true; offset-bottom: 40px"{% endif %}>
       {% if page.header.layout == 'centered' %}
         <div class="uk-margin-large-top uk-margin-xlarge-bottom">
-          {% if page.header.col_one.heading %}
+          {% if page.header.col_one.heading != '' %}
             <h1 class="uk-heading-medium">{{ page.header.col_one.heading }}</h1>
           {% endif %}
-          {% if page.header.col_one.text %}
+          {% if page.header.col_one.text != '' %}
             <div class="uk-container uk-container-2xsmall uk-line-medium uk-h6 uk-text-500 uk-text-lead uk-margin-remove-bottom">{{ page.header.col_one.text }}</div>
           {% endif %}
         </div>
       {% else %}
-        <!-- two col layout -->
+        <div class="uk-grid-large uk-child-width-1-2@m uk-margin-xlarge-top uk-margin-xlarge-bottom uk-width-1-1" data-uk-grid>
+          <div class="{% if page.header.col_two.heading == '' %}uk-width-2-3@l{% endif %}">
+            {% if page.header.col_one.heading != '' %}
+              <h1 class="uk-heading-medium">{{ page.header.col_one.heading }}</h1>
+            {% endif %}
+            {% if page.header.col_one.text != '' %}
+              <div class="uk-container uk-container-2xsmall uk-line-medium uk-h6 uk-text-500 uk-text-lead uk-margin-remove-bottom">{{ page.header.col_one.text }}</div>
+            {% endif %}
+          </div>
+          {% if page.header.col_two.heading != '' %}
+            <div>
+              {% if page.header.col_two.heading != '' %}
+                <h1 class="uk-heading-medium">{{ page.header.col_two.heading }}</h1>
+              {% endif %}
+              {% if page.header.col_two.text != '' %}
+                <div class="uk-container uk-container-2xsmall uk-line-medium uk-h6 uk-text-500 uk-text-lead uk-margin-remove-bottom">{{ page.header.col_two.text }}</div>
+              {% endif %}
+            </div>   
+          {% endif %}       
+        </div>
       {% endif %}
       
     </div>

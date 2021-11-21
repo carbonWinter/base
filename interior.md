@@ -15,8 +15,8 @@ header:
   layout: left
   color: dark
   col_one:
-    heading: ''
-    text: ''
+    heading: 'Dental Crowns'
+    text: 'bakersfield, California'
   col_two:
     heading: ''
     text: ''
