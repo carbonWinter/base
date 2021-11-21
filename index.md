@@ -168,17 +168,21 @@ blocks:
   text: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
   cards:
   - heading: Invisalign
-    before: 'https://via.placeholder.com/600'
-    after: 'https://via.placeholder.com/600'
+    before: https://via.placeholder.com/600
+    after: https://via.placeholder.com/600
   - heading: Braces
-    before: 'https://via.placeholder.com/600'
-    after: 'https://via.placeholder.com/600'
+    before: https://via.placeholder.com/600
+    after: https://via.placeholder.com/600
   - heading: Invisalign
-    before: 'https://via.placeholder.com/600'
-    after: 'https://via.placeholder.com/600'
+    before: https://via.placeholder.com/600
+    after: https://via.placeholder.com/600
   - heading: Braces
-    before: 'https://via.placeholder.com/600'
-    after: 'https://via.placeholder.com/600'
+    before: https://via.placeholder.com/600
+    after: https://via.placeholder.com/600
+- template: slider-1
+  block: slider-1
+  slides:
+  - "/uploads/image-large.jpg"
 - template: map
   block: map
   style: default
