@@ -5,3 +5,7 @@ layout: default
 {% for block in page.blocks %}
   {% include blocks/{{ block.block }}.html %}
 {% endfor %}
+
+{% for block in site.data.options.blocks %}
+  {% include blocks/{{ block.block }}.html %}
+{% endfor %}
