@@ -14,5 +14,17 @@
     {% if block.content != empty %}
       <div class="{% if block.columns != '1' %}uk-column-1-2@s{% endif %} uk-column-1-{{ block.columns | default: '3' }}@l">{{ block.content | markdownify }}</div>
     {% endif %}    
+
+    {% if block.lists.size != 0 %}
+      <div class="uk-grid-large uk-child-width-expand@m" data-uk-grid>
+        {% for ul in block.lists %}
+          <ul class="uk-list uk-list-disc">
+            {% for item in ul.list %}
+              <li>{{ item }}</li>
+            {% endfor %}
+          </ul>
+        {% endfor %}
+      </div>
+    {% endif %}    
   </div>
 </section>
