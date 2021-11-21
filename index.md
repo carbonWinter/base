@@ -183,6 +183,8 @@ blocks:
   block: slider-1
   slides:
   - "/uploads/image-large.jpg"
+  - "/uploads/image-large.jpg"
+  - "/uploads/image-large.jpg"
 - template: map
   block: map
   style: default
