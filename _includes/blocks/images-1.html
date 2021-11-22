@@ -16,7 +16,7 @@
         {% endif %}
       </div>
     {% endif %}
-    <div class="uk-margin-medium-top uk-child-width-1-2 uk-child-width-1-{{ block.columns | default: '3' }}@m uk-grid-row-large" data-uk-grid>
+    <div class="uk-margin-medium-top uk-child-width-1-2 uk-child-width-1-{{ block.columns | default: '3' }}@m uk-grid-row-large{% if block.align == 'center' %} uk-flex uk-flex-center{% endif %}" data-uk-grid>
       {% for image in block.images %}
         <div class="uk-text-{{ block.align | default: 'left' }}">
           <img class="uk-border-circle" data-src="{% if image contains 'http' %}{{ image }}{% else %}{{ image | absolute_url }}{% endif %}" data-width data-height src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-uk-img alt="Gallery">
