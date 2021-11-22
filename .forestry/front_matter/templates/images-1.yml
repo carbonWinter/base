@@ -1,4 +1,20 @@
 ---
 label: Images 1
 hide_body: true
-fields: []
+fields:
+- name: block
+  type: text
+  config:
+    required: false
+  label: Block
+  hidden: true
+  default: images-1
+- name: heading
+  type: include
+  config: {}
+  template: partial-heading
+  label: Heading
+- name: images
+  type: image_gallery
+  config: {}
+  label: Images
