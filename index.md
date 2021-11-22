@@ -7,7 +7,7 @@ header:
     background_style: video
     background_color: ''
     background_image: "/uploads/image-large.jpg"
-    background_video_file: "/uploads/lagoon.mp4"
+    background_video_file: "/uploads/lagoon-2.mp4"
     background_slider: []
     overlay: gradient
     gradient: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 50%);
@@ -133,8 +133,8 @@ blocks:
   text: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
   video_file: "/uploads/lagoon.mp4"
   button:
-    text: 
-    url: ""
+    text: ''
+    url: ''
     blank: false
 - template: text-1
   block: text-1
@@ -165,6 +165,7 @@ blocks:
     vero eros et accumsan et iusto odio dignissim. Lorem ipsum dolor sit amet, consectetuer
     adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna
     aliquam erat volutpat.
+  lists: []
 - template: before-after-1
   block: before-after-1
   align: left
