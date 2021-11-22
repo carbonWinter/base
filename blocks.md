@@ -1,7 +1,7 @@
 ---
 layout: blocks
 header:
-  height: default
+  height: none
   background:
     background_style: color
     background_color: "#E2E2E2"
@@ -49,14 +49,14 @@ blocks:
   color: dark
   columns: '3'
   images:
-  - "https://via.placeholder.com/600x500"
-  - "https://via.placeholder.com/600x500"
-  - "https://via.placeholder.com/600x500"
-  - "https://via.placeholder.com/600x500"
-  - "https://via.placeholder.com/600x500"
-  - "https://via.placeholder.com/600x500"
-  - "https://via.placeholder.com/600x500"
-  - "https://via.placeholder.com/600x500"  
+  - https://via.placeholder.com/600x500
+  - https://via.placeholder.com/600x500
+  - https://via.placeholder.com/600x500
+  - https://via.placeholder.com/600x500
+  - https://via.placeholder.com/600x500
+  - https://via.placeholder.com/600x500
+  - https://via.placeholder.com/600x500
+  - https://via.placeholder.com/600x500
   heading: ''
   text: ''
 
