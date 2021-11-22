@@ -4,8 +4,8 @@
 
     {% if block.heading != empty or block.text != empty %}
       <div class="uk-margin-medium-bottom uk-container-small{% if block.align == 'center' %} uk-margin-auto{% endif %} uk-text-{{ block.align | default: 'left' }} uk-{{ block.color | default: 'dark' }}">
-        {% if block.image != empty %}
-          <img class="uk-margin-medium-bottom" data-src="{% if block.image contains 'http' %}{{ block.image }}{% else %}{{ block.image | absolute_url }}{% endif %}" data-width data-height src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-uk-img alt="{{ block.heading }}">
+        {% if image != empty %}
+          <img class="uk-margin-medium-bottom" data-src="{% if image contains 'http' %}{{ image }}{% else %}{{ image | absolute_url }}{% endif %}" data-width data-height src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-uk-img alt="{{ block.heading }}">
         {% endif %}
         
         {% if block.heading != empty %}
@@ -16,12 +16,12 @@
         {% endif %}
       </div>
     {% endif %}
-
-    {% if block.button.url != empty %}
-      <div class="uk-margin-medium-top uk-text-{{ block.align | default: 'left' }}">
-        <a class="uk-button uk-button-primary" href="{% if block.button.url contains 'http' %}{{ block.button.url }}{% else %}{{ block.button.url | relative_url }}{% endif %}"{% if block.button.blank %} target="_blank" rel="noopener noreferrer" {% endif %}>{{ block.button.text }}</a>
-      </div>
-    {% endif %}    
-    
+    <div class="uk-margin-medium-top uk-child-width-1-2 uk-child-width-1-{{ block.columns | default: '3' }}@m uk-grid-row-large" data-uk-grid>
+      {% for image in block.images %}
+        <div class="uk-text-{{ block.align | default: 'left' }}">
+          <img class="uk-border-circle" data-src="{% if image contains 'http' %}{{ image }}{% else %}{{ image | absolute_url }}{% endif %}" data-width data-height src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-uk-img alt="Gallery">
+        </div>
+      {% endfor %}    
+    </div>
   </div>
 </section>

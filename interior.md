@@ -152,6 +152,11 @@ blocks:
   heading: Accreditations
   text: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
   images:
-  - "/uploads/image-large.jpg"
+  - "https://via.placeholder.com/200"
+  - "https://via.placeholder.com/200"
+  - "https://via.placeholder.com/200"
+  - "https://via.placeholder.com/200"
+  - "https://via.placeholder.com/200"
+  - "https://via.placeholder.com/200"
 
 ---
