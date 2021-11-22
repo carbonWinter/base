@@ -43,5 +43,14 @@ blocks:
   - heading: Braces
     before: https://via.placeholder.com/600
     after: https://via.placeholder.com/600
+- template: gallery-1
+  block: gallery-1
+  align: left
+  color: dark
+  columns: '3'
+  images:
+  - "/uploads/image-large.jpg"
+  heading: ''
+  text: ''
 
 ---
