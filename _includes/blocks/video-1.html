@@ -14,7 +14,9 @@
 
     {% if block.video_file != empty %}
       <div>
-        <video src="{% if block.video_file contains 'http' %}{{ block.video_file }}{% else %}{{ block.video_file | absolute_url }}{% endif %}" playsinline controls></video>
+        <video playsinline controls>
+          <source src="{% if block.video_file contains 'http' %}{{ block.video_file }}{% else %}{{ block.video_file | absolute_url }}{% endif %}" type="video/mp4" data-uk-video>
+        </video>
       </div>
     {% endif %}    
     

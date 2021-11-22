@@ -21,7 +21,7 @@ header:
     heading: ''
     text: ''
 title: Interior
-sticky_cta: false
+sticky_cta: true
 blocks:
 - template: text-1
   block: text-1
