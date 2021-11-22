@@ -234,5 +234,6 @@ fields:
     min: 
     max: 
 pages:
+- blocks.md
 - index.md
 - interior.md
