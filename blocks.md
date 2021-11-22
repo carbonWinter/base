@@ -28,7 +28,7 @@ blocks:
   block: before-after-2
   color: dark
   align: left
-  heading: Before & after
+  heading: Before & after 2
   text: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
   cards:
   - heading: Invisalign
