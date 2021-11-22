@@ -105,7 +105,7 @@ blocks:
   video_file: "/uploads/lagoon.mp4"
   button:
     text: Request an appointment
-    url: "#"
+    url: "/somelink/"
     blank: false
 - template: text-1
   block: text-1
