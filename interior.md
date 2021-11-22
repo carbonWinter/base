@@ -152,11 +152,41 @@ blocks:
   heading: Accreditations
   text: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
   images:
-  - "https://via.placeholder.com/200"
-  - "https://via.placeholder.com/200"
-  - "https://via.placeholder.com/200"
-  - "https://via.placeholder.com/200"
-  - "https://via.placeholder.com/200"
-  - "https://via.placeholder.com/200"
+  - https://via.placeholder.com/200
+  - https://via.placeholder.com/200
+  - https://via.placeholder.com/200
+  - https://via.placeholder.com/200
+  - https://via.placeholder.com/200
+  - https://via.placeholder.com/200
+  columns: ''
+- template: faq-1
+  block: faq-1
+  align: left
+  color: dark
+  heading: Frequently asked questions
+  text: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+  faqs:
+  - heading: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam?
+    content: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+      nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi
+      enim ad minim veniam, quis nostrud **exerci tation ullamcorper** suscipit lobortis
+      nisl ut aliquip ex ea commodo consequat. \n\nDuis autem vel eum iriure dolor
+      in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu
+      feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim"
+  - heading: ''
+    content: ''
+  - heading: ''
+    content: ''
+  - heading: ''
+    content: ''
+- template: before-after-1
+  block: before-after-1
+  align: left
+  heading: ''
+  text: ''
+  cards: []
+- template: slider-1
+  block: slider-1
+  slides: []
 
 ---
