@@ -27,29 +27,36 @@ blocks:
 - template: before-after-2
   block: before-after-2
   color: dark
-  align: left
+  align: center
   heading: Before & after
   text: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
   cards:
   - heading: Invisalign
-    before: https://via.placeholder.com/600
-    after: https://via.placeholder.com/600
+    before: https://farm2.staticflickr.com/1638/26145024230_06acd55d1b_b.jpg
+    after: https://farm2.staticflickr.com/1663/25814974803_d4c55ff708_b.jpg
   - heading: Braces
-    before: https://via.placeholder.com/600
-    after: https://via.placeholder.com/600
+    before: https://farm2.staticflickr.com/1638/26145024230_06acd55d1b_b.jpg
+    after: https://farm2.staticflickr.com/1663/25814974803_d4c55ff708_b.jpg
   - heading: Invisalign
-    before: https://via.placeholder.com/600
-    after: https://via.placeholder.com/600
+    before: https://farm2.staticflickr.com/1638/26145024230_06acd55d1b_b.jpg
+    after: https://farm2.staticflickr.com/1663/25814974803_d4c55ff708_b.jpg
   - heading: Braces
-    before: https://via.placeholder.com/600
-    after: https://via.placeholder.com/600
+    before: https://farm2.staticflickr.com/1638/26145024230_06acd55d1b_b.jpg
+    after: https://farm2.staticflickr.com/1663/25814974803_d4c55ff708_b.jpg
 - template: gallery-1
   block: gallery-1
-  align: left
+  align: center
   color: dark
   columns: '3'
   images:
-  - "/uploads/image-large.jpg"
+  - "https://via.placeholder.com/600x500"
+  - "https://via.placeholder.com/600x500"
+  - "https://via.placeholder.com/600x500"
+  - "https://via.placeholder.com/600x500"
+  - "https://via.placeholder.com/600x500"
+  - "https://via.placeholder.com/600x500"
+  - "https://via.placeholder.com/600x500"
+  - "https://via.placeholder.com/600x500"  
   heading: ''
   text: ''
 
