@@ -16,13 +16,15 @@
     {% endif %}    
 
     {% if block.lists.size != 0 %}
-      <div class="uk-grid-large uk-child-width-expand@m" data-uk-grid>
+      <div class="uk-grid-large uk-child-width-expand@m uk-margin-medium-top" data-uk-grid>
         {% for ul in block.lists %}
-          <ul class="uk-list uk-list-disc">
-            {% for item in ul.list %}
-              <li>{{ item }}</li>
-            {% endfor %}
-          </ul>
+          <div class="uk-flex uk-flex-center">
+            <ul class="uk-list uk-list-disc">
+              {% for item in ul.list %}
+                <li>{{ item }}</li>
+              {% endfor %}
+            </ul>
+          </div>
         {% endfor %}
       </div>
     {% endif %}    

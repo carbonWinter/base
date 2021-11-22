@@ -66,7 +66,7 @@ blocks:
     text: Request an appointment
     url: "#"
     blank: true
-  image: ''
+  image: 'https://via.placeholder.com/70'
 - template: text-1
   block: text-1
   align: left
