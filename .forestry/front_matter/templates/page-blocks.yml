@@ -25,7 +25,7 @@ fields:
   fields:
   - name: height
     type: select
-    default: default
+    default: none
     config:
       required: false
       options:
