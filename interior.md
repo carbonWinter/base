@@ -66,7 +66,7 @@ blocks:
     text: Request an appointment
     url: "#"
     blank: true
-  image: 'https://via.placeholder.com/70'
+  image: https://via.placeholder.com/70
 - template: text-1
   block: text-1
   align: left
@@ -145,5 +145,13 @@ blocks:
     - Lorem ipsum dolor sit amet
     - Lorem ipsum dolor sit amet
     - Lorem ipsum dolor sit amet
+- template: images-1
+  block: images-1
+  align: left
+  color: dark
+  heading: Accreditations
+  text: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+  images:
+  - "/uploads/image-large.jpg"
 
 ---
