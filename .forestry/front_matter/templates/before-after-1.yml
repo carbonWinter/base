@@ -10,33 +10,10 @@ fields:
   hidden: true
   default: before-after-1
 - name: heading
-  type: text
-  config:
-    required: false
+  type: include
+  config: {}
+  template: partial-heading
   label: Heading
-- name: text
-  type: textarea
-  default: ''
-  config:
-    required: false
-    wysiwyg: true
-    schema:
-      format: markdown
-  label: Text
-- name: align
-  type: select
-  default: left
-  config:
-    required: false
-    options:
-    - left
-    - center
-    source:
-      type: simple
-      section: 
-      file: 
-      path: 
-  label: Align
 - name: cards
   type: field_group_list
   fields:
