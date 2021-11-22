@@ -1,4 +1,5 @@
 <section class="uk-section uk-before-after-2">
+  <!-- https://image-compare-viewer.netlify.app -->
   <link rel="stylesheet" href="https://unpkg.com/image-compare-viewer/dist/image-compare-viewer.min.css">
   <script src="https://unpkg.com/image-compare-viewer/dist/image-compare-viewer.min.js"></script>
   <div class="uk-container uk-text-{{ block.align | default: 'left' }} uk-{{ block.color | default: 'dark' }}">
@@ -13,7 +14,7 @@
         {% endif %}
       </div>
     {% endif %}
-    <div class="uk-flex-center uk-grid-column-small uk-child-width-1-3@m" data-uk-grid>
+    <div class="uk-grid-column-small uk-child-width-1-3@m{% if block.align == 'center' %} uk-flex-center{% endif %}" data-uk-grid>
       {% for card in block.cards %}
         <div>
           <div class="image-compare">

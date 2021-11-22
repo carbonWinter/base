@@ -1,7 +1,5 @@
-<section class="uk-section uk-background-cover" 
-  style="{% if block.background.color %}background-color: {{ block.background.color }};{% endif %}{% if block.background.image %}background-image: url({% if block.background.image contains '#' %}{{ block.background.image }}{% else %}{{ block.background.image | absolute_url }}{% endif %});{% endif %}">
+<section class="uk-section uk-section-muted">
   <div class="uk-container">
-
     {% if block.heading != empty or block.text != empty %}
       <div class="uk-margin-medium-bottom uk-container-small{% if block.align == 'center' %} uk-margin-auto{% endif %} uk-text-{{ block.align | default: 'left' }} uk-{{ block.color | default: 'dark' }}">
         {% if image != empty %}

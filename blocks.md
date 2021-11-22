@@ -27,7 +27,7 @@ blocks:
 - template: before-after-2
   block: before-after-2
   color: dark
-  align: center
+  align: left
   heading: Before & after
   text: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
   cards:
