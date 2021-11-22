@@ -10,6 +10,11 @@ fields:
 - type: text
   name: title
   label: Title
+- name: seo
+  type: include
+  config: {}
+  template: partial-seo
+  label: Seo
 - name: sticky_cta
   type: boolean
   label: Sticky CTA
