@@ -1,0 +1,24 @@
+<section class="uk-section uk-section-muted">
+  <div class="uk-container">
+
+    {% if block.heading != empty or block.text != empty %}
+      <div class="uk-margin-large-bottom uk-container-small{% if block.align == 'center' %} uk-margin-auto{% endif %} uk-text-{{ block.align | default: 'left' }}">
+        {% if block.heading != empty %}
+          <h2 class="uk-margin-remove">{{ block.heading }}</h2>
+        {% endif %}
+        {% if block.text != empty %}
+          <div class="uk-text-lead{% if block.heading %} uk-margin-top{% endif %}">{{ block.text | markdownify  }}</div>
+        {% endif %}
+      </div>
+    {% endif %}
+
+    <ul data-uk-accordion>
+      {% for item in block.faqs %}
+        <li>
+          <a class="uk-accordion-title" href="#">{{ item.heading }}</a>
+          <div class="uk-accordion-content">{{ item.content | markdownify }}</div>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
