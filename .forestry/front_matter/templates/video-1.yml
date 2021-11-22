@@ -44,21 +44,7 @@ fields:
   label: Video file
   description: Upload șelf hosted video.
 - name: button
-  type: field_group
+  type: include
   config: {}
-  fields:
-  - name: text
-    type: text
-    config:
-      required: false
-    label: Text
-  - name: url
-    type: text
-    config:
-      required: false
-    label: URL
-  - name: blank
-    type: boolean
-    label: Blank
-    description: Open in new window.
+  template: partial-button
   label: Button
