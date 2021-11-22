@@ -33,7 +33,12 @@ blocks:
     button:
       text: Request an Appointment
       url: "#"
+      blank: false
     phone: "(555) 666-6667"
   address:
     heading: Our Address
     address: "5060 California Ave. Suite 200   \nBakersfield, CA 93309"
+favicons:
+  favicon_16: "/uploads/favicon-16x16.png"
+  favicon_32: "/uploads/favicon-32x32.png"
+  apple_180: "/uploads/apple-touch-icon.png"
