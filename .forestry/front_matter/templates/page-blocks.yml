@@ -218,6 +218,7 @@ fields:
   label: Blocks
   template_types:
   - before-after-1
+  - before-after-2
   - cards-1
   - cards-2
   - contact-1
