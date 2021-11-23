@@ -41,3 +41,16 @@ favicons:
   favicon_16: "/uploads/favicon-16x16.png"
   favicon_32: "/uploads/favicon-32x32.png"
   apple_180: "/uploads/apple-touch-icon.png"
+fonts:
+  body: ''
+  heading: ''
+  navigation: ''
+colors:
+  body: "#333333"
+  heading: "#393837"
+  muted: "#BFB8AE"
+backgrounds:
+  primary: "#6F80A6"
+  secondary: "#8EB4FF"
+  dark: "#303D4F"
+  muted: "#ECEAE6"
