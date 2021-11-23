@@ -2,6 +2,39 @@
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
 
+$global-color:                    {{ site.data.options.colors.body | default: '#000000' }};
+$global-muted-color:              {{ site.data.options.colors.muted | default: '#C5C3C2' }};
+$base-heading-color:              {{ site.data.options.colors.heading | default: '#000000' }};
+
+$global-primary-background:       {{ site.data.options.backgrounds.primary | default: '#6F80A6' }};
+$global-muted-background:         {{ site.data.options.backgrounds.muted | default: '#ECEAE6' }};
+$global-secondary-background:     {{ site.data.options.backgrounds.secondary | default: '#8EB4FF' }};
+$global-dark-background:          {{ site.data.options.backgrounds.dark | default: '#303D4F' }};
+
+$global-font-family:              "{{ site.data.options.fonts.body | default: 'SFCompactDisplay' }}", sans-serif;
+$base-heading-font-family:        "{{ site.data.options.fonts.heading | default: 'Mukta Mahee' }}", sans-serif;
+$navbar-nav-item-font-family:     "{{ site.data.options.fonts.navigation | default: 'SFCompactDisplay' }}", sans-serif;
+
+{% if site.data.options.fonts.body == 'SFCompactDisplay' or site.data.options.fonts.heading == 'SFCompactDisplay' or site.data.options.fonts.navigation == 'SFCompactDisplay' %}
+  @font-face {
+    font-family: 'SFCompactDisplay';
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+    src:  url('../fonts/SF-Compact-Display-Regular.woff2') format('woff2'),
+          url('../fonts/SF-Compact-Display-Regular.woff') format('woff');
+  }
+{% endif %}
+
+// @font-face {
+//   font-family: 'SFCompactDisplay';
+//   font-weight: 600;
+//   font-style: normal;
+//   font-display: swap;
+//   src:  url('../fonts/SF-Compact-Display-Semibold.woff2') format('woff2'),
+//         url('../fonts/SF-Compact-Display-Semibold.woff') format('woff');
+// }
+
 // 1. Custom variables and variable overwrites.
 @import "theme/variables";
 

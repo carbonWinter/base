@@ -14,9 +14,10 @@
   <meta name="msapplication-config" content="browserconfig.xml">
   <meta name="theme-color" content="#ffffff">
   <link rel="canonical" href="{{ site.url }}{{ page.permalink }}">
-
-  <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
+
+  {% include fonts.html %}
+  <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
   <script src="{{ "/assets/js/main.min.js" | relative_url }}"></script>
   {% include hook-head.html %}
   {% if site.google_analytics %}
