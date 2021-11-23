@@ -202,16 +202,16 @@ blocks:
   cards:
   - heading: Invisalign
     before: https://via.placeholder.com/600
-    after: https://via.placeholder.com/600
+    after: https://via.placeholder.com/600/aaaaaa
   - heading: Braces
     before: https://via.placeholder.com/600
-    after: https://via.placeholder.com/600
+    after: https://via.placeholder.com/600/aaaaaa
   - heading: Invisalign
     before: https://via.placeholder.com/600
-    after: https://via.placeholder.com/600
+    after: https://via.placeholder.com/600/aaaaaa
   - heading: Braces
     before: https://via.placeholder.com/600
-    after: https://via.placeholder.com/600
+    after: https://via.placeholder.com/600/aaaaaa
 - template: slider-1
   block: slider-1
   slides:
