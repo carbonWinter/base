@@ -19,13 +19,6 @@ fields:
       file: 
       path: 
   label: Theme
-- name: color_primary
-  type: color
-  label: Color primary
-  config:
-    required: false
-    color_format: Hex
-  default: "#15DDB5"
 - name: logo_dark
   type: file
   config:
@@ -162,5 +155,16 @@ fields:
         path: 
     label: Navigation
   label: Fonts
+- name: colors
+  type: field_group
+  config: {}
+  fields:
+  - name: primary
+    type: color
+    label: Primary
+    config:
+      required: false
+      color_format: Hex
+  label: Colors
 pages:
 - _data/options.yml
