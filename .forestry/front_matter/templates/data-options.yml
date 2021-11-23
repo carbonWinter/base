@@ -118,5 +118,36 @@ fields:
       maxSize: 64
     label: Apple 180
   label: Favicons
+- name: fonts
+  type: field_group
+  config: {}
+  fields:
+  - name: body
+    type: select
+    default: SFCompactDisplay
+    config:
+      required: false
+      options:
+      - SFCompactDisplay
+      source:
+        type: simple
+        section: 
+        file: 
+        path: 
+    label: Body
+  - name: heading
+    type: select
+    default: MuktaMahee
+    config:
+      required: false
+      options:
+      - MuktaMahee
+      source:
+        type: simple
+        section: 
+        file: 
+        path: 
+    label: Heading
+  label: Fonts
 pages:
 - _data/options.yml
