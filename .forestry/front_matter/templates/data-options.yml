@@ -130,11 +130,11 @@ fields:
     label: Body
   - name: heading
     type: select
-    default: MuktaMahee
+    default: Mukta Mahee
     config:
       required: false
       options:
-      - MuktaMahee
+      - Mukta Mahee
       source:
         type: simple
         section: 
