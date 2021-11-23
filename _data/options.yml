@@ -43,7 +43,7 @@ favicons:
   apple_180: "/uploads/apple-touch-icon.png"
 fonts:
   body: SFCompactDisplay
-  heading: MuktaMahee
+  heading: Mukta Mahee
   navigation: SFCompactDisplay
 colors:
   body: "#333333"
