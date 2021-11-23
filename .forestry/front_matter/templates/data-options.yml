@@ -159,12 +159,27 @@ fields:
   type: field_group
   config: {}
   fields:
-  - name: primary
+  - name: body
     type: color
-    label: Primary
+    label: Body
     config:
       required: false
       color_format: Hex
+    default: "#333333"
+  - name: heading
+    type: color
+    label: Heading
+    config:
+      required: false
+      color_format: Hex
+    default: "#393837"
+  - name: muted
+    type: color
+    label: Muted
+    config:
+      required: false
+      color_format: Hex
+    default: "#BFB8AE"
   label: Colors
 pages:
 - _data/options.yml
