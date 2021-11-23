@@ -20,6 +20,11 @@ header:
   col_two:
     heading: ''
     text: ''
+  page_navigation:
+  - text: Before & after
+    id: "1"
+  - text: Gallery
+    id: "2"
 title: Blocks
 description: ''
 sticky_cta: false
