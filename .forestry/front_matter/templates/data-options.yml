@@ -148,6 +148,19 @@ fields:
         file: 
         path: 
     label: Heading
+  - name: navigation
+    type: select
+    default: SFCompactDisplay
+    config:
+      required: false
+      options:
+      - SFCompactDisplay
+      source:
+        type: simple
+        section: 
+        file: 
+        path: 
+    label: Navigation
   label: Fonts
 pages:
 - _data/options.yml
