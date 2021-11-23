@@ -181,5 +181,38 @@ fields:
       color_format: Hex
     default: "#BFB8AE"
   label: Colors
+- name: backgrounds
+  type: field_group
+  config: {}
+  fields:
+  - name: primary
+    type: color
+    label: Primary
+    config:
+      required: false
+      color_format: Hex
+    default: "#6F80A6"
+  - name: secondary
+    type: color
+    label: Secondary
+    config:
+      required: false
+      color_format: Hex
+    default: "#8EB4FF"
+  - name: dark
+    type: color
+    label: Dark
+    config:
+      required: false
+      color_format: Hex
+    default: "#303D4F"
+  - name: muted
+    type: color
+    label: Muted
+    config:
+      required: false
+      color_format: Hex
+    default: "#ECEAE6"
+  label: Backgrounds
 pages:
 - _data/options.yml
