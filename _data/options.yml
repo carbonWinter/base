@@ -42,9 +42,9 @@ favicons:
   favicon_32: "/uploads/favicon-32x32.png"
   apple_180: "/uploads/apple-touch-icon.png"
 fonts:
-  body: ''
-  heading: ''
-  navigation: ''
+  body: SFCompactDisplay
+  heading: MuktaMahee
+  navigation: SFCompactDisplay
 colors:
   body: "#333333"
   heading: "#393837"
