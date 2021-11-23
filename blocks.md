@@ -1,10 +1,10 @@
 ---
 layout: blocks
 header:
-  height: none
+  height: default
   background:
     background_style: color
-    background_color: "#E2E2E2"
+    background_color: "#655A5A"
     overlay: none
     overlay_color: "#000000"
     overlay_opacity: 0.7
@@ -13,10 +13,10 @@ header:
     background_slider: []
     gradient: ''
   layout: centered
-  color: dark
+  color: light
   col_one:
-    heading: ''
-    text: ''
+    heading: Lorem Ipsum
+    text: Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
   col_two:
     heading: ''
     text: ''
