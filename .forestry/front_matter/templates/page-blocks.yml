@@ -212,6 +212,25 @@ fields:
     showOnly:
       field: layout
       value: left
+  - name: page_navigation
+    type: field_group_list
+    fields:
+    - name: text
+      type: text
+      config:
+        required: false
+      label: Text
+    - name: id
+      type: text
+      config:
+        required: false
+      label: ID
+      description: Block ID.
+    config:
+      min: 
+      max: 
+      labelField: 
+    label: Page navigation
   label: Header
 - name: blocks
   type: blocks
