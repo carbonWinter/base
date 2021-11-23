@@ -1,7 +1,7 @@
 ---
 layout: blocks
 header:
-  height: medium
+  height: large
   background:
     background_style: color
     background_color: "#655A5A"
