@@ -2,6 +2,16 @@
 label: Data options
 hide_body: true
 fields:
+- name: blocks
+  type: blocks
+  label: Blocks
+  template_types:
+  - contact-1
+  - map
+  config:
+    min: 
+    max: 
+  description: 'Globally displayed blocks pre-footer. '
 - name: theme
   type: select
   default: mordecai
@@ -79,16 +89,6 @@ fields:
       required: false
     label: Phone
   label: Sticky CTA
-- name: blocks
-  type: blocks
-  label: Blocks
-  template_types:
-  - contact-1
-  - map
-  config:
-    min: 
-    max: 
-  description: 'Globally displayed blocks pre-footer. '
 - name: favicons
   type: field_group
   config: {}
