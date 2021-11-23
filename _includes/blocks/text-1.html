@@ -1,4 +1,4 @@
-<section class="uk-section">
+<section id="block-{{ forloop.index }}" class="uk-section">
   <div class="uk-container">
     {% if block.heading != empty or block.text != empty %}
       <div class="uk-margin-medium-bottom uk-container-small{% if block.align == 'center' %} uk-margin-auto{% endif %} uk-text-{{ block.align | default: 'left' }}">
