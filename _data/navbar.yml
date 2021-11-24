@@ -5,11 +5,11 @@ color: light
 background: "#303d4f"
 menu_left:
 - text: Our Doctors
-  url: "#"
+  url: "/interior/"
   style: link
   blank: false
   dropdown: []
-- url: "#"
+- url: "/blocks/"
   style: link
   blank: false
   dropdown: []
