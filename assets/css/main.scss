@@ -26,14 +26,14 @@ $navbar-nav-item-font-family:     "{{ site.data.options.fonts.navigation | defau
   }
 {% endif %}
 
-// @font-face {
-//   font-family: 'SFCompactDisplay';
-//   font-weight: 600;
-//   font-style: normal;
-//   font-display: swap;
-//   src:  url('../fonts/SF-Compact-Display-Semibold.woff2') format('woff2'),
-//         url('../fonts/SF-Compact-Display-Semibold.woff') format('woff');
-// }
+@font-face {
+  font-family: 'SFCompactDisplay';
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+  src:  url('../fonts/SF-Compact-Display-Semibold.woff2') format('woff2'),
+        url('../fonts/SF-Compact-Display-Semibold.woff') format('woff');
+}
 
 // 1. Custom variables and variable overwrites.
 @import "{{ site.data.options.theme | default: 'mordecai' }}/variables";

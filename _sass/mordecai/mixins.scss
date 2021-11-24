@@ -1,5 +1,28 @@
 
+@mixin hook-navbar-dropdown(){
+  box-shadow: $navbar-dropdown-box-shadow;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
 
+@mixin hook-navbar-dropdown-nav(){ 
+  font-size: $navbar-dropdown-nav-font-size; 
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+@mixin hook-navbar-dropdown-nav-item(){
+  padding: 10px 0;
+  font-weight: 600;
+}
+
+@mixin hook-navbar-misc() {
+  @media (min-width: $breakpoint-xlarge) {
+    .uk-navbar-nav>li>a, .uk-navbar-item, .uk-navbar-toggle {
+      font-size: 1.25rem;
+    }
+  }
+}
 @mixin hook-utility-misc() {
   .uk-pointer {
     cursor: pointer;

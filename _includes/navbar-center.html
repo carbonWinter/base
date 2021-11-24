@@ -1,9 +1,9 @@
-<div class="uk-container">
+<div class="uk-container uk-container-large">
     <div data-uk-navbar>
         <div class="uk-navbar-center">
           <div class="uk-navbar-center-left">
             <div>
-              <ul class="uk-navbar-nav uk-visible@m">
+              <ul class="uk-navbar-nav uk-visible@l">
                   {% for link in site.data.navbar.menu_left %}
                       {% if link.url contains 'http' %}
                           {% assign domain = '' %}
@@ -67,7 +67,7 @@
       
           <div class="uk-navbar-center-right">
             <div>
-              <ul class="uk-navbar-nav uk-visible@m">
+              <ul class="uk-navbar-nav uk-visible@l">
                   {% for link in site.data.navbar.menu_right %}
                       {% if link.url contains 'http' %}
                           {% assign domain = '' %}
@@ -113,7 +113,7 @@
                       {% endif %}
                   {% endfor %}
               </ul>
-              <a class="uk-navbar-toggle uk-hidden@m" href="#nav-mobile" aria-label="Mobile Navigation" data-uk-navbar-toggle-icon data-uk-toggle></a>
+              <a class="uk-navbar-toggle uk-hidden@l" href="#nav-mobile" aria-label="Mobile Navigation" data-uk-navbar-toggle-icon data-uk-toggle></a>
             </div>
           </div>
         </div>

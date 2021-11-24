@@ -3,7 +3,7 @@
 
 // Global variables
 // $global-medium-font-size: 1.25rem;
-// $global-background:                             #fff;
+$global-background:                             #fff;
 
 // $global-border:                                 $global-secondary-background;
 // $global-font-family:                            'Montserrat', sans-serif;
@@ -67,20 +67,32 @@
 
 // // Navigation variables
 $navbar-nav-item-height:                        140px;
+$navbar-nav-item-padding-horizontal:            25px;
+
 // $navbar-nav-item-color:                         $global-secondary-background;
 // $navbar-nav-item-hover-color:                   $global-primary-background;
 // $navbar-nav-item-active-color:                  $global-primary-background;
-// $navbar-nav-item-font-size:                     0.8125rem;
+$navbar-nav-item-font-size:                     1.125rem;
 // $navbar-toggle-color:                           $global-secondary-background;
 // $navbar-toggle-hover-color:                     $global-primary-background;
-// $inverse-navbar-nav-item-color:                 #fff;
-// $inverse-navbar-nav-item-hover-color:           $global-primary-background;
-// $inverse-navbar-nav-item-onclick-color:         $global-primary-background;
-// $inverse-navbar-nav-item-active-color:          $global-primary-background;
-// $inverse-navbar-item-color:                     #fff;
-// $inverse-navbar-toggle-color:                   #fff;
-// $inverse-navbar-toggle-hover-color:             $global-primary-background;
+$inverse-navbar-nav-item-color:                 #fff;
+$inverse-navbar-nav-item-hover-color:           $global-secondary-background;
+$inverse-navbar-nav-item-onclick-color:         $global-secondary-background;
+$inverse-navbar-nav-item-active-color:          $global-secondary-background;
+$inverse-navbar-item-color:                     #fff;
+$inverse-navbar-toggle-color:                   #fff;
+$inverse-navbar-toggle-hover-color:             $global-secondary-background;
 
+$navbar-dropdown-width:                          250px;
+$navbar-dropdown-margin:                         -40px;
+$navbar-dropdown-padding:                        25px;
+$navbar-dropdown-background:                     rgba($global-background, 0.9);
+// $navbar-dropdown-color:                          $global-color !default;
+
+$navbar-dropdown-nav-item-color:                 darken($global-primary-background, 20%);
+$navbar-dropdown-nav-item-hover-color:           $global-secondary-background;
+$navbar-dropdown-nav-item-active-color:          $global-secondary-background;
+$navbar-dropdown-nav-font-size:                  0.938rem;
 // // Section variables
 // $section-xlarge-padding-vertical:               120px;
 // $section-xlarge-padding-vertical-m:             180px;
