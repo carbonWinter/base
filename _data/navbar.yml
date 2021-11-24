@@ -42,6 +42,11 @@ menu_left:
     blank: false
 menu_center: []
 menu_right:
+- text: 000-000-0000
+  url: 000-000-0000
+  style: phone
+  blank: false
+  dropdown: []
 - text: Our Services
   url: "#"
   style: link
@@ -94,4 +99,9 @@ menu_mobile:
   blank: false
   dropdown: []
   text: Contact
+- text: 000-000-0000
+  url: 000-000-0000
+  style: phone
+  blank: false
+  dropdown: []
 phone: 000-000-0000
