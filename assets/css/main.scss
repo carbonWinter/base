@@ -36,18 +36,18 @@ $navbar-nav-item-font-family:     "{{ site.data.options.fonts.navigation | defau
 // }
 
 // 1. Custom variables and variable overwrites.
-@import "theme/variables";
+@import "{{ site.data.options.theme | default: 'mordecai' }}/variables";
 
 // 2. Import default variables and available mixins.
 @import "uikit/variables-theme";
 @import "uikit/mixins-theme";
 
 // 3. Custom mixin overwrites.
-@import "theme/mixins";
-@import "theme/_sharer";
+@import "{{ site.data.options.theme | default: 'mordecai' }}/mixins";
+@import "global/_sharer";
 
 // 4. Import UIkit.
-@import "theme/uikit";
+@import "global/uikit";
 
 
 .uk-navbar-container:not(.uk-navbar-transparent) {
