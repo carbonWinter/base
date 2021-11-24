@@ -14,15 +14,15 @@ fields:
   description: 'Globally displayed blocks pre-footer. '
 - name: theme
   type: select
-  default: mordecai
+  default: Mordecai
   config:
     required: false
     options:
-    - mordecai
-    - wolfy
-    - razorfish
-    - wintergreen
-    - halcyon
+    - Mordecai
+    - Wolfy
+    - Razorfish
+    - Wintergreen
+    - Halcyon
     source:
       type: simple
       section: 
