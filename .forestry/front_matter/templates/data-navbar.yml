@@ -37,11 +37,6 @@ fields:
     required: false
     color_format: Hex
   default: "#000000"
-- name: phone
-  type: text
-  config:
-    required: false
-  label: Phone
 - name: menu_left
   type: field_group_list
   fields:
