@@ -42,11 +42,6 @@ menu_left:
     blank: false
 menu_center: []
 menu_right:
-- text: 000-000-0000
-  url: 000-000-0000
-  style: phone
-  blank: false
-  dropdown: []
 - text: Our Services
   url: "#"
   style: link
@@ -55,6 +50,11 @@ menu_right:
 - text: Additional Resources
   url: "#"
   style: link
+  blank: false
+  dropdown: []
+- text: 000-000-0000
+  url: 000-000-0000
+  style: phone
   blank: false
   dropdown: []
 menu_mobile:
@@ -73,25 +73,25 @@ menu_mobile:
   style: link
   blank: false
   dropdown:
-  - text: Porcelain veneers
+  - text: porcelain veneers
     url: "#"
     blank: false
-  - text: Pro teeth whitening
+  - text: pro teeth whitening
     url: "#"
     blank: false
-  - text: Dental implants
+  - text: dental implants
     url: "#"
     blank: false
-  - text: Dental crowns
+  - text: dental crowns
     url: "#"
     blank: false
-  - text: Full reconstruction
+  - text: full reconstruction
     url: "#"
     blank: false
-  - text: Metal-free fillings
+  - text: metal-free fillings
     url: "#"
     blank: false
-  - text: Dental inlays/onlays
+  - text: dental inlays/onlays
     url: "#"
     blank: false
 - url: "#"
