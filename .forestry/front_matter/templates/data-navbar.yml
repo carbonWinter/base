@@ -64,6 +64,7 @@ fields:
       - link
       - button-primary
       - button-secondary
+      - phone
       source:
         type: simple
         section: 
@@ -123,6 +124,7 @@ fields:
       - link
       - button-primary
       - button-secondary
+      - phone
       source:
         type: simple
         section: 
@@ -185,6 +187,7 @@ fields:
       - link
       - button-primary
       - button-secondary
+      - phone
       source:
         type: simple
         section: 
@@ -244,6 +247,7 @@ fields:
       - link
       - button-primary
       - button-secondary
+      - phone
       source:
         type: simple
         section: 
