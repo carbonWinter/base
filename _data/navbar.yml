@@ -73,25 +73,25 @@ menu_mobile:
   style: link
   blank: false
   dropdown:
-  - text: porcelain veneers
+  - text: Porcelain veneers
     url: "#"
     blank: false
-  - text: pro teeth whitening
+  - text: Pro teeth whitening
     url: "#"
     blank: false
-  - text: dental implants
+  - text: Dental implants
     url: "#"
     blank: false
-  - text: dental crowns
+  - text: Dental crowns
     url: "#"
     blank: false
-  - text: full reconstruction
+  - text: Full reconstruction
     url: "#"
     blank: false
-  - text: metal-free fillings
+  - text: Metal-free fillings
     url: "#"
     blank: false
-  - text: dental inlays/onlays
+  - text: Dental inlays/onlays
     url: "#"
     blank: false
 - url: "#"

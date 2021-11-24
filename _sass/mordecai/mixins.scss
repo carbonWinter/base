@@ -1,3 +1,52 @@
+@mixin hook-nav-primary(){
+
+  .uk-nav-sub {
+    a {
+      font-size: 1.25rem;
+      font-size: 1.375rem;
+      padding: 6px 0;
+    }
+  }
+
+  .uk-button {
+    margin-top: 12px;
+  }
+
+  .uk-button-primary {
+    color: #fff;
+    display: block;
+    &:hover {
+      color: #fff;
+    }
+  }
+
+  .uk-button-default {
+    color: $global-dark-background;
+    display: block;
+    &:hover {
+      color: #fff;
+    }
+  }
+
+  .uk-link-phone {
+    margin-top: 10px;
+    text-align: center;
+    display: block;
+
+    .uk-icon-button {
+      width: 30px;
+      height: 30px;
+      background: $nav-primary-item-color;
+      color: #fff;
+      font-size: 1rem;
+    }
+
+    &:hover .uk-icon-button {
+      background: $nav-primary-item-hover-color;
+    }
+    
+  }
+}
 
 @mixin hook-navbar-dropdown(){
   box-shadow: $navbar-dropdown-box-shadow;
@@ -42,6 +91,10 @@
     img {
       max-height: 100px;
     }
+  }
+
+  .uk-background-dark, .uk-section-dark {
+    background-color: $global-dark-background;
   }
 
 

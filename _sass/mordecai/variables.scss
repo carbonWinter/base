@@ -49,14 +49,17 @@ $global-background:                             #fff;
 // // Button variables
 // $global-control-height:                         47px;
 // $button-font-size:                              $xsmall-font-size;
-// $button-default-color:                          $global-secondary-background;
+$button-default-color:                          $global-dark-background;
 // $button-default-hover-background:               $global-secondary-background;
 // $button-default-hover-color:                    $global-background;
 // $button-default-active-background:              $global-secondary-background;
 // $button-default-active-color:                   $global-background;
-// $button-default-border:                         $global-secondary-background;
-// $button-default-hover-border:                   $global-secondary-background;
-// $button-default-active-border:                  $global-secondary-background;
+$button-default-border:                         $global-dark-background;
+$button-default-hover-border:                   $global-dark-background;
+$button-default-active-border:                  $global-dark-background;
+$button-default-hover-background:               $global-dark-background;
+$button-default-hover-color:                    #fff;
+$button-default-active-background:              $global-dark-background;
 
 // $inverse-button-default-hover-background:       $global-background;
 // $inverse-button-default-hover-color:            $global-secondary-background;
@@ -97,5 +100,13 @@ $navbar-dropdown-nav-font-size:                  0.938rem;
 // $section-xlarge-padding-vertical:               120px;
 // $section-xlarge-padding-vertical-m:             180px;
 // $section-default-background:                    transparent;
+
+$nav-primary-item-color:                 $global-primary-background;
+$nav-primary-item-hover-color:           $global-secondary-background;
+$nav-primary-item-active-color:          $global-secondary-background;
+$nav-primary-header-color:               $global-secondary-background;
+$nav-primary-sublist-item-color:         $global-primary-background;
+$nav-primary-sublist-item-hover-color:   $global-secondary-background;
+$nav-primary-sublist-item-active-color:  $global-secondary-background;
 
 $text-lead-font-size:                            1.125rem;

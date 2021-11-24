@@ -1,9 +1,9 @@
 <div id="nav-mobile" class="uk-modal-full" data-uk-modal>
-  <div class="uk-modal-dialog">
+  <div class="uk-modal-dialog uk-background-muted">
 
     <div class="uk-container">
-      <div data-uk-navbar>
-        <div class="uk-navbar-left">
+      <div>
+        <div class="">
           <a class="uk-navbar-item uk-logo" href="{{ "/" | relative_url }}">
             {% if site.data.options.logo_light != '' or site.data.options.logo_dark != '' %}
               {% if site.data.options.logo_light != '' %}
@@ -18,14 +18,14 @@
           </a>
         </div>
         <div class="uk-navbar-right">
-          <button class="uk-navbar-item uk-modal-close-full uk-close-large" type="button" data-uk-close></button>
+          <button class="uk-navbar-item uk-modal-close-full uk-close-large uk-background-muted" type="button" data-uk-close></button>
         </div>
       </div>
     </div>
     <div class="uk-container uk-container-xsmall">
       <div class="uk-margin-large-top" data-uk-height-viewport>
         <div>
-          <ul class="uk-nav uk-nav-parent-icon" data-uk-nav>
+          <ul class="uk-nav uk-nav-parent-icon uk-nav-primary" data-uk-nav>
             {% for link in site.data.navbar.menu_mobile %}
               {% if link.url contains 'http' %}
                   {% assign domain = '' %}
@@ -41,7 +41,13 @@
 
               <li class="{{ current }}{% if link.dropdown and link.dropdown.size != 0 %} uk-parent{% endif %}">
                 {% if link.url %}
-                  <a{% if link.style != 'link' %} class="uk-button{% if link.style == 'button-primary' %} uk-button-primary{% endif %}{% if link.style == 'button-secondary' %} uk-button-secondary{% endif %}"{% endif %} href="{{ domain }}{{ link.url }}" {% if link.blank %}target="_blank" rel="noopener" {% endif %}>{{ link.text }}</a>
+                  {% if link.style == 'phone' %}
+                    <a class="uk-link-phone" href="tel: {{ link.url }}"><span class="uk-icon-button uk-margin-small-right">
+                      <svg width="16" height="16" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill="#fff" stroke="#fff" stroke-width="1.01" d="M6.189,13.611C8.134,15.525 11.097,18.239 13.867,18.257C16.47,18.275 18.2,16.241 18.2,16.241L14.509,12.551L11.539,13.639L6.189,8.29L7.313,5.355L3.76,1.8C3.76,1.8 1.732,3.537 1.7,6.092C1.667,8.809 4.347,11.738 6.189,13.611"></path></svg>
+                    </span>{{ link.text }}</a>
+                  {% else %}
+                    <a{% if link.style != 'link' %} class="uk-button{% if link.style == 'button-primary' %} uk-button-primary{% endif %}{% if link.style == 'button-default' %} uk-button-default{% endif %}"{% endif %} href="{{ domain }}{{ link.url }}" {% if link.blank %}target="_blank" rel="noopener" {% endif %}>{{ link.text }}</a>
+                  {% endif %}
                 {% else %}
                   <a href="#">{{ link.text }}</a>
                 {% endif %}
@@ -65,9 +71,6 @@
               </li>
             {% endfor %}
           </ul>
-          <div class="uk-margin-xlarge-top uk-text-uppercase uk-h5 uk-text-spacing">
-            {% include social-networks.html %}
-          </div>
         </div>
       </div>
     </div>
