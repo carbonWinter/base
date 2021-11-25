@@ -2,7 +2,7 @@
   <div class="uk-section-large uk-section-{{site.footer.background | default: 'default'}}">
     <div class="uk-container">
       <div class="uk-text-center">
-        <a class="uk-navbar-item uk-logo" href="{{ "/" | relative_url }}">
+        <a class="uk-logo" href="{{ "/" | relative_url }}">
           {% if site.data.options.logo_light != '' or site.data.options.logo_dark != '' %}
             {% if site.data.options.logo_light != '' %}
               <img class="uk-logo-inverse" src="{{ site.data.options.logo_light | absolute_url }}" alt="{{ site.title }}">
