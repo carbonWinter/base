@@ -53,16 +53,16 @@
       </div>
     </div> 
   </div>
-  <div class="uk-section-small{% if site.data.footer.subfooter.color == 'light' %} uk-light{% endif %}" style="background-color: {{ site.data.footer.subfooter.background | default: '#000' }};">
+  <div class="uk-section-xsmall{% if site.data.footer.subfooter.color == 'light' %} uk-light{% endif %}" style="background-color: {{ site.data.footer.subfooter.background | default: '#000' }};">
     <div class="uk-container">
-      <div class="uk-text-center uk-text-left@m" data-uk-grid>
+      <div class="uk-text-center uk-text-left@m uk-text-small" data-uk-grid>
         <div class="uk-width-expand@m">
           {{ site.data.footer.copyright }}
           {% if site.data.footer.privacy_link.url != '' %}
             | <a href="{% if site.data.footer.privacy_link.url contains 'http' %}{{ site.data.footer.privacy_link.url }}{% else %}{{ site.data.footer.privacy_link.url | relative_url }}{% endif %}">{{ site.data.footer.privacy_link.text }}</a>
           {% endif %}
         </div>
-        <div class="uk-width-1-3@m">site by dental game plan <img class="uk-margin-small-left" width="30" src="{{ '/assets/img/dental-game-plan.svg' | absolute_url }}" alt="dental game plan"></div>
+        <div class="uk-width-1-3@m">Site by Dental Game Plan <img class="uk-margin-small-left" width="24" src="{{ '/assets/img/dental-game-plan.svg' | absolute_url }}" alt="dental game plan"></div>
       </div>
     </div>
   </div>

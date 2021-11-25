@@ -5,6 +5,13 @@
 // $global-medium-font-size: 1.25rem;
 $global-background:                             #fff;
 
+$global-inverse-color:                          #fff;
+$inverse-global-color:                          rgba($global-inverse-color, 0.7);
+$inverse-base-color:                            $inverse-global-color;
+$inverse-base-link-color:                       $inverse-global-color;
+
+// $inverse-base-link-hover-color:                 $inverse-global-emphasis-color;
+
 // $global-border:                                 $global-secondary-background;
 // $global-font-family:                            'Montserrat', sans-serif;
 // $global-link-color:                             $global-secondary-background;
