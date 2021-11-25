@@ -36,7 +36,7 @@ menus:
     url: "#"
 color: dark
 background: color
-background_color: "#EEE4E4"
+background_color: "#F0E8DF"
 background_gradient: ''
 subfooter:
   background: "#000000"
