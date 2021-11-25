@@ -134,7 +134,7 @@ fields:
     required: false
     color_format: Hex
   label: Background
-  default: "#D4D4D4"
+  default: "#F0E8DF"
   showOnly:
     value: color
 - name: color
