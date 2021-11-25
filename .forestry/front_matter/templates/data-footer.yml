@@ -164,16 +164,7 @@ fields:
   label: Background color
   default: "#D4D4D4"
   showOnly:
-    field: background
     value: color
-- name: background_gradient
-  type: text
-  config:
-    required: false
-  label: Background gradient
-  showOnly:
-    field: background
-    value: gradient
 - name: subfooter
   type: field_group
   config: {}
