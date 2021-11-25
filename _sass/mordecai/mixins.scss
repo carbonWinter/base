@@ -97,6 +97,33 @@
     background-color: $global-dark-background;
   }
 
+  .uk-text-medium {
+    font-size: 1.25rem;
+  }
+
+  // Global styles
+  .footer-1 {
+    .uk-grid-divider {
+      border-color: darken($global-border, 100%);
+    }
+
+    address p {
+      margin-bottom: 0;
+    }
+
+    address {
+      margin-bottom: 5px;
+      line-height: 2.7;
+    }
+
+    .uk-list {
+      line-height: 2.2;
+    }
+
+    .uk-nav li a {
+      padding: 12px 0
+    }
+  }
 
 
 }

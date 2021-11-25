@@ -9,6 +9,11 @@ $global-inverse-color:                          #fff;
 $inverse-global-color:                          rgba($global-inverse-color, 0.7);
 $inverse-base-color:                            $inverse-global-color;
 $inverse-base-link-color:                       $inverse-global-color;
+$global-border:                               #e5e5e5;
+
+$link-text-hover-color:                         lighten($global-color, 25%);
+
+$grid-divider-border:                           darken($global-border, 15%);
 
 // $inverse-base-link-hover-color:                 $inverse-global-emphasis-color;
 

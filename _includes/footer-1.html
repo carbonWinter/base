@@ -1,6 +1,6 @@
-<footer id="footer">
-  <div class="uk-section-large uk-section-{{site.footer.background | default: 'default'}}">
-    <div class="uk-container">
+<footer id="footer" class="footer-1">
+  <div class="uk-section-large" style="background-color: {{site.data.footer.background | default: '#000000'}};">
+    <div class="uk-container uk-text-medium">
       <div class="uk-text-center">
         <a class="uk-logo" href="{{ "/" | relative_url }}">
           {% if site.data.options.logo_light != '' or site.data.options.logo_dark != '' %}
@@ -17,22 +17,22 @@
       </div>
       {% if site.data.footer.phone != '' %}
         <div class="uk-margin-top uk-text-center">
-          <a class="" href="tel: {{ site.data.footer.phone }}">{{ site.data.footer.phone }}</a>
+          <a class="uk-link-text" href="tel: {{ site.data.footer.phone }}">{{ site.data.footer.phone }}</a>
         </div>
       {% endif %}
       {% if site.data.footer.copyright != '' %}
-        <div class="uk-margin-top uk-text-center">
+        <div class="uk-margin-medium-top uk-text-center uk-text-muted">
           {{ site.data.footer.copyright }}
         </div>
       {% endif %}
       
-      <div class="uk-margin-top uk-child-width-1-2@m" data-uk-grid>
+      <div class="uk-margin-top uk-child-width-1-2@m uk-grid-divider" data-uk-grid>
         <div>
           {% if site.data.footer.menus.size != 0 %}
             {% for menu in site.data.footer.menus %}
-              <ul class="uk-nav">
+              <ul class="uk-nav uk-margin-top uk-margin-bottom">
                 {% for item in menu.menu %}
-                  <li><a class="uk-flex-center uk-flex-right@m" href="{% if item.url contains 'http' %}{{ item.url }}{% else %}{{ item.url | relative_url }}{% endif %}">{{ item.text }}</a></li>
+                  <li><a class="uk-flex-center uk-flex-right@m uk-link-text" href="{% if item.url contains 'http' %}{{ item.url }}{% else %}{{ item.url | relative_url }}{% endif %}">{{ item.text }}</a></li>
                 {% endfor %}
               </ul>
             {% endfor %}
@@ -40,10 +40,10 @@
         </div>
         <div class="uk-text-center uk-text-left@m">
           {% if site.data.footer.address != '' %}
-            <address>{{ site.data.footer.address | markdownify }}</address>
+            <address class="uk-margin-top">{{ site.data.footer.address | markdownify }}</address>
           {% endif %}
           {% if site.data.footer.hours.size != 0 %}
-            <ul class="uk-list">
+            <ul class="uk-list uk-margin-bottom uk-margin-remove-top">
               {% for item in site.data.footer.hours %}
                 <li>{{ item }}</li>
               {% endfor %}
