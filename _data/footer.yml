@@ -34,7 +34,7 @@ menus:
     url: "#"
   - text: dental inlays/onlays
     url: "#"
-color: light
+color: dark
 background: color
 background_color: "#F0E8DF"
 background_gradient: ''
