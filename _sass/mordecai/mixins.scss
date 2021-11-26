@@ -102,6 +102,16 @@
     }
   }
 
+  .uk-height-xlarge {
+    height: 500px;
+  }
+
+  @media (min-width: $breakpoint-medium) {
+    .uk-height-xlarge {
+      height: 760px;
+    }
+  }
+
   .uk-background-dark, .uk-section-dark {
     background-color: $global-dark-background;
   }
