@@ -139,11 +139,12 @@ blocks:
     blank: false
   background:
     color: muted
-    image: 'https://via.placeholder.com/1600x1000'
+    image: https://via.placeholder.com/1600x1000
     video: ''
     overlay:
       color: ''
       opacity: 
+  color: light
 - template: text-1
   block: text-1
   align: left
