@@ -6,12 +6,12 @@
   <div class="uk-container uk-position-relative uk-text-{{ block.align | default: 'left' }}">
 
     {% if block.heading != empty or block.text != empty %}
-      <div class="uk-margin-large-bottom uk-container-small{% if block.align == 'center' %} uk-margin-auto{% endif %}">
+      <div class="uk-section-heading-container uk-margin-large-bottom uk-container-small{% if block.align == 'center' %} uk-margin-auto{% endif %}">
         {% if block.heading != empty %}
-          <h2 class="uk-margin-remove">{{ block.heading }}</h2>
+          <h2 class="uk-section-heading uk-margin-remove">{{ block.heading }}</h2>
         {% endif %}
         {% if block.text != empty %}
-          <div class="uk-text-lead{% if block.heading %} uk-margin-top{% endif %}">{{ block.text | markdownify  }}</div>
+          <div class="uk-text-lead{% if block.heading %} uk-margin-xsmall-top{% endif %}">{{ block.text | markdownify  }}</div>
         {% endif %}
       </div>
     {% endif %}

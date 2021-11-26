@@ -3,7 +3,7 @@
   {%- if block.background.overlay.color != '' -%}
     <div class="uk-position-cover" style="background: {{ block.background.overlay.color }}; opacity: {{ block.background.overlay.opacity | default: '0.6' }}"></div>
   {%- endif -%}
-  <div class="uk-container uk-position-relative">
+  <div class="uk-container uk-position-relative uk-{{ block.color | default: 'dark' }}">
     {% if block.heading != empty or block.text != empty %}
       <div class="uk-section-heading-container uk-margin-large-bottom uk-container-small{% if block.align == 'center' %} uk-margin-auto{% endif %} uk-text-{{ block.align | default: 'left' }}">
         {% if block.heading != empty %}
