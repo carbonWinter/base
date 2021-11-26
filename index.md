@@ -16,9 +16,8 @@ header:
   transparent_navbar: true
   layout: left
   col_one:
-    heading: Lorem ipsum dolor sit amet
-    text: Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
-      eu fugiat nulla pariatur.
+    heading: ''
+    text: ''
   col_two:
     heading: ''
     text: ''
@@ -82,7 +81,7 @@ blocks:
     overlay:
       color: ''
       opacity: 
-  color: 'dark'
+  color: dark
 - template: testimonials-1
   block: testimonials-1
   testimonials:
@@ -110,7 +109,7 @@ blocks:
     image: https://via.placeholder.com/400x600
   background:
     color: muted
-    image: 'https://via.placeholder.com/1600x800'
+    image: https://via.placeholder.com/1600x800
     video: ''
     overlay:
       color: "#E9E0E0"
@@ -197,7 +196,9 @@ blocks:
     vero eros et accumsan et iusto odio dignissim. Lorem ipsum dolor sit amet, consectetuer
     adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna
     aliquam erat volutpat.
-  lists: []
+  lists:
+  - list: []
+  - list: []
   background:
     color: default
     image: ''
