@@ -2,7 +2,12 @@
 
 
 // Global variables
-$global-large-font-size:                       2.125rem;
+// $base-h1-font-size:                              $base-h1-font-size-m * 0.85 !default;
+// $base-h1-line-height:                            1.2 !default;
+$base-h2-font-size-m:                            3.125rem;
+$base-h2-font-size:                              2.75rem;
+
+$base-h3-font-size:                             2.125rem;
 $global-background:                             #fff;
 
 $global-inverse-color:                          #fff;
@@ -125,4 +130,4 @@ $nav-primary-sublist-item-color:         $global-primary-background;
 $nav-primary-sublist-item-hover-color:   $global-secondary-background;
 $nav-primary-sublist-item-active-color:  $global-secondary-background;
 
-$text-lead-font-size:                            1.125rem;
+$text-lead-font-size:                            1.5rem;
