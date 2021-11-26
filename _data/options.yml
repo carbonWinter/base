@@ -24,8 +24,8 @@ blocks:
     color: default
     video: ''
     overlay:
-      color: ''
-      opacity: 
+      color: "#FF0000"
+      opacity: '0.4'
   hours:
     heading: Office Hours
     hours:
