@@ -110,7 +110,7 @@ blocks:
     image: https://via.placeholder.com/400x600
   background:
     color: muted
-    image: ''
+    image: 'https://via.placeholder.com/1600x800'
     video: ''
     overlay:
       color: "#E9E0E0"

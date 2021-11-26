@@ -4,7 +4,7 @@
     <div class="uk-position-cover" style="background: {{ block.background.overlay.color }}; opacity: {{ block.background.overlay.opacity | default: '0.6' }}"></div>
   {%- endif -%}
   <div class="uk-container uk-position-relative uk-{{ block.color | default: 'dark' }}">
-    <div data-uk-slider="autoplay: true; autoplay-interval: 5000; pause-on-hover: false">
+    <div data-uk-slider="autoplay: true; autoplay-interval: 6000; pause-on-hover: false">
 
       <div class="uk-position-relative">
 
@@ -17,15 +17,15 @@
                     <img data-src="{% if slide.image contains 'http' %}{{ slide.image }}{% else %}{{ slide.image | absolute_url }}{% endif %}" data-width data-height src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-uk-img alt="{{ slide.heading }}">
                   </div>
                   <div class="uk-width-expand">
-                    <img src="{{ '/assets/img/stars.svg' | absolute_url }}" width="200" alt="Rating">
+                    <img src="{{ '/assets/img/stars.svg' | absolute_url }}" width="340" alt="Rating">
                     {% if slide.heading != empty %}
-                      <h3>{{ slide.heading }}</h3>
+                      <h3 class="uk-h2 uk-section-heading uk-line-height-one">{{ slide.heading }}</h3>
                     {% endif %}                    
                     {% if slide.text != empty %}
-                      <div class="uk-margin-top">{{ slide.text }}</div>
+                      <div class="uk-margin-top uk-text-content">{{ slide.text | markdownify }}</div>
                     {% endif %} 
                     {% if slide.author != empty %}
-                      <div class="uk-margin-top uk-margin-left">&#8212; {{ slide.author }}</div>
+                      <div class="uk-margin-top uk-margin-medium-left uk-text-large">&#8212; {{ slide.author }}</div>
                     {% endif %}                    
                   </div>
                 </div>
@@ -40,8 +40,8 @@
         </div>
 
         <div class="uk-visible@m">
-          <a class="uk-position-center-left-out uk-position-small" href="#" data-uk-slidenav-previous="ratio: 1.25" data-uk-slider-item="previous"></a>
-          <a class="uk-position-center-right-out uk-position-small" href="#" data-uk-slidenav-next="ratio: 1.25" data-uk-slider-item="next"></a>
+          <a class="uk-position-center-left-out uk-position-small" href="#" data-uk-slidenav-previous="ratio: 1.4" data-uk-slider-item="previous"></a>
+          <a class="uk-position-center-right-out uk-position-small" href="#" data-uk-slidenav-next="ratio: 1.4" data-uk-slider-item="next"></a>
         </div>
 
       </div>
