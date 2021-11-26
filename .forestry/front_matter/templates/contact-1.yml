@@ -9,6 +9,11 @@ fields:
   label: Block
   hidden: true
   default: contact-1
+- name: background
+  type: include
+  config: {}
+  template: partial-background
+  label: Background
 - name: hours
   type: field_group
   config: {}
