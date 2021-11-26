@@ -9,6 +9,11 @@ fields:
   label: Block
   hidden: true
   default: video-1
+- name: background
+  type: include
+  config: {}
+  template: partial-background
+  label: Background
 - name: heading
   type: text
   config:
