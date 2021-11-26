@@ -21,6 +21,11 @@ blocks:
   block: contact-1
   background:
     image: "/uploads/bg-1.svg"
+    color: default
+    video: ''
+    overlay:
+      color: ''
+      opacity: 
   hours:
     heading: Office Hours
     hours:
