@@ -75,6 +75,14 @@ blocks:
     button:
       text: Read More
       url: "#"
+  background:
+    color: ''
+    image: ''
+    video: ''
+    overlay:
+      color: ''
+      opacity: 
+  color: ''
 - template: testimonials-1
   block: testimonials-1
   testimonials:
@@ -100,6 +108,14 @@ blocks:
       eu.
     author: Tom Redburg, Bakersfield, CA
     image: https://via.placeholder.com/400x600
+  background:
+    color: muted
+    image: ''
+    video: ''
+    overlay:
+      color: "#E9E0E0"
+      opacity: '0.7'
+  color: dark
 - template: cards-2
   block: cards-2
   align: left
@@ -126,6 +142,14 @@ blocks:
     text: Request an Appointment
     url: "#"
     blank: false
+  background:
+    color: ''
+    image: ''
+    video: ''
+    overlay:
+      color: ''
+      opacity: 
+  color: ''
 - template: video-1
   block: video-1
   align: left
@@ -181,6 +205,7 @@ blocks:
     overlay:
       color: ''
       opacity: 
+  color: ''
 - template: before-after-1
   block: before-after-1
   align: left
@@ -200,6 +225,13 @@ blocks:
     before: https://via.placeholder.com/600
     after: https://via.placeholder.com/600/aaaaaa
   color: ''
+  background:
+    color: ''
+    image: ''
+    video: ''
+    overlay:
+      color: ''
+      opacity: 
 - template: slider-1
   block: slider-1
   slides:
