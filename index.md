@@ -77,7 +77,6 @@ blocks:
       url: "#"
 - template: testimonials-1
   block: testimonials-1
-  background_image: ''
   testimonials:
   - heading: Best cosmetic dentist in Bakersfield
     text: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
