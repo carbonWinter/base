@@ -1,4 +1,26 @@
 ---
 label: Partial background
 hide_body: true
-fields: []
+fields:
+- name: background
+  type: field_group
+  config: {}
+  fields:
+  - name: color
+    type: select
+    default: default
+    config:
+      required: false
+      options:
+      - default
+      - primary
+      - secondary
+      - muted
+      - dark
+      source:
+        type: simple
+        section: 
+        file: 
+        path: 
+    label: Color
+  label: Background
