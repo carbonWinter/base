@@ -14,6 +14,20 @@ fields:
   config: {}
   template: partial-background
   label: Background
+- name: color
+  type: select
+  default: dark
+  config:
+    required: false
+    options:
+    - dark
+    - light
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Color
 - name: heading
   type: text
   config:
@@ -82,17 +96,3 @@ fields:
     max: 
     labelField: 
   label: Lists
-- name: color
-  type: select
-  default: dark
-  config:
-    required: false
-    options:
-    - dark
-    - light
-    source:
-      type: simple
-      section: 
-      file: 
-      path: 
-  label: Color
