@@ -36,42 +36,42 @@ blocks:
   - heading: Dental implants
     text: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
       nibh euismod tincidunt.
-    icon: https://via.placeholder.com/40
+    icon: https://via.placeholder.com/54
     button:
       text: Read More
       url: "#"
   - heading: Tooth restoration
     text: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
       nibh euismod tincidunt.
-    icon: https://via.placeholder.com/40
+    icon: https://via.placeholder.com/54
     button:
       text: Read More
       url: "#"
   - heading: Dental crowns
     text: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
       nibh euismod tincidunt.
-    icon: https://via.placeholder.com/40
+    icon: https://via.placeholder.com/54
     button:
       text: Read More
       url: "#"
   - heading: Cosmetic dentistry
     text: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
       nibh euismod tincidunt.
-    icon: https://via.placeholder.com/40
+    icon: https://via.placeholder.com/54
     button:
       text: Read More
       url: "#"
   - heading: Ortho & braces
     text: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
       nibh euismod tincidunt.
-    icon: https://via.placeholder.com/40
+    icon: https://via.placeholder.com/54
     button:
       text: Read More
       url: "#"
   - heading: Teeth cleaning
     text: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
       nibh euismod tincidunt.
-    icon: https://via.placeholder.com/40
+    icon: https://via.placeholder.com/54
     button:
       text: Read More
       url: "#"
@@ -82,7 +82,7 @@ blocks:
     overlay:
       color: ''
       opacity: 
-  color: ''
+  color: 'dark'
 - template: testimonials-1
   block: testimonials-1
   testimonials:
