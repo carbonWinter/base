@@ -6,15 +6,15 @@ header:
   background:
     background_style: video
     background_color: ''
-    background_image: "https://cdn.jwplayer.com/thumbs/UhPLPmBe-1920.jpg"
-    background_video_file: "https://cdn.jwplayer.com/videos/UhPLPmBe-EOPqYJ09.mp4"
+    background_image: "/uploads/image-large.jpg"
+    background_video_file: "/uploads/lagoon-2.mp4"
     background_slider: []
     overlay: gradient
-    gradient: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 70%);
+    gradient: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 50%);
     overlay_color: "#ffffff"
     overlay_opacity: 0.1
   transparent_navbar: true
-  layout: centered
+  layout: left
   col_one:
     heading: Lorem ipsum dolor sit amet
     text: Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
@@ -23,6 +23,7 @@ header:
     heading: ''
     text: ''
   color: light
+  page_navigation: []
 blocks:
 - template: cards-1
   block: cards-1
@@ -131,11 +132,18 @@ blocks:
   align: left
   heading: Video headline
   text: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-  video_file: "https://cdn.jwplayer.com/videos/UhPLPmBe-ej76B8vc.mp4"
+  video_file: "/uploads/lagoon-2.mp4"
   button:
     text: ''
     url: ''
     blank: false
+  background:
+    color: muted
+    image: ''
+    video: ''
+    overlay:
+      color: ''
+      opacity: 
 - template: text-1
   block: text-1
   align: left
@@ -166,6 +174,13 @@ blocks:
     adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna
     aliquam erat volutpat.
   lists: []
+  background:
+    color: default
+    image: ''
+    video: ''
+    overlay:
+      color: ''
+      opacity: 
 - template: before-after-1
   block: before-after-1
   align: left
@@ -184,6 +199,7 @@ blocks:
   - heading: Braces
     before: https://via.placeholder.com/600
     after: https://via.placeholder.com/600/aaaaaa
+  color: ''
 - template: slider-1
   block: slider-1
   slides:
@@ -191,5 +207,6 @@ blocks:
   - "/uploads/image-large.jpg"
   - "/uploads/image-large.jpg"
 sticky_cta: true
+description: ''
 
 ---
