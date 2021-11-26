@@ -1,3 +1,12 @@
+@mixin hook-button-misc() {
+  .uk-button {
+    border-radius: 500px;
+    font-weight: 500;
+    letter-spacing: 0.16em;
+    font-family: $base-heading-font-family;
+  }
+}
+
 @mixin hook-nav-primary(){
 
   .uk-nav-sub {
@@ -98,7 +107,25 @@
   }
 
   .uk-text-medium {
-    font-size: 1.25rem;
+    font-size: 1.375rem;
+  }
+
+  .uk-letter-spacing-medium {
+    letter-spacing: 1px;
+  }
+
+  .uk-line-height-one {
+    line-height: 1;
+  }
+
+  .uk-line-height-medium {
+    line-height: 2;
+  }
+
+  @media (min-width: $breakpoint-medium) {
+    .uk-width-contact-appointment {
+      width: 41%;
+    }
   }
 
   // Global styles

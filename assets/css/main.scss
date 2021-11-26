@@ -24,16 +24,23 @@ $navbar-nav-item-font-family:     "{{ site.data.options.fonts.navigation | defau
     src:  url('../fonts/SF-Compact-Display-Regular.woff2') format('woff2'),
           url('../fonts/SF-Compact-Display-Regular.woff') format('woff');
   }
+
+  @font-face {
+    font-family: 'SFCompactDisplay';
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+    src:  url('../fonts/SF-Compact-Display-Semibold.woff2') format('woff2'),
+          url('../fonts/SF-Compact-Display-Semibold.woff') format('woff');
+  }
+
+
 {% endif %}
 
-@font-face {
-  font-family: 'SFCompactDisplay';
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap;
-  src:  url('../fonts/SF-Compact-Display-Semibold.woff2') format('woff2'),
-        url('../fonts/SF-Compact-Display-Semibold.woff') format('woff');
-}
+
+{% if site.data.options.fonts.body == 'Mukta Mahee' or site.data.options.fonts.heading == 'Mukta Mahee' or site.data.options.fonts.navigation == 'Mukta Mahee' %}
+$base-heading-font-weight: 600;
+{% endif %}
 
 // 1. Custom variables and variable overwrites.
 @import "{{ site.data.options.theme | default: 'mordecai' }}/variables";

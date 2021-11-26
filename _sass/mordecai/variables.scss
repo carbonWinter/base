@@ -2,7 +2,7 @@
 
 
 // Global variables
-// $global-medium-font-size: 1.25rem;
+$global-large-font-size:                       2.125rem;
 $global-background:                             #fff;
 
 $global-inverse-color:                          #fff;
@@ -15,6 +15,10 @@ $link-text-hover-color:                         lighten($global-color, 25%);
 
 $grid-divider-border:                           darken($global-border, 15%);
 
+$global-control-height:                         56px;
+// $button-line-height:                             $global-control-height !default;
+$button-font-size:                              1rem;
+$button-padding-horizontal:                     40px;
 // $inverse-base-link-hover-color:                 $inverse-global-emphasis-color;
 
 // $global-border:                                 $global-secondary-background;
