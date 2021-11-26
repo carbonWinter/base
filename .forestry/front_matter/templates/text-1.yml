@@ -9,6 +9,11 @@ fields:
   label: Block
   default: text-1
   hidden: true
+- name: background
+  type: include
+  config: {}
+  template: partial-background
+  label: Background
 - name: heading
   type: text
   config:
