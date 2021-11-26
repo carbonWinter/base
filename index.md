@@ -139,7 +139,7 @@ blocks:
     blank: false
   background:
     color: muted
-    image: ''
+    image: 'https://via.placeholder.com/1600x1000'
     video: ''
     overlay:
       color: ''
