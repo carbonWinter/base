@@ -9,6 +9,25 @@ fields:
   label: Block
   hidden: true
   default: cards-2
+- name: background
+  type: include
+  config: {}
+  template: partial-background
+  label: Background
+- name: color
+  type: select
+  default: dark
+  config:
+    required: false
+    options:
+    - dark
+    - light
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Color
 - name: heading
   type: text
   config:
