@@ -16,31 +16,3 @@ fields:
     schema:
       format: markdown
   label: Text
-- name: align
-  type: select
-  default: left
-  config:
-    required: false
-    options:
-    - left
-    - center
-    source:
-      type: simple
-      section: 
-      file: 
-      path: 
-  label: Align
-- name: color
-  type: select
-  default: dark
-  config:
-    required: false
-    options:
-    - dark
-    - light
-    source:
-      type: simple
-      section: 
-      file: 
-      path: 
-  label: Color
