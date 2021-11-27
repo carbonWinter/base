@@ -68,6 +68,11 @@ blocks:
   align: center
   background:
     image: "/uploads/image-large.jpg"
+    color: ''
+    video: ''
+    overlay:
+      color: ''
+      opacity: 
   heading: We love what we do
   text: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
     nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
@@ -192,6 +197,13 @@ blocks:
   - https://via.placeholder.com/200
   - https://via.placeholder.com/200
   columns: '3'
+  background:
+    color: ''
+    image: ''
+    video: ''
+    overlay:
+      color: ''
+      opacity: 
 - template: faq-1
   block: faq-1
   align: left
@@ -227,6 +239,13 @@ blocks:
       nisl ut aliquip ex ea commodo consequat. \n\nDuis autem vel eum iriure dolor
       in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu
       feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim"
+  background:
+    color: muted
+    image: ''
+    video: ''
+    overlay:
+      color: ''
+      opacity: 
 - template: before-after-1
   block: before-after-1
   align: left
