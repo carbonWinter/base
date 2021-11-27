@@ -121,10 +121,22 @@
     cursor: pointer;
   }
 
-  .uk-before-after-1 {
-    .uk-after {
+  .uk-before-after-1-wrapper {
+    >div {
+      transition: all .2s ease-in;
+    }
+    >div:last-child {
       margin-left: -40%;
     }
+  }
+
+  .uk-reverse > div:first-child {
+    transform: translateX(40%);
+    z-index: 1;
+  }
+
+  .uk-reverse > div:last-child {
+    transform: translateX(-40%);
   }
 
   .uk-slider-1-dotnav {
