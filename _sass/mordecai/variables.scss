@@ -24,6 +24,15 @@ $grid-divider-border:                           darken($global-border, 15%);
 
 $global-control-height:                         56px;
 // $button-line-height:                             $global-control-height !default;
+
+$accordion-item-margin-top:                     0;
+$accordion-title-font-size:                     1.5rem;
+$accordion-title-line-height:                   1.4 !default;
+$accordion-title-color:                         $global-color;
+$accordion-title-hover-color:                   $global-primary-background;
+$accordion-content-margin-top:                  0;
+
+
 $button-font-size:                              1rem;
 $button-padding-horizontal:                     40px;
 // $inverse-base-link-hover-color:                 $inverse-global-emphasis-color;

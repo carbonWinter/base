@@ -1,3 +1,38 @@
+@mixin hook-accordion-misc() {
+  .uk-accordion-faq {
+    li {
+      border-bottom: solid 1px #bfb9af;
+
+      &:first-child {
+        border-top: solid 1px #bfb9af;
+      }
+    }
+
+    .uk-accordion-title {
+      padding: 45px 0;
+
+      &:before {
+        background-image: none;
+      }
+    }
+
+    .uk-accordion-content {
+      padding-bottom: 45px;
+    }
+
+    @media (min-width: $breakpoint-large) {
+      .uk-accordion-title {
+        padding: 85px 0;
+      }
+      .uk-accordion-content {
+        padding-bottom: 80px;
+      }
+      
+    }
+
+  }
+}
+
 @mixin hook-button-misc() {
   .uk-button {
     border-radius: 500px;
@@ -243,7 +278,7 @@
       span {
         position: absolute;
         left: -30px;
-        top: 8px;
+        top: 7px;
       }
     }
   }
