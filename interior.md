@@ -68,11 +68,11 @@ blocks:
   align: center
   background:
     image: "/uploads/image-large.jpg"
-    color: ''
+    color: muted
     video: ''
     overlay:
-      color: ''
-      opacity: 
+      color: "#F4E8D4"
+      opacity: '0.5'
   heading: We love what we do
   text: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
     nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
