@@ -180,6 +180,37 @@
     }
   }
 
+  .uk-header-medium {
+    min-height: 400px;
+  }
+
+  .uk-header-large {
+    min-height: 460px;
+  }
+
+  @media (min-width: $breakpoint-medium) {
+    .uk-header-medium {
+      min-height: 540px;
+    }
+
+    .uk-header-large {
+      min-height: 730px;
+    }
+  }
+
+  .uk-header {
+    .uk-heading-large {
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+    .uk-text-lead {
+      text-transform: uppercase;
+      font-weight: $base-heading-font-weight;
+      font-size: $base-h3-font-size;
+      letter-spacing: 0.08em;
+    }
+  }
+
   // Global styles
   .footer-1 {
     .uk-grid-divider {

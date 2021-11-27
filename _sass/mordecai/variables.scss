@@ -41,7 +41,7 @@ $button-padding-horizontal:                     40px;
 // $base-body-font-weight:                         400;
 // $base-heading-font-weight:                      600;
 // $heading-xlarge-font-size:                      4rem;
-// $heading-xlarge-font-size-l:                    4.5rem;
+$heading-large-font-size-l:                     5.25rem;
 // $heading-xlarge-font-size:                      3.5rem;
 // $heading-xlarge-font-size-l:                    7.5rem;
 // $heading-2xlarge-font-size:                     4.5rem;
@@ -133,3 +133,5 @@ $nav-primary-sublist-item-hover-color:   $global-secondary-background;
 $nav-primary-sublist-item-active-color:  $global-secondary-background;
 
 $text-lead-font-size:                            1.5rem;
+$inverse-text-lead-color:                       #fff;
+
