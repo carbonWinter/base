@@ -198,7 +198,7 @@ blocks:
   - https://via.placeholder.com/200
   columns: '3'
   background:
-    color: ''
+    color: default
     image: ''
     video: ''
     overlay:
