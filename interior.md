@@ -64,7 +64,7 @@ blocks:
   color: dark
 - template: cta-1
   block: cta-1
-  color: light
+  color: dark
   align: center
   background:
     image: "/uploads/image-large.jpg"
@@ -72,7 +72,7 @@ blocks:
     video: ''
     overlay:
       color: "#F4E8D4"
-      opacity: '0.5'
+      opacity: '0.9'
   heading: We love what we do
   text: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
     nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
