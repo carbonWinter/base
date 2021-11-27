@@ -9,6 +9,11 @@ fields:
   label: Block
   hidden: true
   default: cta-1
+- name: background
+  type: include
+  config: {}
+  template: partial-background
+  label: Background
 - name: color
   type: select
   default: dark
@@ -23,16 +28,6 @@ fields:
       file: 
       path: 
   label: Color
-- name: background
-  type: field_group
-  config: {}
-  fields:
-  - name: image
-    type: file
-    config:
-      maxSize: 64
-    label: Image
-  label: Background
 - name: align
   type: select
   default: left
