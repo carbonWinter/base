@@ -160,6 +160,12 @@
     }
   }
 
+  .uk-video-1 {
+    .uk-section-heading-container:after {
+      background-color: $global-primary-background;
+    }
+  }
+
   @media (min-width: $breakpoint-medium) {
     .uk-width-contact-appointment {
       width: 41%;
@@ -211,7 +217,36 @@
     }
   }
 
+  .uk-video-border {
+    border: solid 10px #fff;
+  }
+
+  .uk-images-1 {
+    img {
+      border-radius: 500px;
+      border: solid 1px black;
+    }
+  }
+
+  @media (min-width: $breakpoint-large) {
+    .uk-grid+.uk-grid-large, .uk-grid+.uk-grid-row-large, .uk-grid-large>.uk-grid-margin, .uk-grid-row-large>.uk-grid-margin, *+.uk-grid-margin-large {
+      margin-top: 140px
+    }
+  }
+
   // Global styles
+  .uk-list-icon {
+    margin-left: 30px;
+    li {
+      position: relative;
+
+      span {
+        position: absolute;
+        left: -30px;
+        top: 8px;
+      }
+    }
+  }
   .footer-1 {
     .uk-grid-divider {
       border-color: darken($global-border, 100%);

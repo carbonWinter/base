@@ -130,8 +130,8 @@ blocks:
     url: "/somelink/"
     blank: false
   background:
-    color: default
-    image: ''
+    color: muted
+    image: 'https://via.placeholder.com/1600x900'
     video: ''
     overlay:
       color: ''
@@ -190,12 +190,12 @@ blocks:
   heading: Accreditations
   text: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
   images:
-  - https://via.placeholder.com/200
-  - https://via.placeholder.com/200
-  - https://via.placeholder.com/200
-  - https://via.placeholder.com/200
-  - https://via.placeholder.com/200
-  - https://via.placeholder.com/200
+  - https://via.placeholder.com/250
+  - https://via.placeholder.com/250
+  - https://via.placeholder.com/250
+  - https://via.placeholder.com/250
+  - https://via.placeholder.com/250
+  - https://via.placeholder.com/250
   columns: '3'
   background:
     color: default
