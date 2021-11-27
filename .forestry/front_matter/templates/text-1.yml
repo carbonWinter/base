@@ -84,6 +84,41 @@ fields:
 - name: lists
   type: field_group_list
   fields:
+  - name: icon
+    type: select
+    default: none
+    config:
+      required: false
+      options:
+      - none
+      - star
+      - heart
+      - bolt
+      - check
+      - close
+      - minus
+      - plus
+      - chevron-right
+      - arrow-right
+      - triangle-right
+      - file-text
+      - laptop
+      - desktop
+      - tablet
+      - phone
+      source:
+        type: simple
+        section: 
+        file: 
+        path: 
+    label: Icon
+  - name: icon_color
+    type: color
+    label: Icon color
+    config:
+      required: false
+      color_format: Hex
+    default: "#000000"
   - name: list
     type: list
     config:
