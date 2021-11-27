@@ -34,25 +34,25 @@ blocks:
     nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi
     enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis
     nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit
-    in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla
-    facilisis at vero eros et accumsan et iusto odio dignissim. Lorem ipsum dolor
+    in vulputate esse molestie consequat, vel illum dolore eu feugiat nulla facilisis
+    at vero eros et accumsan et iusto odio dignissim. Lorem ipsum dolor sit amet,
+    consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
+    dolore magna aliquam erat volutpat.Lorem ipsum dolor sit amet, consectetuer adipiscing
+    elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
+    erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper
+    suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum
+    iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum
+    dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim.
+    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
+    euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.Lorem ipsum dolor
     sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt
-    ut laoreet dolore magna aliquam erat volutpat.Lorem ipsum dolor sit amet, consectetuer
-    adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna
-    aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
-    ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem
-    vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat,
-    vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto
-    odio dignissim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
-    diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.Lorem
-    ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
-    tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim
-    veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip
-    ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate
-    velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at
-    vero eros et accumsan et iusto odio dignissim. Lorem ipsum dolor sit amet, consectetuer
-    adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna
-    aliquam erat volutpat.
+    ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
+    nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
+    consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse
+    molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et
+    accumsan et iusto odio dignissim. Lorem ipsum dolor sit amet, consectetuer adipiscing
+    elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
+    erat volutpat.
   lists: []
   background:
     color: default
@@ -171,10 +171,14 @@ blocks:
     - Lorem ipsum dolor sit amet
     - Lorem ipsum dolor sit amet
     - Lorem ipsum dolor sit amet
+    icon: close
+    icon_color: "#FE6868"
   - list:
     - Lorem ipsum dolor sit amet
     - Lorem ipsum dolor sit amet
     - Lorem ipsum dolor sit amet
+    icon: check
+    icon_color: "#4FEDA0"
   background:
     color: default
     image: ''
