@@ -55,13 +55,13 @@ blocks:
     aliquam erat volutpat.
   lists: []
   background:
-    color: ''
+    color: default
     image: ''
     video: ''
     overlay:
       color: ''
       opacity: 
-  color: ''
+  color: dark
 - template: cta-1
   block: cta-1
   color: light
@@ -112,13 +112,13 @@ blocks:
     aliquam erat volutpat.
   lists: []
   background:
-    color: ''
+    color: default
     image: ''
     video: ''
     overlay:
       color: ''
       opacity: 
-  color: ''
+  color: dark
 - template: video-1
   block: video-1
   align: left
@@ -130,13 +130,13 @@ blocks:
     url: "/somelink/"
     blank: false
   background:
-    color: ''
+    color: default
     image: ''
     video: ''
     overlay:
       color: ''
       opacity: 
-  color: ''
+  color: dark
 - template: text-1
   block: text-1
   align: left
@@ -176,13 +176,13 @@ blocks:
     - Lorem ipsum dolor sit amet
     - Lorem ipsum dolor sit amet
   background:
-    color: ''
+    color: default
     image: ''
     video: ''
     overlay:
       color: ''
       opacity: 
-  color: ''
+  color: dark
 - template: images-1
   block: images-1
   align: left
