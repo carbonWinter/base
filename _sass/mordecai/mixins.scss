@@ -1,10 +1,10 @@
 @mixin hook-accordion-misc() {
   .uk-accordion-faq {
     li {
-      border-bottom: solid 1px #bfb9af;
+      border-bottom: solid 1px $global-muted-color;
 
       &:first-child {
-        border-top: solid 1px #bfb9af;
+        border-top: solid 1px $global-muted-color;
       }
     }
 
@@ -278,6 +278,31 @@
   @media (min-width: $breakpoint-large) {
     .uk-grid+.uk-grid-large, .uk-grid+.uk-grid-row-large, .uk-grid-large>.uk-grid-margin, .uk-grid-row-large>.uk-grid-margin, *+.uk-grid-margin-large {
       margin-top: 140px
+    }
+  }
+
+  .uk-cta-sticky {
+    .uk-button {
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+    .uk-button-default {
+      border-right-color: transparent;
+    }
+    .uk-icon-button {
+      background-color: #000;
+      width: 26px;
+      height: 26px;
+    }
+    .uk-link-phone {
+      font-family: $base-heading-font-family;
+      color: #000;
+      letter-spacing: 1px;
+
+      &:hover {
+        text-decoration: none;
+        color: $global-secondary-background;
+      }
     }
   }
 
