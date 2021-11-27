@@ -1,7 +1,7 @@
 ---
 layout: blocks
 header:
-  height: default
+  height: medium
   background:
     background_style: image
     background_color: "#E2E2E2"
@@ -20,6 +20,7 @@ header:
   col_two:
     heading: ''
     text: ''
+  page_navigation: []
 title: Interior
 sticky_cta: true
 blocks:
@@ -53,6 +54,14 @@ blocks:
     adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna
     aliquam erat volutpat.
   lists: []
+  background:
+    color: ''
+    image: ''
+    video: ''
+    overlay:
+      color: ''
+      opacity: 
+  color: ''
 - template: cta-1
   block: cta-1
   color: light
@@ -97,6 +106,14 @@ blocks:
     adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna
     aliquam erat volutpat.
   lists: []
+  background:
+    color: ''
+    image: ''
+    video: ''
+    overlay:
+      color: ''
+      opacity: 
+  color: ''
 - template: video-1
   block: video-1
   align: left
@@ -107,6 +124,14 @@ blocks:
     text: Request an appointment
     url: "/somelink/"
     blank: false
+  background:
+    color: ''
+    image: ''
+    video: ''
+    overlay:
+      color: ''
+      opacity: 
+  color: ''
 - template: text-1
   block: text-1
   align: left
@@ -145,6 +170,14 @@ blocks:
     - Lorem ipsum dolor sit amet
     - Lorem ipsum dolor sit amet
     - Lorem ipsum dolor sit amet
+  background:
+    color: ''
+    image: ''
+    video: ''
+    overlay:
+      color: ''
+      opacity: 
+  color: ''
 - template: images-1
   block: images-1
   align: left
@@ -212,11 +245,20 @@ blocks:
   - heading: Braces
     before: https://via.placeholder.com/600
     after: https://via.placeholder.com/600/aaaaaa
+  background:
+    color: ''
+    image: ''
+    video: ''
+    overlay:
+      color: ''
+      opacity: 
+  color: ''
 - template: slider-1
   block: slider-1
   slides:
   - "/uploads/image-large.jpg"
   - "/uploads/image-large.jpg"
   - "/uploads/image-large.jpg"
+description: ''
 
 ---
