@@ -265,13 +265,13 @@ blocks:
     before: https://via.placeholder.com/600
     after: https://via.placeholder.com/600/aaaaaa
   background:
-    color: ''
+    color: default
     image: ''
     video: ''
     overlay:
       color: ''
       opacity: 
-  color: ''
+  color: dark
 - template: slider-1
   block: slider-1
   slides:
