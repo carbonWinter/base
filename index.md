@@ -236,9 +236,9 @@ blocks:
 - template: slider-1
   block: slider-1
   slides:
-  - "/uploads/image-large.jpg"
-  - "/uploads/image-large.jpg"
-  - "/uploads/image-large.jpg"
+  - "/uploads/slider-1.jpg"
+  - "/uploads/slider-1.jpg"
+  - "/uploads/slider-1.jpg"
 sticky_cta: true
 description: ''
 

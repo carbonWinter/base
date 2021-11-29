@@ -8,7 +8,7 @@ header:
     overlay: color
     overlay_color: "#000000"
     overlay_opacity: 0.2
-    background_image: "/uploads/image-large.jpg"
+    background_image: "/uploads/bg-interior.jpg"
     background_video_file: ''
     background_slider: []
     gradient: ''
@@ -67,12 +67,12 @@ blocks:
   color: dark
   align: center
   background:
-    image: "/uploads/image-large.jpg"
+    image: "/uploads/comfort-1-bg-mordecai.jpeg"
     color: muted
     video: ''
     overlay:
-      color: "#F4E8D4"
-      opacity: '0.9'
+      color: ""
+      opacity: ''
   heading: We love what we do
   text: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
     nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
@@ -80,7 +80,7 @@ blocks:
     text: Request an appointment
     url: "#"
     blank: true
-  image: https://via.placeholder.com/70
+  image: '/uploads/icon-heart.png'
 - template: text-1
   block: text-1
   align: left
@@ -194,12 +194,12 @@ blocks:
   heading: Accreditations
   text: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
   images:
-  - https://via.placeholder.com/250
-  - https://via.placeholder.com/250
-  - https://via.placeholder.com/250
-  - https://via.placeholder.com/250
-  - https://via.placeholder.com/250
-  - https://via.placeholder.com/250
+  - '/uploads/logo-1.png'
+  - '/uploads/logo-2.png'
+  - '/uploads/logo-3.png'
+  - '/uploads/logo-4.png'
+  - '/uploads/logo-5.png'
+  - '/uploads/logo-6.png'
   columns: '3'
   background:
     color: default
