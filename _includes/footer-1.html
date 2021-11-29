@@ -15,9 +15,9 @@
           {% endif %}
         </a>
       </div>
-      {% if site.data.footer.phone != '' %}
+      {% if site.data.options.phone != '' %}
         <div class="uk-margin-top uk-text-center">
-          <a class="uk-link-text" href="tel: {{ site.data.footer.phone }}">{{ site.data.footer.phone }}</a>
+          <a class="uk-link-text" href="tel:{{ site.data.options.phone }}">{{ site.data.options.phone }}</a>
         </div>
       {% endif %}
       {% if site.data.footer.copyright != '' %}

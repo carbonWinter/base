@@ -52,11 +52,6 @@ menu_right:
   style: link
   blank: false
   dropdown: []
-- text: 888-555-5556
-  url: 8885555556
-  style: phone
-  blank: false
-  dropdown: []
 menu_mobile:
 - text: Our Doctors
   url: "#"
@@ -99,9 +94,3 @@ menu_mobile:
   blank: false
   dropdown: []
   text: Contact
-- text: 888-555-5556
-  url: 8885555556
-  style: phone
-  blank: false
-  dropdown: []
-phone: 8885555556

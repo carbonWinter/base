@@ -19,7 +19,7 @@
                           <li{{ current }}>
                             {% if link.url %}
                               {% if link.style == 'phone' %}
-                                <a class="uk-link-phone" href="tel: {{ link.url }}">
+                                <a class="uk-link-phone" href="tel:{{ link.url }}">
                                   <span class="uk-icon-button uk-margin-small-right">
                                     <svg width="16" height="16" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill="#fff" stroke="#fff" stroke-width="1.01" d="M6.189,13.611C8.134,15.525 11.097,18.239 13.867,18.257C16.47,18.275 18.2,16.241 18.2,16.241L14.509,12.551L11.539,13.639L6.189,8.29L7.313,5.355L3.76,1.8C3.76,1.8 1.732,3.537 1.7,6.092C1.667,8.809 4.347,11.738 6.189,13.611"></path></svg>
                                   </span>
@@ -91,7 +91,7 @@
                           <li{{ current }}>
                             {% if link.url %}
                               {% if link.style == 'phone' %}
-                                <a class="uk-link-phone" href="tel: {{ link.url }}">
+                                <a class="uk-link-phone" href="tel:{{ link.url }}">
                                   <span class="uk-icon-button uk-margin-small-right">
                                     <svg width="16" height="16" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill="#fff" stroke="#fff" stroke-width="1.01" d="M6.189,13.611C8.134,15.525 11.097,18.239 13.867,18.257C16.47,18.275 18.2,16.241 18.2,16.241L14.509,12.551L11.539,13.639L6.189,8.29L7.313,5.355L3.76,1.8C3.76,1.8 1.732,3.537 1.7,6.092C1.667,8.809 4.347,11.738 6.189,13.611"></path></svg>
                                   </span>
@@ -128,6 +128,15 @@
                           </li>
                       {% endif %}
                   {% endfor %}
+                  {% if site.data.options.phone != '' %}
+                    <li>
+                      <a class="uk-link-phone" href="tel:{{ site.data.options.phone }}">
+                        <span class="uk-icon-button uk-margin-small-right">
+                          <svg width="16" height="16" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill="#fff" stroke="#fff" stroke-width="1.01" d="M6.189,13.611C8.134,15.525 11.097,18.239 13.867,18.257C16.47,18.275 18.2,16.241 18.2,16.241L14.509,12.551L11.539,13.639L6.189,8.29L7.313,5.355L3.76,1.8C3.76,1.8 1.732,3.537 1.7,6.092C1.667,8.809 4.347,11.738 6.189,13.611"></path></svg>
+                        </span>
+                        {{ site.data.options.phone }}</a>
+                    </li>
+                  {% endif %}
               </ul>
               <a class="uk-navbar-toggle uk-hidden@l" href="#nav-mobile" aria-label="Mobile Navigation" data-uk-navbar-toggle-icon data-uk-toggle></a>
             </div>
