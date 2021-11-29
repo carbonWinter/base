@@ -38,7 +38,7 @@ blocks:
       text: Request an Appointment
       url: "#"
       blank: false
-    phone: "(555) 666-6667"
+    phone: "5556666667"
   address:
     heading: Our Address
     address: "5060 California Ave. Suite   \n200 Bakersfield, CA 93309"
