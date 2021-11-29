@@ -124,7 +124,7 @@ blocks:
   align: left
   heading: Video headline
   text: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-  video_file: "/uploads/lagoon-2.mp4"
+  video_file: "https://cdn.jwplayer.com/videos/SFX9iwPJ-EOPqYJ09.mp4"
   button:
     text: Request an appointment
     url: "/somelink/"
