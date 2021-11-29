@@ -11,7 +11,7 @@ sticky_cta:
     text: Dental Offers
     url: "#"
     blank: true
-  phone: 8885555556
+  phone: "8885555556"
 blocks:
 - template: map
   block: map
@@ -24,7 +24,7 @@ blocks:
     color: default
     video: ''
     overlay:
-      color: ""
+      color: ''
       opacity: '0.4'
   hours:
     heading: Office Hours
@@ -59,3 +59,4 @@ backgrounds:
   secondary: "#8EB4FF"
   dark: "#303D4F"
   muted: "#ECEAE6"
+phone: 888-555-555-5556
