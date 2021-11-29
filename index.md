@@ -109,11 +109,11 @@ blocks:
     image: https://via.placeholder.com/400x600
   background:
     color: muted
-    image: https://via.placeholder.com/1600x800
+    image: "/uploads/bg-testimonials.jpg"
     video: ''
     overlay:
-      color: "#E9E0E0"
-      opacity: '0.7'
+      color: ""
+      opacity: ''
   color: dark
 - template: cards-2
   block: cards-2
