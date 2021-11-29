@@ -11,7 +11,7 @@ sticky_cta:
     text: Dental Offers
     url: "#"
     blank: true
-  phone: 000-000-0000
+  phone: 8885555556
 blocks:
 - template: map
   block: map
