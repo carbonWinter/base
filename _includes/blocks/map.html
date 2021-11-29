@@ -1,4 +1,4 @@
-<section>
+<div>
   {% if block.style == 'multi-location' %}
     {% comment %}
     map-2:
@@ -15,7 +15,7 @@
         latitude: 33.74354
         longitude: -117.81838
       - name: Gold Coast Dental - Orange
-        address-1: 1122 E. Lincoln Ave. Ste. 104
+        address-1: 1122 E. Lincoln Ave. Ste. 104a
         address-2: Orange, CA 92865
         latitude: 33.83587
         longitude: -117.84144
@@ -100,7 +100,7 @@
       }
       </script>
   {% else %}
-    <iframe class="uk-width-1-1 uk-height-xlarge" src="{{ block.src }}" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" loading="lazy"></iframe>
+    <iframe class="uk-width-1-1 uk-height-xlarge" src="{{ block.src }}" title="Map" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" loading="lazy"></iframe>
   {% endif %}
-</section>
+</div>
 
