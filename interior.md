@@ -125,6 +125,7 @@ blocks:
   heading: Video headline
   text: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
   video_file: "https://cdn.jwplayer.com/videos/SFX9iwPJ-EOPqYJ09.mp4"
+  video_image: "https://cdn.jwplayer.com/thumbs/SFX9iwPJ-1280.jpg"
   button:
     text: Request an appointment
     url: "/somelink/"
