@@ -88,11 +88,6 @@ fields:
       label: Blank
       description: Open in new window.
     label: Button primary
-  - name: phone
-    type: text
-    config:
-      required: false
-    label: Phone
   label: Sticky CTA
 - name: favicons
   type: field_group

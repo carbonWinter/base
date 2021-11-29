@@ -59,11 +59,6 @@ fields:
       label: Blank
       description: Open in new window.
     label: Button
-  - name: phone
-    type: text
-    config:
-      required: false
-    label: Phone
   label: Appointment
 - name: address
   type: field_group
