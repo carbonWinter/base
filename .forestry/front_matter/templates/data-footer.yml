@@ -19,11 +19,6 @@ fields:
       file: 
       path: 
   label: Layout
-- name: phone
-  type: text
-  config:
-    required: false
-  label: Phone
 - name: address
   type: textarea
   default: ''
