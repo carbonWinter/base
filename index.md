@@ -161,7 +161,7 @@ blocks:
     blank: false
   background:
     color: muted
-    image: https://via.placeholder.com/1600x1000
+    image: '/uploads/bg-video.jpg'
     video: ''
     overlay:
       color: ''
