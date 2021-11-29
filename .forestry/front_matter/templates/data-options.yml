@@ -39,6 +39,11 @@ fields:
   config:
     maxSize: 64
   label: Logo light
+- name: phone
+  type: text
+  config:
+    required: false
+  label: Phone
 - name: sticky_cta
   type: field_group
   config: {}
