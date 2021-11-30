@@ -6,7 +6,7 @@ header:
   background:
     background_style: video
     background_color: ''
-    background_image: "/upload/bg-video-test.jpeg"
+    background_image: "/uploads/bg-video-test.jpeg"
     background_video_file: "/uploads/video.mp4"
     background_slider: []
     overlay: gradient
@@ -155,7 +155,7 @@ blocks:
   heading: Video headline
   text: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
   video_file: "/uploads/video.mp4"
-  video_image: "/upload/bg-video-test.jpeg"
+  video_image: "/uploads/bg-video-test.jpeg"
   button:
     text: ''
     url: ''
