@@ -9,30 +9,41 @@ fields:
   label: Block
   hidden: true
   default: map
-- name: style
-  type: select
-  default: default
+- name: api_key
+  type: text
   config:
     required: false
-    options:
-    - default
-    - multi-location
-    source:
-      type: simple
-      section: 
-      file: 
-      path: 
-  label: Style
-- name: src
-  type: textarea
-  default: ''
+  label: API Key
+- name: locations
+  type: field_group_list
+  fields:
+  - name: name
+    type: text
+    config:
+      required: false
+    label: Name
+  - name: address_1
+    type: text
+    config:
+      required: false
+    label: Address 1
+  - name: address_2
+    type: text
+    config:
+      required: false
+    label: Address 2
+  - name: latitude
+    type: text
+    config:
+      required: false
+    label: Latitude
+  - name: longitude
+    type: text
+    config:
+      required: false
+    label: Longitude
   config:
-    required: false
-    wysiwyg: false
-    schema:
-      format: markdown
-  label: Src
-  description: Enter iframe source.
-  showOnly:
-    field: style
-    value: default
+    min: 
+    max: 
+    labelField: 
+  label: Locations
