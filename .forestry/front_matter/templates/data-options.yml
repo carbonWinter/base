@@ -130,11 +130,11 @@ fields:
     label: Body
   - name: heading
     type: select
-    default: Mukta Mahee
+    default: SFCompactDisplay
     config:
       required: false
       options:
-      - Mukta Mahee
+      - SFCompactDisplay
       source:
         type: simple
         section: 
