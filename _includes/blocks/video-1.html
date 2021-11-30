@@ -17,22 +17,11 @@
     {% endif %}
 
     {% if block.video_file != empty %}
-      <!-- <div>
+      <div>
         <video playsinline controls>
           <source src="{% if block.video_file contains 'http' %}{{ block.video_file }}{% else %}{{ block.video_file | absolute_url }}{% endif %}" type="video/mp4" data-uk-video>
         </video>
-      </div> -->
-      <script src="https://cdn.jwplayer.com/libraries/CroihAag.js"> </script>
-      <div class="uk-video-border">
-        <div id="jwVideo">This text will be replaced with a player.</div>
       </div>
-      <script>
-      jwplayer("jwVideo").setup({
-        "file": "{{ block.video_file }}",
-        "image": "{{ block.video_image }}",
-        autostart: false,
-      });
-      </script>      
     {% endif %}    
     
     {% if block.button.url != empty %}
