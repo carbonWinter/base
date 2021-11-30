@@ -12,7 +12,7 @@ $global-secondary-background:     {{ site.data.options.backgrounds.secondary | d
 $global-dark-background:          {{ site.data.options.backgrounds.dark | default: '#303D4F' }};
 
 $global-font-family:              "{{ site.data.options.fonts.body | default: 'SFCompactDisplay' }}", sans-serif;
-$base-heading-font-family:        "{{ site.data.options.fonts.heading | default: 'Mukta Mahee' }}", sans-serif;
+$base-heading-font-family:        "{{ site.data.options.fonts.heading | default: 'SFCompactDisplay' }}", sans-serif;
 $navbar-nav-item-font-family:     "{{ site.data.options.fonts.navigation | default: 'SFCompactDisplay' }}", sans-serif;
 
 {% if site.data.options.fonts.body == 'SFCompactDisplay' or site.data.options.fonts.heading == 'SFCompactDisplay' or site.data.options.fonts.navigation == 'SFCompactDisplay' %}
@@ -33,12 +33,10 @@ $navbar-nav-item-font-family:     "{{ site.data.options.fonts.navigation | defau
     src:  url('../fonts/SF-Compact-Display-Semibold.woff2') format('woff2'),
           url('../fonts/SF-Compact-Display-Semibold.woff') format('woff');
   }
-
-
 {% endif %}
 
 
-{% if site.data.options.fonts.body == 'Mukta Mahee' or site.data.options.fonts.heading == 'Mukta Mahee' or site.data.options.fonts.navigation == 'Mukta Mahee' %}
+{% if site.data.options.fonts.body == 'SFCompactDisplay' or site.data.options.fonts.heading == 'SFCompactDisplay' or site.data.options.fonts.navigation == 'SFCompactDisplay' %}
 $base-heading-font-weight: 600;
 {% endif %}
 

@@ -17,7 +17,7 @@
     {% endif %}
 
     {% if block.video_file != empty %}
-      <div>
+      <div class="uk-video-border">
         <video class="uk-width-1-1" playsinline controls poster="{% if block.video_image contains 'http' %}{{ block.video_image }}{% else %}{{ block.video_image | absolute_url }}{% endif %}">
           <source src="{% if block.video_file contains 'http' %}{{ block.video_file }}{% else %}{{ block.video_file | absolute_url }}{% endif %}" type="video/mp4">
         </video>

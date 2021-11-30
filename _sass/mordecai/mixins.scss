@@ -36,7 +36,7 @@
 @mixin hook-button-misc() {
   .uk-button {
     border-radius: 500px;
-    font-weight: 500;
+    font-weight: $base-heading-font-weight;
     letter-spacing: 0.16em;
     font-family: $base-heading-font-family;
   }
