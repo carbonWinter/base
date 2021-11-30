@@ -12,8 +12,8 @@ $global-secondary-background:     {{ site.data.options.backgrounds.secondary | d
 $global-dark-background:          {{ site.data.options.backgrounds.dark | default: '#303D4F' }};
 
 $global-font-family:              "{{ site.data.options.fonts.body | default: 'SFCompactDisplay' }}", sans-serif;
-$base-heading-font-family:        "{{ site.data.options.fonts.body | default: 'Mukta Mahee' }}", sans-serif;
-$navbar-nav-item-font-family:     "{{ site.data.options.fonts.body | default: 'SFCompactDisplay' }}", sans-serif;
+$base-heading-font-family:        "{{ site.data.options.fonts.heading | default: 'Mukta Mahee' }}", sans-serif;
+$navbar-nav-item-font-family:     "{{ site.data.options.fonts.navigation | default: 'SFCompactDisplay' }}", sans-serif;
 
 {% if site.data.options.fonts.body == 'SFCompactDisplay' or site.data.options.fonts.heading == 'SFCompactDisplay' or site.data.options.fonts.navigation == 'SFCompactDisplay' %}
   @font-face {
