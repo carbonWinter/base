@@ -15,9 +15,10 @@
   <meta name="theme-color" content="#ffffff">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
 
-  {% include fonts.html %}
   <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
   <script src="{{ "/assets/js/main.min.js" | relative_url }}"></script>
+
+  {% include fonts.html %}
   {% include hook-head.html %}
   {% if site.google_analytics %}
     {% include google-analytics.html %}
