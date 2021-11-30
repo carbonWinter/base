@@ -106,7 +106,7 @@
 
 @mixin hook-navbar-dropdown-nav-item(){
   padding: 10px 0;
-  font-weight: 600;
+  font-weight: $base-heading-font-weight;
 }
 
 @mixin hook-navbar-misc() {
