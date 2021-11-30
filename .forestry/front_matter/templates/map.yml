@@ -47,3 +47,8 @@ fields:
     max: 
     labelField: 
   label: Locations
+- name: marker
+  type: file
+  config:
+    maxSize: 64
+  label: Marker

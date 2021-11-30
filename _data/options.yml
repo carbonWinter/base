@@ -17,16 +17,17 @@ blocks:
   block: map
   api_key: AIzaSyDgSfwIXtCUA96SxACvR-O7rU0aDg9LofE
   locations:
-  - name: Gold Coast Dental - Yorba Linda
-    address_1: 20395 Yorba Linda Blvd.
-    address_2: Yorba Linda, CA 92886
-    latitude: '33.89304'
-    longitude: "-117.77653"
   - name: Gold Coast Dental - Tustin
     address_1: 275 Centennial Way Ste. 109
     address_2: Tustin, CA 92780
     latitude: '33.74354'
     longitude: "-117.81838"
+  - name: Gold Coast Dental - Yorba Linda
+    address_1: 20395 Yorba Linda Blvd.
+    address_2: Yorba Linda, CA 92886
+    latitude: '33.89304'
+    longitude: "-117.77653"
+  marker: ''
 - template: contact-1
   block: contact-1
   background:
