@@ -124,8 +124,8 @@ blocks:
   align: left
   heading: Video headline
   text: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-  video_file: "https://cdn.jwplayer.com/videos/SFX9iwPJ-fmVwJ4sG.mp4"
-  video_image: "https://cdn.jwplayer.com/thumbs/SFX9iwPJ-720.jpg"
+  video_file: "/uploads/video.mp4"
+  video_image: "/upload/bg-video-test.jpeg"
   button:
     text: Request an appointment
     url: "/somelink/"

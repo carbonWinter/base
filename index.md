@@ -6,8 +6,8 @@ header:
   background:
     background_style: video
     background_color: ''
-    background_image: "/upload/bg-interior.jpg"
-    background_video_file: "/uploads/lagoon-2.mp4"
+    background_image: "/upload/bg-video-test.jpeg"
+    background_video_file: "/uploads/video.mp4"
     background_slider: []
     overlay: gradient
     gradient: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 50%);
@@ -154,8 +154,8 @@ blocks:
   align: left
   heading: Video headline
   text: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-  video_file: "/uploads/lagoon-2.mp4"
-  video_image: "/upload/bg-interior.jpg"
+  video_file: "/uploads/video.mp4"
+  video_image: "/upload/bg-video-test.jpeg"
   button:
     text: ''
     url: ''
