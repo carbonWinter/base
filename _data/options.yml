@@ -11,12 +11,24 @@ sticky_cta:
     text: Dental Offers
     url: "#"
     blank: true
-  phone: "8885555556"
+  phone: '8885555556'
 blocks:
 - template: map
   block: map
   style: default
   src: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d106135.16805356064!2d-118.10352971948846!3d33.767797277879076!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dd2f211b7d2cb3%3A0xb4d2cb1d16115521!2sOrthodontist%20Los%20Alamitos%20%7C%20Los%20Alamitos%20TMJ%20Treatment%20-%20Sleep%20Apnea%20Los%20Alamitos%20-%20Invisalign%20-%20Sleep%2C%20TMJ%20%26%20Orthodontics%20at%20Aviara%20Centers%20Los%20Alamitos!5e0!3m2!1sen!2sus!4v1629920364552!5m2!1sen!2sus
+  api_key: AIzaSyDgSfwIXtCUA96SxACvR-O7rU0aDg9LofE
+  locations:
+  - name: Gold Coast Dental - Yorba Linda
+    address_1: 20395 Yorba Linda Blvd.
+    address_2: Yorba Linda, CA 92886
+    latitude: '33.89304'
+    longitude: "-117.77653"
+  - name: Gold Coast Dental - Tustin
+    address_1: 275 Centennial Way Ste. 109
+    address_2: Tustin, CA 92780
+    latitude: '33.74354'
+    longitude: "-117.81838"
 - template: contact-1
   block: contact-1
   background:
@@ -38,7 +50,7 @@ blocks:
       text: Request an Appointment
       url: "#"
       blank: false
-    phone: "5556666667"
+    phone: '5556666667'
   address:
     heading: Our Address
     address: "5060 California Ave. Suite   \n200 Bakersfield, CA 93309"
