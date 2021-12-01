@@ -172,6 +172,17 @@ fields:
 - name: appointments
   type: field_group
   config: {}
+  fields:
+  - name: client_id
+    type: text
+    config:
+      required: false
+    label: Client ID
+  - name: client_name
+    type: text
+    config:
+      required: false
+    label: Client name
   label: Appointments
 pages:
 - _data/options.yml
