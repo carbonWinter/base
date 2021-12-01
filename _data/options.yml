@@ -71,3 +71,14 @@ backgrounds:
   dark: "#303D4F"
   muted: "#ECEAE6"
 phone: 888-555-555-5556
+appointments:
+  client_id: '0000000'
+  client_name: Client xyz
+offer:
+  heading: Default offer heading
+  subheading: Default offer subheading
+  disclaimer: Lorem ipsum disclaimer
+  list:
+  - Dolorem
+  - Ipsum
+  - Lorem
