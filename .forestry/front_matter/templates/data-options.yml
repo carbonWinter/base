@@ -183,6 +183,11 @@ fields:
     config:
       required: false
     label: Client name
-  label: Appointments
+  label: Appointment
+- name: offer
+  type: field_group
+  config: {}
+  label: Offer
+  description: Default offer.
 pages:
 - _data/options.yml
