@@ -187,6 +187,33 @@ fields:
 - name: offer
   type: field_group
   config: {}
+  fields:
+  - name: heading
+    type: text
+    config:
+      required: false
+    label: Heading
+  - name: subheading
+    type: text
+    config:
+      required: false
+    label: Subheading
+  - name: disclaimer
+    type: textarea
+    default: ''
+    config:
+      required: false
+      wysiwyg: true
+      schema:
+        format: markdown
+    label: Disclaimer
+  - name: list
+    type: list
+    config:
+      use_select: false
+      min: 
+      max: 
+    label: List
   label: Offer
   description: Default offer.
 pages:
