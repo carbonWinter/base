@@ -1,0 +1,168 @@
+<div id="modal-appointment" data-uk-modal>
+  <div class="uk-modal-dialog uk-modal-body uk-background-muted uk-border-rounded">
+    <button class="uk-modal-close-default" type="button" data-uk-close></button>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script>
+      function sendApptForm(frm) {
+        var frmpost = "?formdata=1";
+        for (i = 0; i < frm.elements.length; i++) {
+          if (frm.elements[i].name == '') { break; }
+          frmpost += "&" + frm.elements[i].name + "=" + encodeURIComponent(frm.elements[i].value);
+        }
+        $.ajax({
+          type: "POST",
+          url: "https://mud.dentalgameplan.com/marketing/handlejekyllappointment",
+          // same as above but handlejekylloffer for the offer form
+          data: frmpost,
+          success: function (a, b, c) {
+            console.log(a);
+            $('#modalAppointment').modal('toggle');
+          },
+          error: function () {
+            console.log("error sending appointment data from modal-appt-1.html");
+            $('#modalAppointment').modal('toggle');
+          }
+        });
+      } 
+
+      function shiftData(from, to) {
+        $('#' + to).val($('#' + from).val());
+        
+        // remove all buttons prior to current hour and after the closing time, set in config.yml
+        let hoursList = {{ site.hours | jsonify }}; // this returns the ACTUAL ARRAY unmodified
+        let buttonGroup = document.querySelector(".btn-group-toggle");
+        buttonGroup.classList.remove("d-none");
+        var todaysDate = new Date();
+        currentTime = todaysDate.getHours(); 
+        console.log('hoursList[today]', hoursList[todaysDate.getUTCDay()][1]);
+
+        for (let i = 0; i < buttonGroup.children.length; i++) {
+          if (buttonGroup.children[i].children[0].value < currentTime * 100 || buttonGroup.children[i].children[0].value >= hoursList[todaysDate.getUTCDay()][1] * 100) {
+            buttonGroup.children[i].classList.add("d-none");
+          }
+        }
+      }
+           
+    </script>
+
+    <form>
+      <div id="appointment-step-1" class="appointment-next-1">
+        <h3 class="uk-h4 uk-text-center">What Service Would You Like to Schedule For?</h3>
+        <div class="uk-margin-medium-top">
+          <select id="selectService" name="selectService" class="uk-select uk-border-pill" required>
+            <option value="">Choose</option>
+            <option value="aesthetic-dentistry">Aesthetic Dentistry</option>
+            <option value="cavity-fillings">Cavity Fillings</option>
+            <option value="cleaning-exam">Cleaning, Exam &amp; X-Ray</option>
+            <option value="crown-bridge">Crowns &amp; Bridges</option>
+            <option value="dental-emergency">Emergency Visit</option>
+            <option value="dentures">Dentures Consultation</option>
+            <option value="endodontics">Endodontics</option>
+            <option value="gum-disease">Gum Disease</option>
+            <option value="holistic-dentistry">Holistic Dentistry</option>
+            <option value="dental-implants">Implant Consultation</option>
+            <option value="invisalign">Invisalign Consultation</option>
+            <option value="kids-dentistry">Kid's Dentistry</option>
+            <option value="laser-dentistry">Laser Dentistry</option>
+            <option value="oral-surgery">Oral Surgery</option>
+            <option value="pro-teeth-whitening">Pro Teeth Whitening</option>
+            <option value="sleep-apnea">Sleep Apnea</option>
+            <option value="sleep-dentistry">Sleep Dentistry</option>
+            <option value="teeth-straightening">Teeth Straightening</option>
+            <option value="tmj-disorder">TMJ Disorder</option>
+            <option value="tooth-extraction">Tooth Extraction</option>
+            <option value="veneers">Veneers</option>
+            <option value="all-on-4-implants">All On 4 Implants</option>
+            <option value="six-month-smiles">Six Month Smiles</option>
+            <option value="braces">Braces</option>
+            <option value="fast-braces">Fast Braces</option>
+            <option value="wisdom-teeth">Wisdom Teeth</option>
+          </select>
+        </div>
+        <div class="uk-margin-medium-top uk-text-center">
+          <button class="uk-button uk-button-primary" type="button" data-uk-toggle="target: .appointment-next-1">Next</button>
+        </div>
+      </div>
+
+      <div id="appointment-step-2" class="appointment-next-1 appointment-next-2" hidden>
+        <h3 class="uk-h4 uk-text-center">What Day and Time Would You Like to Be Seen?</h3>
+        <div class="uk-margin-medium-top">
+          <div id="date"></div>
+        </div>
+        <div class="uk-margin-medium-top uk-flex uk-flex-center">
+          <div class="uk-margin uk-text-center uk-grid uk-grid-small uk-child-width-auto">
+            <div>
+              <button class="uk-button uk-button-default" type="button" data-uk-toggle="target: .appointment-next-1">Back</button>
+            </div>
+            <div>
+              <button class="uk-button uk-button-primary" type="button" data-uk-toggle="target: .appointment-next-2">Next</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="appointment-step-3" class="appointment-next-2" hidden>
+        <h3 class="uk-h4 uk-text-center">Secure Your Appointment With Us:</h3>
+
+        <input type="hidden" name="HandshakeKey" value="+eByTBfF2k2dhCqe">
+        <input type="hidden" name="client_id" value="{{ site.data.options.appointments.client_id }}">
+        <input type="hidden" name="client_name" value="{{ site.data.options.appointments.client_name }}">
+        <input type="hidden" name="selectService" id="apptservice" value="">
+        <input type="hidden" name="apptdate" id="apptdate" value="">
+        <input type="hidden" name="appttime" id="appttime" value="">
+
+        <div class="uk-margin-medium-top uk-flex uk-flex-center">
+          <div class="uk-grid-small uk-child-width-auto@s uk-grid">
+            <label><input class="uk-radio" type="radio" name="newExisting" id="newExisting1" value="New Patient" checked> New Patient</label>
+            <label><input class="uk-radio" type="radio" name="newExisting" id="newExisting2" value="Existing Patient"> Existing Patient</label>
+          </div>
+        </div>
+        <div class="uk-margin">
+          <label for="inputName" class="uk-form-label">Full Name*</label>
+          <input type="text" class="uk-input uk-border-pill" id="inputName" name="inputName" placeholder="FULL NAME" required>
+        </div>
+        <div class="uk-margin">
+          <label for="inputEmail" class="uk-form-label">Email Address*</label>
+          <input type="email" class="uk-input uk-border-pill" id="inputEmail" name="inputEmail" placeholder="EMAIL ADDRESS" required>
+        </div>
+        <div class="uk-margin">
+          <label for="inputPhone" class="uk-form-label">Phone*</label>
+          <input type="tel" class="uk-input uk-border-pill" id="inputPhone" name="inputPhone" placeholder="PHONE" required>
+        </div>
+        <div class="uk-margin">
+          <label><input class="uk-checkbox" type="checkbox" value="1" id="checkReceiveOffer" name="checkReceiveOffer" checked> Yes, I would like to receive an offer for this service</label>
+        </div>
+        <div class="uk-margin-medium-top uk-flex uk-flex-center">
+          <div class="uk-margin uk-text-center uk-grid uk-grid-small uk-child-width-auto">
+            <div>
+              <button class="uk-button uk-button-default" type="button" data-uk-toggle="target: .appointment-next-2">Back</button>
+            </div>
+            <div>
+              <button class="uk-button uk-button-primary" type="button" onclick="sendApptForm(this.form)">Schedule</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+
+    <script>
+      // https://flatpickr.js.org/examples/
+      var dateInput = document.getElementById('apptdate');
+      flatpickr("#date", {
+        inline: true,
+        // enableTime: true,
+        // minTime: "08:00",
+        // maxTime: "16:00",
+        // minuteIncrement: '60',
+        minDate: 'today',
+        dateFormat: 'm/d/Y',
+        "onChange": function(selectedDates, dateStr, instance) {
+          console.log(selectedDates);
+          dateInput.value = dateStr;
+        },
+      });
+    </script>
+    
+  </div>
+</div>
