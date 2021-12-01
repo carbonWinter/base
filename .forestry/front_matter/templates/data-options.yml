@@ -44,51 +44,6 @@ fields:
   config:
     required: false
   label: Phone
-- name: sticky_cta
-  type: field_group
-  config: {}
-  fields:
-  - name: button_secondary
-    type: field_group
-    config: {}
-    fields:
-    - name: text
-      type: text
-      config:
-        required: false
-      label: Text
-      default: Appointments
-    - name: url
-      type: text
-      config:
-        required: false
-      label: URL
-    - name: blank
-      type: boolean
-      label: Blank
-      description: Open in new window.
-    label: Button secondary
-  - name: button_primary
-    type: field_group
-    config: {}
-    fields:
-    - name: text
-      type: text
-      config:
-        required: false
-      label: Text
-      default: Dental Offers
-    - name: url
-      type: text
-      config:
-        required: false
-      label: URL
-    - name: blank
-      type: boolean
-      label: Blank
-      description: Open in new window.
-    label: Button primary
-  label: Sticky CTA
 - name: favicons
   type: field_group
   config: {}
@@ -214,5 +169,9 @@ fields:
       color_format: Hex
     default: "#ECEAE6"
   label: Backgrounds
+- name: appointments
+  type: field_group
+  config: {}
+  label: Appointments
 pages:
 - _data/options.yml
