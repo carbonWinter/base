@@ -54,7 +54,9 @@ $base-heading-font-weight: 600;
 // 4. Import UIkit.
 @import "global/uikit";
 
-
 .uk-navbar-container:not(.uk-navbar-transparent) {
   background: {{ site.data.navbar.background | default: '#ffffff' }};
 }
+
+@import "global/_custom";
+
