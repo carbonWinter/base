@@ -1,6 +1,6 @@
 <footer id="footer" class="footer-1">
   <div class="uk-section-large" style="background-color: {{site.data.footer.background | default: '#000000'}};">
-    <div class="uk-container uk-text-medium">
+    <div class="uk-container">
       <div class="uk-text-center">
         <a class="uk-logo" href="{{ "/" | relative_url }}">
           {% if site.data.options.logo_light != '' or site.data.options.logo_dark != '' %}
@@ -16,17 +16,17 @@
         </a>
       </div>
       {% if site.data.options.phone != '' %}
-        <div class="uk-margin-top uk-text-center">
+        <div class="uk-margin-top uk-text-center uk-text-medium">
           <a class="uk-link-text" href="tel:{{ site.data.options.phone }}">{{ site.data.options.phone }}</a>
         </div>
       {% endif %}
       {% if site.data.footer.copyright != '' %}
-        <div class="uk-margin-medium-top uk-text-center uk-text-muted">
+        <div class="uk-margin-medium-top uk-text-center uk-text-medium">
           {{ site.data.footer.copyright }}
         </div>
       {% endif %}
       
-      <div class="uk-margin-top uk-child-width-1-2@m uk-grid-divider" data-uk-grid>
+      <div class="uk-margin-top uk-child-width-1-2@m uk-grid-divider uk-text-medium" data-uk-grid>
         <div>
           {% if site.data.footer.menus.size != 0 %}
             {% for menu in site.data.footer.menus %}

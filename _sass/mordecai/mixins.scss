@@ -289,9 +289,9 @@
     .uk-button {
       border-top-right-radius: 0;
       border-bottom-right-radius: 0;
+      margin-right: -3px;
     }
     .uk-button-default {
-      border-right-color: transparent;
       &:not(:hover) {
         background-color: $global-muted-background;
       }
