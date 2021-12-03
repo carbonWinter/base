@@ -1,43 +1,13 @@
 ---
 title: Base
-description: Jekyll theme.
+description: Jekyll base theme.
 url: https://base-theme-dgp.netlify.app
 baseurl: 
 lang: en
 logo: 
-logo_light: 
 permalink: "/:title/"
 
-template:               mordecai
-
-author:
-  email: info@blacompany.com
-  phone: +1-800-354-3434
-  address: 2030 West River St. <br> New York 52304
-  
-# footer:
-#   background: secondary
-#   social: true
-#   address: true
-#   phone: true
-#   email: true
-#   copyright: Made by <a href="https://unbound.studio/">Unbound Studio</a> in Mexico City.
-
-google_analytics: 
-
-social_networks:
-  facebook: https://www.facebook.com/
-  flickr: 
-  github: 
-  instagram: https://www.instagram.com/
-  linkedin: 
-  pinterest: 
-  twitter: 
-  vimeo: 
-  youtube: 
-
 markdown: kramdown
-highlighter: rouge
 plugins:
 - jekyll-seo-tag
 - jekyll-sitemap
@@ -63,15 +33,7 @@ sass:
 
 livereload: true
 
-collections:
-  # projects:
-  #   output: true
 defaults:
-# - scope:
-#     path: ''
-#     type: projects
-#   values:
-#     layout: blocks
 - scope:
     path: ''
     type: pages
