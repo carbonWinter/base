@@ -231,7 +231,7 @@ fields:
       max: 
       labelField: 
     label: Page navigation
-  label: Header
+  label: Hero
 - name: blocks
   type: blocks
   label: Blocks
