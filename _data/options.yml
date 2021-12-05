@@ -74,6 +74,41 @@ phone: 888-555-555-5556
 appointments:
   client_id: '0000000'
   client_name: Client xyz
+  services:
+  - Aesthetic Dentistry
+  - Cavity Fillings
+  - Cleaning, Exam & X-Ray
+  - Crowns & Bridges
+  - Emergency Visit
+  - Dentures Consultation
+  - Endodontics
+  - Gum Disease
+  - Holistic Dentistry
+  - Implant Consultation
+  - Invisalign Consultation
+  - Kid's Dentistry
+  - Laser Dentistry
+  - Oral Surgery
+  - Pro Teeth Whitening
+  - Sleep Apnea
+  - Sleep Dentistry
+  - Teeth Straightening
+  - TMJ Disorder
+  - Tooth Extraction
+  - Veneers
+  - All On 4 Implants
+  - Six Month Smiles
+  - Braces
+  - Fast Braces
+  - Wisdom Teeth
+  hours:
+  - "[7, 14]"
+  - "[7, 19]"
+  - "[7, 19]"
+  - "[7, 19]"
+  - "[7, 19]"
+  - "[7, 19]"
+  - "[7, 16]"  
 offer:
   heading: Default offer heading
   subheading: Default offer subheading

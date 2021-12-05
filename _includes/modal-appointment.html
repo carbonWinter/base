@@ -1,5 +1,5 @@
 <div id="modal-appointment" data-uk-modal>
-  <div class="uk-modal-dialog uk-modal-body uk-background-muted uk-border-rounded">
+  <div class="uk-modal-dialog uk-modal-body uk-background-muted">
     <button class="uk-modal-close-default" type="button" data-uk-close></button>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
     <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
@@ -10,158 +10,222 @@
           if (frm.elements[i].name == '') { break; }
           frmpost += "&" + frm.elements[i].name + "=" + encodeURIComponent(frm.elements[i].value);
         }
-        $.ajax({
-          type: "POST",
-          url: "https://mud.dentalgameplan.com/marketing/handlejekyllappointment",
-          // same as above but handlejekylloffer for the offer form
-          data: frmpost,
-          success: function (a, b, c) {
-            console.log(a);
-            $('#modalAppointment').modal('toggle');
-          },
-          error: function () {
-            console.log("error sending appointment data from modal-appt-1.html");
-            $('#modalAppointment').modal('toggle');
-          }
-        });
+
+        // Send form
+
+          // On response close modal
+          UIkit.modal('#modal-appointment').hide();
+
+          // On success notification
+          UIkit.notification({
+            message: '<span class="uk-margin-small-right" data-uk-icon=\'icon: check\'></span> Your appointment request has been sent!',
+            status: 'success'
+          });
+
+          // On fail notification
+          UIkit.notification({
+            message: '<span class="uk-margin-small-right" data-uk-icon=\'icon: close\'></span>Your appointment request failed!',
+            status: 'danger'
+          });
+
       } 
-
-      function shiftData(from, to) {
-        $('#' + to).val($('#' + from).val());
-        
-        // remove all buttons prior to current hour and after the closing time, set in config.yml
-        let hoursList = {{ site.hours | jsonify }}; // this returns the ACTUAL ARRAY unmodified
-        let buttonGroup = document.querySelector(".btn-group-toggle");
-        buttonGroup.classList.remove("d-none");
-        var todaysDate = new Date();
-        currentTime = todaysDate.getHours(); 
-        console.log('hoursList[today]', hoursList[todaysDate.getUTCDay()][1]);
-
-        for (let i = 0; i < buttonGroup.children.length; i++) {
-          if (buttonGroup.children[i].children[0].value < currentTime * 100 || buttonGroup.children[i].children[0].value >= hoursList[todaysDate.getUTCDay()][1] * 100) {
-            buttonGroup.children[i].classList.add("d-none");
-          }
-        }
-      }
-           
     </script>
 
-    <form>
+    <div>
       <div id="appointment-step-1" class="appointment-next-1">
         <h3 class="uk-modal-title uk-text-center">What Service Would You Like to Schedule For?</h3>
         <div class="uk-margin-medium-top">
-          <select id="selectService" name="selectService" class="uk-select uk-border-pill" required>
+          <select id="selectService" name="selectService" class="uk-select uk-border-pill" required onchange="updateService(this.value)">
             <option value="">Choose</option>
-            <option value="aesthetic-dentistry">Aesthetic Dentistry</option>
-            <option value="cavity-fillings">Cavity Fillings</option>
-            <option value="cleaning-exam">Cleaning, Exam &amp; X-Ray</option>
-            <option value="crown-bridge">Crowns &amp; Bridges</option>
-            <option value="dental-emergency">Emergency Visit</option>
-            <option value="dentures">Dentures Consultation</option>
-            <option value="endodontics">Endodontics</option>
-            <option value="gum-disease">Gum Disease</option>
-            <option value="holistic-dentistry">Holistic Dentistry</option>
-            <option value="dental-implants">Implant Consultation</option>
-            <option value="invisalign">Invisalign Consultation</option>
-            <option value="kids-dentistry">Kid's Dentistry</option>
-            <option value="laser-dentistry">Laser Dentistry</option>
-            <option value="oral-surgery">Oral Surgery</option>
-            <option value="pro-teeth-whitening">Pro Teeth Whitening</option>
-            <option value="sleep-apnea">Sleep Apnea</option>
-            <option value="sleep-dentistry">Sleep Dentistry</option>
-            <option value="teeth-straightening">Teeth Straightening</option>
-            <option value="tmj-disorder">TMJ Disorder</option>
-            <option value="tooth-extraction">Tooth Extraction</option>
-            <option value="veneers">Veneers</option>
-            <option value="all-on-4-implants">All On 4 Implants</option>
-            <option value="six-month-smiles">Six Month Smiles</option>
-            <option value="braces">Braces</option>
-            <option value="fast-braces">Fast Braces</option>
-            <option value="wisdom-teeth">Wisdom Teeth</option>
+            {% for item in site.data.options.appointments.services %}
+              <option value="{{ item | slugify }}">{{ item }}</option>
+            {% endfor %}
           </select>
         </div>
         <div class="uk-margin-medium-top uk-text-center">
-          <button class="uk-button uk-button-primary" type="button" data-uk-toggle="target: .appointment-next-1">Next</button>
+          <button class="uk-button uk-button-primary uk-button-small" type="button" data-uk-toggle="target: .appointment-next-1">Next</button>
         </div>
       </div>
 
       <div id="appointment-step-2" class="appointment-next-1 appointment-next-2" hidden>
         <h3 class="uk-modal-title uk-text-center">What Day and Time Would You Like to Be Seen?</h3>
-        <div class="uk-margin-medium-top">
-          <div id="date"></div>
+        <div class="uk-margin-medium-top" data-uk-grid>
+          <div class="uk-width-auto@m">
+            <div id="date"></div>
+          </div>
+          <div class="uk-width-expand@m">
+            <div class="btn-group-toggle">
+              <label class="uk-button uk-button-default uk-button-small uk-margin-small-right uk-margin-small-bottom uk-button-time uk-active">
+                <input type="radio" name="time" value="0900" onclick="setApptTime(this)">9:00AM
+              </label>
+              <label class="uk-button uk-button-default uk-button-small uk-margin-small-right uk-margin-small-bottom uk-button-time">
+                <input type="radio" name="time" value="1000" onclick="setApptTime(this)">10:00AM
+              </label>
+              <label class="uk-button uk-button-default uk-button-small uk-margin-small-right uk-margin-small-bottom uk-button-time">
+                <input type="radio" name="time" value="1100" onclick="setApptTime(this)">11:00AM
+              </label>
+              <label class="uk-button uk-button-default uk-button-small uk-margin-small-right uk-margin-small-bottom uk-button-time">
+                <input type="radio" name="time" value="1300" onclick="setApptTime(this)">1:00PM
+              </label>
+              <label class="uk-button uk-button-default uk-button-small uk-margin-small-right uk-margin-small-bottom uk-button-time">
+                <input type="radio" name="time" value="1400" onclick="setApptTime(this)">2:00PM
+              </label>
+              <label class="uk-button uk-button-default uk-button-small uk-margin-small-right uk-margin-small-bottom uk-button-time">
+                <input type="radio" name="time" value="1500" onclick="setApptTime(this)">3:00PM
+              </label>
+              <label class="uk-button uk-button-default uk-button-small uk-margin-small-right uk-margin-small-bottom uk-button-time">
+                <input type="radio" name="time" value="1600" onclick="setApptTime(this)">4:00PM
+              </label>
+              <label class="uk-button uk-button-default uk-button-small uk-margin-small-right uk-margin-small-bottom uk-button-time">
+                <input type="radio" name="time" value="1700" onclick="setApptTime(this)">5:00PM
+              </label>
+              <label class="uk-button uk-button-default uk-button-small uk-margin-small-right uk-margin-small-bottom uk-button-time">
+                <input type="radio" name="time" value="1800" onclick="setApptTime(this)">6:00PM
+              </label>
+              <label class="uk-button uk-button-default uk-button-small uk-margin-small-right uk-margin-small-bottom uk-button-time">
+                <input type="radio" name="time" value="1900" onclick="setApptTime(this)">7:00PM
+              </label>
+              <label class="uk-button uk-button-default uk-button-small uk-margin-small-right uk-margin-small-bottom uk-button-time">
+                <input type="radio" name="time" value="2000" onclick="setApptTime(this)">8:00PM
+              </label>
+            </div>
+          </div>
         </div>
         <div class="uk-margin-medium-top uk-flex uk-flex-center">
           <div class="uk-margin uk-text-center uk-grid uk-grid-small uk-child-width-auto">
             <div>
-              <button class="uk-button uk-button-default" type="button" data-uk-toggle="target: .appointment-next-1">Back</button>
+              <button class="uk-button uk-button-default uk-button-small" type="button" data-uk-toggle="target: .appointment-next-1">Back</button>
             </div>
             <div>
-              <button class="uk-button uk-button-primary" type="button" data-uk-toggle="target: .appointment-next-2">Next</button>
+              <button class="uk-button uk-button-primary uk-button-small" type="button" data-uk-toggle="target: .appointment-next-2">Next</button>
             </div>
           </div>
         </div>
       </div>
 
       <div id="appointment-step-3" class="appointment-next-2" hidden>
-        <h3 class="uk-modal-title uk-text-center">Secure Your Appointment With Us:</h3>
+        <form>
+          <h3 class="uk-modal-title uk-text-center">Secure Your Appointment With Us:</h3>
 
-        <input type="hidden" name="HandshakeKey" value="+eByTBfF2k2dhCqe">
-        <input type="hidden" name="client_id" value="{{ site.data.options.appointments.client_id }}">
-        <input type="hidden" name="client_name" value="{{ site.data.options.appointments.client_name }}">
-        <input type="hidden" name="selectService" id="apptservice" value="">
-        <input type="hidden" name="apptdate" id="apptdate" value="">
-        <input type="hidden" name="appttime" id="appttime" value="">
+          <input type="hidden" name="HandshakeKey" value="+eByTBfF2k2dhCqe">
+          <input type="hidden" name="client_id" value="{{ site.data.options.appointments.client_id }}">
+          <input type="hidden" name="client_name" value="{{ site.data.options.appointments.client_name }}">
+          <input type="hidden" name="selectService" id="apptservice" value="">
+          <input type="hidden" name="apptdate" id="apptdate" value="{{ 'now' | date: '%m/%d/%Y' }}">
+          <input type="hidden" name="appttime" id="appttime" value="">
 
-        <div class="uk-margin-medium-top uk-flex uk-flex-center">
-          <div class="uk-grid-small uk-child-width-auto@s uk-grid">
-            <label><input class="uk-radio" type="radio" name="newExisting" id="newExisting1" value="New Patient" checked> New Patient</label>
-            <label><input class="uk-radio" type="radio" name="newExisting" id="newExisting2" value="Existing Patient"> Existing Patient</label>
-          </div>
-        </div>
-        <div class="uk-margin">
-          <label for="inputName" class="uk-form-label">Full Name*</label>
-          <input type="text" class="uk-input uk-border-pill" id="inputName" name="inputName" placeholder="FULL NAME" required>
-        </div>
-        <div class="uk-margin">
-          <label for="inputEmail" class="uk-form-label">Email Address*</label>
-          <input type="email" class="uk-input uk-border-pill" id="inputEmail" name="inputEmail" placeholder="EMAIL ADDRESS" required>
-        </div>
-        <div class="uk-margin">
-          <label for="inputPhone" class="uk-form-label">Phone*</label>
-          <input type="tel" class="uk-input uk-border-pill" id="inputPhone" name="inputPhone" placeholder="PHONE" required>
-        </div>
-        <div class="uk-margin">
-          <label><input class="uk-checkbox" type="checkbox" value="1" id="checkReceiveOffer" name="checkReceiveOffer" checked> Yes, I would like to receive an offer for this service</label>
-        </div>
-        <div class="uk-margin-medium-top uk-flex uk-flex-center">
-          <div class="uk-margin uk-text-center uk-grid uk-grid-small uk-child-width-auto">
-            <div>
-              <button class="uk-button uk-button-default" type="button" data-uk-toggle="target: .appointment-next-2">Back</button>
-            </div>
-            <div>
-              <button class="uk-button uk-button-primary" type="button" onclick="sendApptForm(this.form)">Schedule</button>
+          <div class="uk-margin-medium-top uk-flex uk-flex-center">
+            <div class="uk-grid-small uk-child-width-auto@s uk-grid">
+              <label><input class="uk-radio" type="radio" name="newExisting" id="newExisting1" value="New Patient" checked> New Patient</label>
+              <label><input class="uk-radio" type="radio" name="newExisting" id="newExisting2" value="Existing Patient"> Existing Patient</label>
             </div>
           </div>
-        </div>
+          <div class="uk-margin">
+            <label for="inputName" class="uk-form-label">Full Name*</label>
+            <input type="text" class="uk-input uk-border-pill" id="inputName" name="inputName" placeholder="FULL NAME" required>
+          </div>
+          <div class="uk-margin">
+            <label for="inputEmail" class="uk-form-label">Email Address*</label>
+            <input type="email" class="uk-input uk-border-pill" id="inputEmail" name="inputEmail" placeholder="EMAIL ADDRESS" required>
+          </div>
+          <div class="uk-margin">
+            <label for="inputPhone" class="uk-form-label">Phone*</label>
+            <input type="tel" class="uk-input uk-border-pill" id="inputPhone" name="inputPhone" placeholder="PHONE" required>
+          </div>
+          <div class="uk-margin">
+            <label><input class="uk-checkbox" type="checkbox" value="1" id="checkReceiveOffer" name="checkReceiveOffer" checked> Yes, I would like to receive an offer for this service</label>
+          </div>
+          <div class="uk-margin-medium-top uk-flex uk-flex-center">
+            <div class="uk-margin uk-text-center uk-grid uk-grid-small uk-child-width-auto">
+              <div>
+                <button class="uk-button uk-button-default uk-button-small" type="button" data-uk-toggle="target: .appointment-next-2">Back</button>
+              </div>
+              <div>
+                <button class="uk-button uk-button-primary uk-button-small" type="button" onclick="sendApptForm(this.form)">Schedule</button>
+              </div>
+            </div>
+          </div>
+        </form>
       </div>
-    </form>
+    </div>
 
     <script>
+      const datesAreOnSameDay = (selected, todaysDate) =>
+        selected.getFullYear() === todaysDate.getFullYear() &&
+        selected.getMonth() === todaysDate.getMonth() &&
+        selected.getDate() === todaysDate.getDate();
+
+      function selectedDateIsBefore(selected, todaysDate) {
+        if (selected.getMonth() > todaysDate.getMonth()) {
+          return false;
+        } else if (selected.getMonth() < todaysDate.getMonth()) {
+          return true;
+        }
+        return selected.getDate() < todaysDate.getDate() && selected.getMonth() == todaysDate.getMonth();
+      }
+
+      let buttonGroup = document.querySelector(".btn-group-toggle");
+      let hoursList = {{ site.data.options.appointments.hours | jsonify | remove: '"' }};
+      
+      function updateHours(selectedDate, todaysDate) {
+        if (selectedDateIsBefore(selectedDate, todaysDate) || hoursList[selectedDate.getUTCDay()].length == 0) {
+          buttonGroup.classList.add("uk-hidden");
+        } else if (datesAreOnSameDay(selectedDate, todaysDate)) {
+          buttonGroup.classList.remove("uk-hidden");
+          currentTime = todaysDate.getHours(); 
+          for (let i = 0; i < buttonGroup.children.length; i++) {
+            if (buttonGroup.children[i].children[0].value < currentTime * 100 || hoursList[selectedDate.getUTCDay()][1] * 100 <= buttonGroup.children[i].children[0].value) {
+              buttonGroup.children[i].classList.add("uk-hidden");
+            }
+          }
+        } else {
+            buttonGroup.classList.remove("uk-hidden");      
+            for (let i = 0; i < buttonGroup.children.length; i++) {
+              if (buttonGroup.children[i].children[0].value >= hoursList[selectedDate.getUTCDay()][0] * 100 && buttonGroup.children[i].children[0].value < hoursList[selectedDate.getUTCDay()][1] * 100) {
+                // greater than opening hours and less than closing, show -- necessary because the inital display hides < current time (see modal-appt-1.html) -MR
+                buttonGroup.children[i].classList.remove("uk-hidden");
+            } else if (buttonGroup.children[i].children[0].value >= hoursList[selectedDate.getUTCDay()][1] * 100 || buttonGroup.children[i].children[0].value < hoursList[selectedDate.getUTCDay()][0] * 100) {
+              //greater than closing or less than opening hours, hide
+              buttonGroup.children[i].classList.add("uk-hidden");
+            }
+          }
+        }
+      }
+
+      var timeInput = document.getElementById('appttime');
+      function setApptTime(item) {
+        var timeButtons = document.querySelectorAll(".uk-button-time");
+
+        timeButtons.forEach(button => {
+          button.classList.remove("uk-active");
+        });               
+        item.parentElement.classList.add("uk-active");
+        timeInput.value = item.value;
+      }
+
       // https://flatpickr.js.org/examples/
       var dateInput = document.getElementById('apptdate');
       flatpickr("#date", {
         inline: true,
-        // enableTime: true,
-        // minTime: "08:00",
-        // maxTime: "16:00",
-        // minuteIncrement: '60',
         minDate: 'today',
         dateFormat: 'm/d/Y',
         "onChange": function(selectedDates, dateStr, instance) {
-          console.log(selectedDates);
+          var dateAsString = dateStr; //the first parameter of this function
+          var todaysDate = new Date();
+          var selectedDate = selectedDates[0]; //the getDate method
+          
           dateInput.value = dateStr;
+          updateHours(selectedDate, todaysDate);
         },
       });
+
+      var todaysDate = new Date();
+      updateHours(todaysDate, todaysDate);
+
+      var serviceInput = document.getElementById('apptservice');
+      function updateService(service) {
+        serviceInput.value = service;
+      }
     </script>
     
   </div>

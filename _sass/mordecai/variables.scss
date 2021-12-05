@@ -23,6 +23,9 @@ $link-text-hover-color:                         lighten($global-color, 25%);
 $grid-divider-border:                           darken($global-border, 15%);
 
 $global-control-height:                         56px;
+// $form-height:                                   56px;
+$form-padding-horizontal:                       20px;
+
 // $button-line-height:                             $global-control-height !default;
 
 $accordion-item-margin-top:                     0;
@@ -35,6 +38,8 @@ $accordion-content-margin-top:                  0;
 
 $button-font-size:                              1rem;
 $button-padding-horizontal:                     40px;
+$button-small-line-height:                      46px;
+
 // $inverse-base-link-hover-color:                 $inverse-global-emphasis-color;
 
 // $global-border:                                 $global-secondary-background;
@@ -145,5 +150,6 @@ $text-lead-font-size:                            1.5rem;
 $inverse-text-lead-color:                       #fff;
 
 $modal-dialog-width:                             800px;
+$notification-width:                             430px;
 
 
