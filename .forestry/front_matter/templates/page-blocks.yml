@@ -19,6 +19,30 @@ fields:
   type: boolean
   label: Sticky CTA
   description: Display sticky call to action on the page.
+- name: offer
+  type: field_group
+  config: {}
+  fields:
+  - name: heading
+    type: text
+    config:
+      required: false
+    label: Heading
+  - name: subheading
+    type: text
+    config:
+      required: false
+    label: Subheading
+  - name: disclaimer
+    type: textarea
+    default: ''
+    config:
+      required: false
+      wysiwyg: false
+      schema:
+        format: markdown
+    label: Disclaimer
+  label: Offer
 - name: header
   type: field_group
   config: {}
@@ -254,6 +278,5 @@ fields:
     min: 
     max: 
 pages:
-- blocks.md
 - index.md
 - interior.md

@@ -183,6 +183,21 @@ fields:
     config:
       required: false
     label: Client name
+  - name: services
+    type: list
+    config:
+      use_select: false
+      min: 
+      max: 
+    label: Services
+  - name: hours
+    type: list
+    config:
+      use_select: false
+      min: 7
+      max: 7
+    label: Hours
+    description: 'Format e.g.: [7, 19]'
   label: Appointment
 - name: offer
   type: field_group
@@ -207,13 +222,6 @@ fields:
       schema:
         format: markdown
     label: Disclaimer
-  - name: list
-    type: list
-    config:
-      use_select: false
-      min: 
-      max: 
-    label: List
   label: Offer
   description: Default offer.
 pages:
