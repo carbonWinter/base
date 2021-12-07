@@ -33,6 +33,20 @@ fields:
   config:
     required: false
   label: Heading
+- name: heading_tag
+  type: select
+  default: H2
+  config:
+    required: false
+    options:
+    - H1
+    - H2
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Heading tag
 - name: text
   type: textarea
   default: ''
