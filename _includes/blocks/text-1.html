@@ -7,7 +7,7 @@
     {% if block.heading != empty or block.text != empty %}
       <div class="uk-section-heading-container uk-margin-large-bottom uk-container-small{% if block.align == 'center' %} uk-margin-auto{% endif %} uk-text-{{ block.align | default: 'left' }}">
         {% if block.heading != empty %}
-          {% if block.heading_tag == 'h1' %}
+          {% if block.heading_tag == 'H1' %}
               <h1 class="uk-h2 uk-margin-remove uk-section-heading">{{ block.heading }}</h1>
             {% else %}
               <h2 class="uk-h2 uk-margin-remove uk-section-heading">{{ block.heading }}</h2>
