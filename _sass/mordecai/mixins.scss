@@ -315,6 +315,12 @@
         color: $global-secondary-background;
       }
     }
+    @media (max-width: $breakpoint-small) {
+      .uk-button {
+        letter-spacing: 0;
+        line-height: 42px;
+      }
+    }
   }
 
   // Global styles
@@ -381,6 +387,12 @@
 
   .uk-background-secondary-muted {
     background-color: lighten($global-secondary-background, 18%);
+  }
+
+  @media (max-width: $breakpoint-small) {
+    .uk-navbar-center .uk-logo img {
+      max-width: 200px;
+    }
   }
 
 }
