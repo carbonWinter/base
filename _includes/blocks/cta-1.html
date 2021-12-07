@@ -17,6 +17,10 @@
         {% if block.text != empty %}
           <div class="uk-text-lead{% if block.heading %} uk-margin-top{% endif %}">{{ block.text | markdownify  }}</div>
         {% endif %}
+        {% if block.content != empty %}
+          <div class="uk-text-content uk-margin-top">{{ block.content | markdownify  }}</div>
+        {% endif %}
+        
       </div>
     {% endif %}
 
