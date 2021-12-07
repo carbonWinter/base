@@ -22,7 +22,7 @@
                       <h3 class="uk-h2 uk-section-heading uk-line-height-one">{{ slide.heading }}</h3>
                     {% endif %}                    
                     {% if slide.text != empty %}
-                      <div class="uk-margin-top uk-text-content">{{ slide.text | markdownify }}</div>
+                      <div class="uk-margin-top uk-text-content"><q>{{ slide.text }}</q></div>
                     {% endif %} 
                     {% if slide.author != empty %}
                       <div class="uk-margin-top uk-margin-medium-left uk-text-large">&#8212; {{ slide.author }}</div>
