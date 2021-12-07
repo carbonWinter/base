@@ -7,7 +7,11 @@
     {% if block.heading != empty or block.text != empty %}
       <div class="uk-section-heading-container uk-margin-large-bottom uk-container-small{% if block.align == 'center' %} uk-margin-auto{% endif %} uk-text-{{ block.align | default: 'left' }}">
         {% if block.heading != empty %}
-          <h2 class="uk-margin-remove uk-section-heading">{{ block.heading }}</h2>
+          {% if block.heading_tag == 'h1' %}
+              <h1 class="uk-h2 uk-margin-remove uk-section-heading">{{ block.heading }}</h1>
+            {% else %}
+              <h2 class="uk-h2 uk-margin-remove uk-section-heading">{{ block.heading }}</h2>
+            {% endif %}
         {% endif %}
         {% if block.text != empty %}
           <div class="uk-text-lead{% if block.heading %} uk-margin-xsmall-top{% endif %}">{{ block.text | markdownify  }}</div>
