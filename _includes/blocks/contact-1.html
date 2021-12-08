@@ -22,6 +22,11 @@
         <div class="uk-width-contact-appointment">
           <div class="uk-card uk-card-default uk-card-body uk-text-center">
             <h3 class="uk-text-center uk-text-uppercase uk-letter-spacing-medium uk-margin-large-top">{{ block.appointment.heading }}</h3>
+            {% if block.appointment.appointment_button %}
+              <div class="uk-margin-medium-top uk-text-{{ block.align | default: 'left' }}" data-uk-scrollspy="cls: uk-animation-slide-bottom; repeat: true; delay: 400">
+                <a class="uk-button uk-button-primary" href="#modal-appointment" data-uk-modal>Request an Appointment</a>
+              </div>
+            {% endif %}    
             {% if block.appointment.button.url != '' %}
               <div class="uk-margin-large-top">
                 <a class="uk-button uk-button-primary" href="{{ block.appointment.button.url }}"{% if block.appointment.button.blank %} target="_blank" rel="noopener noreferrer" {% endif %}>{{ block.appointment.button.text }}</a>

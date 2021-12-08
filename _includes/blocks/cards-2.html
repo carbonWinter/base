@@ -32,6 +32,13 @@
         </div>
       </div>
     {% endfor %}
+
+    {% if block.appointment_button %}
+      <div class="uk-margin-medium-top uk-text-{{ block.align | default: 'left' }}" data-uk-scrollspy="cls: uk-animation-slide-bottom; repeat: true; delay: 400">
+        <a class="uk-button uk-button-primary" href="#modal-appointment" data-uk-modal>Request an Appointment</a>
+      </div>
+    {% endif %}    
+    
     {% if block.button.url != empty %}
       <div class="uk-margin-xlarge-top uk-text-center">
         <a class="uk-button uk-button-primary" href="{% if block.button.url contains 'http' %}{{ block.button.url }}{% else %}{{ block.button.url | relative_url }}{% endif %}"{% if block.button.blank %} target="_blank" rel="noopener noreferrer" {% endif %}>{{ block.button.text }}</a>
