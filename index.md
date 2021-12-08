@@ -168,6 +168,7 @@ blocks:
       color: ''
       opacity: 
   color: light
+  appointment_button: true
 - template: text-1
   block: text-1
   align: left
