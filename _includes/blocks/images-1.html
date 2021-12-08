@@ -20,10 +20,10 @@
         <div class="uk-text-{{ block.align | default: 'left' }}">
           {% if image.url != empty %}
             <a href="{{ image.url }}" target="_blank" rel="noopener noreferrer">
-              <img data-src="{% if image contains 'http' %}{{ image }}{% else %}{{ image | absolute_url }}{% endif %}" data-width data-height src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-uk-img alt="Gallery">
+              <img data-src="{% if image.image contains 'http' %}{{ image.image }}{% else %}{{ image.image | absolute_url }}{% endif %}" data-width data-height src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-uk-img alt="Gallery">
             </a>
           {% else %}
-            <img data-src="{% if image contains 'http' %}{{ image }}{% else %}{{ image | absolute_url }}{% endif %}" data-width data-height src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-uk-img alt="Gallery">
+            <img data-src="{% if image.image contains 'http' %}{{ image.image }}{% else %}{{ image.image | absolute_url }}{% endif %}" data-width data-height src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-uk-img alt="Gallery">
           {% endif %}
         </div>
       {% endfor %}    
