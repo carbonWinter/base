@@ -149,7 +149,7 @@ fields:
       config:
         required: false
         color_format: Hex
-      default: "#000000"
+      default: 
       showOnly:
         field: overlay
         value: color
@@ -278,5 +278,6 @@ fields:
     min: 
     max: 
 pages:
+- cleaning-and-exam.md
 - index.md
-- interior.md
+- terms-of-use.md

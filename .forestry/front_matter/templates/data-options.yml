@@ -6,6 +6,7 @@ fields:
   type: blocks
   label: Blocks
   template_types:
+  - slider-1
   - contact-1
   - map
   config:

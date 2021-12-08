@@ -15,4 +15,4 @@ fields:
     wysiwyg: true
     schema:
       format: markdown
-  label: Text
+  label: Subheading
