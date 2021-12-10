@@ -48,6 +48,13 @@
         // console.log(frmpost);
 
         // Send form
+        $.ajax({
+          type: "POST",
+          url: "https://mud.dentalgameplan.com/marketing/handlejekylloffer",
+          data: frmpost,
+          success: function(a,b,c){
+            console.log(a);
+            //$('#modalAppointment').modal('toggle');
 
           // On response close modal
           UIkit.modal('#modal-offer').hide();
@@ -58,12 +65,18 @@
             status: 'success'
           });
 
+          },
+          error: function() {
+            console.log("error");
+
           // On fail notification
           UIkit.notification({
             message: '<span class="uk-margin-small-right" data-uk-icon=\'icon: close\'></span>Your offer request failed!',
             status: 'danger'
           });
 
+          }
+        });
       } 
     </script>
     
