@@ -138,22 +138,34 @@
         }
 
         // Send form
+        $.ajax({
+          type: "POST",
+          url: "https://mud.dentalgameplan.com/marketing/handlejekyllappointment",
+          data: frmpost,
+          success: function(a,b,c){
+            console.log(a);
+            //$('#modalAppointment').modal('toggle');
 
-          // On response close modal
-          UIkit.modal('#modal-appointment').hide();
+            // On response close modal
+            UIkit.modal('#modal-appointment').hide();
 
-          // On success notification
-          UIkit.notification({
-            message: '<span class="uk-margin-small-right" data-uk-icon=\'icon: check\'></span> Your appointment request has been sent!',
-            status: 'success'
-          });
+            // On success notification
+            UIkit.notification({
+              message: '<span class="uk-margin-small-right" data-uk-icon=\'icon: check\'></span> Your appointment request has been sent!',
+              status: 'success'
+            });
+          },
+          error: function() {
+            console.log("error");
 
-          // On fail notification
-          UIkit.notification({
-            message: '<span class="uk-margin-small-right" data-uk-icon=\'icon: close\'></span>Your appointment request failed!',
-            status: 'danger'
-          });
+            // On fail notification
+            UIkit.notification({
+              message: '<span class="uk-margin-small-right" data-uk-icon=\'icon: close\'></span>Your appointment request failed!',
+              status: 'danger'
+            });
 
+          }
+        });
       } 
 
       // Date and times    
