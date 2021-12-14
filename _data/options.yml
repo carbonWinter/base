@@ -1,5 +1,5 @@
 ---
-theme: mordecai
+theme: wintergreen
 logo_dark: "/uploads/logo-salin-dark.svg"
 logo_light: "/uploads/logo-salin-light.svg"
 sticky_cta:
@@ -48,10 +48,6 @@ blocks:
   address:
     heading: Our Address
     address: "5060 California Ave. Suite   \n200 Bakersfield, CA 93309"
-favicons:
-  favicon_16: "/uploads/favicon-16x16.png"
-  favicon_32: "/uploads/favicon-32x32.png"
-  apple_180: "/uploads/apple-touch-icon.png"
 fonts:
   body: SFCompactDisplay
   heading: SFCompactDisplay
