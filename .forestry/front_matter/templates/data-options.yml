@@ -45,28 +45,6 @@ fields:
   config:
     required: false
   label: Phone
-- name: favicons
-  type: field_group
-  config: {}
-  fields:
-  - name: favicon_16
-    type: file
-    config:
-      maxSize: 64
-    label: Favicon 16
-    description: Upload PNG image.
-  - name: favicon_32
-    type: file
-    config:
-      maxSize: 64
-    label: Favicon 32
-    description: Upload PNG image.
-  - name: apple_180
-    type: file
-    config:
-      maxSize: 64
-    label: Apple 180
-  label: Favicons
 - name: fonts
   type: field_group
   config: {}

@@ -40,6 +40,9 @@ fields:
     config:
       required: false
     label: Heading
+  - name: appointment_button
+    type: boolean
+    label: Appointment button
   - name: button
     type: field_group
     config: {}

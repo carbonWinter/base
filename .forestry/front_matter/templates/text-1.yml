@@ -14,24 +14,10 @@ fields:
   config: {}
   template: partial-background
   label: Background
-- name: color
-  type: select
-  default: dark
-  config:
-    required: false
-    options:
-    - dark
-    - light
-    source:
-      type: simple
-      section: 
-      file: 
-      path: 
-  label: Color
 - name: heading
-  type: text
-  config:
-    required: false
+  type: include
+  config: {}
+  template: partial-heading
   label: Heading
 - name: heading_tag
   type: select
@@ -47,15 +33,20 @@ fields:
       file: 
       path: 
   label: Heading tag
-- name: text
-  type: textarea
-  default: ''
+- name: color
+  type: select
+  default: dark
   config:
     required: false
-    wysiwyg: true
-    schema:
-      format: markdown
-  label: Text
+    options:
+    - dark
+    - light
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Color
 - name: align
   type: select
   default: left
@@ -94,7 +85,7 @@ fields:
     wysiwyg: true
     schema:
       format: markdown
-  label: Content
+  label: Copy
 - name: lists
   type: field_group_list
   fields:

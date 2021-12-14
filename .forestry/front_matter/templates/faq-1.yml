@@ -49,7 +49,7 @@ fields:
       wysiwyg: true
       schema:
         format: markdown
-    label: Content
+    label: Copy
   config:
     min: 
     max: 

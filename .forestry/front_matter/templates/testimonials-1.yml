@@ -44,7 +44,7 @@ fields:
       wysiwyg: true
       schema:
         format: markdown
-    label: Text
+    label: Copy
   - name: author
     type: text
     config:

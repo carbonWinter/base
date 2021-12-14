@@ -14,6 +14,11 @@ fields:
   config: {}
   template: partial-background
   label: Background
+- name: heading
+  type: include
+  config: {}
+  template: partial-heading
+  label: Heading
 - name: color
   type: select
   default: dark
@@ -42,20 +47,6 @@ fields:
       file: 
       path: 
   label: Align
-- name: heading
-  type: text
-  config:
-    required: false
-  label: Heading
-- name: text
-  type: textarea
-  default: ''
-  config:
-    required: false
-    wysiwyg: true
-    schema:
-      format: markdown
-  label: Text
 - name: content
   type: textarea
   default: ''
@@ -64,7 +55,10 @@ fields:
     wysiwyg: true
     schema:
       format: markdown
-  label: Content
+  label: Copy
+- name: appointment_button
+  type: boolean
+  label: Appointment button
 - name: button
   type: field_group
   config: {}
