@@ -1,5 +1,5 @@
 {%- if page.header.height != 'none' -%}
-  <div class="uk-header uk-position-relative uk-background-cover uk-background-top-center" 
+  <div class="uk-header uk-position-relative uk-background-cover{%- if page.header.background.background_style != 'video' -%} uk-background-top-center{%- endif -%}" 
     style="{% if page.header.background.background_color %}background-color: {{ page.header.background.background_color | default: '#ffffff' }};{% endif %}{% if page.header.background.background_image %}background-image: url({% if page.header.background.background_image contains '#' %}{{ page.header.background.background_image }}{% else %}{{ page.header.background.background_image | absolute_url }}{% endif %});{% endif %}"{% if page.header.height == 'viewport' %} data-uk-height-viewport{% endif %}>
     {%- if page.header.background.background_style == 'video' -%}
     <div class="uk-position-cover uk-cover-container">
