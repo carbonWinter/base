@@ -10,6 +10,7 @@ fields:
     options:
     - default
     - center
+    - dropbar
     source:
       type: simple
       section: 
