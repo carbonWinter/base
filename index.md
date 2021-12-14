@@ -6,7 +6,7 @@ header:
   background:
     background_style: video
     background_color: ''
-    background_image: "/uploads/bg-video-test.jpeg"
+    background_image: "https://via.placeholder.com/1600x800"
     background_video_file: "/uploads/video.mp4"
     background_slider: []
     overlay: gradient
