@@ -45,6 +45,11 @@ fields:
   config:
     required: false
   label: Phone
+- name: google_analytics
+  type: text
+  config:
+    required: false
+  label: Google Analytics
 - name: fonts
   type: field_group
   config: {}
