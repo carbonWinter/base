@@ -22,7 +22,7 @@
   <script src="{{ '/assets/js/jquery-3.6.0.min.js' | relative_url }}" defer></script>
   
   {% include hook-head.html %}
-  {% if site.google_analytics %}
+  {% if site.data.options.google_analytics != empty %}
     {% include google-analytics.html %}
   {% endif %}
 </head>
