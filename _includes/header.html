@@ -41,7 +41,7 @@
       {% if page.header.layout == 'centered' %}
         <div class="uk-margin-large-top uk-margin-xlarge-bottom">
           {% if page.header.col_one.heading != '' %}
-            <h1 class="uk-heading-large uk-margin-remove-bottom">{{ page.header.col_one.heading }}</h1>
+            <h2 class="uk-heading-large uk-margin-remove-bottom">{{ page.header.col_one.heading }}</h2>
           {% endif %}
           {% if page.header.col_one.text != '' %}
             <div class="uk-text-lead">{{ page.header.col_one.text }}</div>
@@ -51,7 +51,7 @@
         <div class="uk-grid-large uk-child-width-1-2@m uk-margin-xlarge-top uk-margin-xlarge-bottom uk-width-1-1" data-uk-grid>
           <div class="{% if page.header.col_two.heading == '' %}uk-width-2-3@l{% endif %}">
             {% if page.header.col_one.heading != '' %}
-              <h1 class="uk-heading-large uk-margin-remove-bottom">{{ page.header.col_one.heading }}</h1>
+              <h2 class="uk-heading-large uk-margin-remove-bottom">{{ page.header.col_one.heading }}</h2>
             {% endif %}
             {% if page.header.col_one.text != '' %}
               <div class="uk-text-lead">{{ page.header.col_one.text }}</div>
@@ -60,7 +60,7 @@
           {% if page.header.col_two.heading != '' %}
             <div>
               {% if page.header.col_two.heading != '' %}
-                <h1 class="uk-heading-medium uk-margin-bottom">{{ page.header.col_two.heading }}</h1>
+                <h2 class="uk-heading-medium uk-margin-bottom">{{ page.header.col_two.heading }}</h2>
               {% endif %}
               {% if page.header.col_two.text != '' %}
                 <div class="uk-text-lead">{{ page.header.col_two.text }}</div>
