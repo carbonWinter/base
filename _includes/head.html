@@ -3,7 +3,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>{{ page.seo_title }} | {{ site.data.options.site_title }}</title>
+  <title>{% if page.seo_title and page.seo_title != empty %}{{ page.seo_title }} | {% endif %}{{ site.data.options.site_title }}</title>
   <meta property="og:title" content="{{ page.seo_title }}">
   <meta property="og:locale" content="en">
   <meta name="description" content="{{ page.description }}">
