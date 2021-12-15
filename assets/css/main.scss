@@ -50,6 +50,7 @@ $base-heading-font-weight: 600;
 // 3. Custom mixin overwrites.
 @import "{{ site.data.options.theme | default: 'mordecai' }}/mixins";
 @import "global/_sharer";
+@import "global/_global";
 
 // 4. Import UIkit.
 @import "global/uikit";

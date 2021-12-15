@@ -1,0 +1,16 @@
+.uk-back-top-top {
+  a {
+    margin-right: 20px;
+    margin-bottom: 20px;
+    background-color: $global-muted-background;
+    color: $global-primary-background;
+    
+  }
+}    
+
+.uk-back-top-top.uk-invisible {
+  position: relative;
+  bottom: -150vh;
+  right: 20px;
+  margin-top: -55px;
+}   
