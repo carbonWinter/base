@@ -208,5 +208,41 @@ fields:
     label: Disclaimer
   label: Offer
   description: Default offer.
+- name: social
+  type: field_group
+  config: {}
+  fields:
+  - name: facebook
+    type: text
+    config:
+      required: false
+    label: Facebook
+  - name: linkedin
+    type: text
+    config:
+      required: false
+    label: Linkedin
+  - name: pinterest
+    type: text
+    config:
+      required: false
+    label: Pinterest
+  - name: twitter
+    type: text
+    config:
+      required: false
+    label: Twitter
+  - name: yelp
+    type: text
+    config:
+      required: false
+    label: Yelp
+  - name: youtube
+    type: text
+    config:
+      required: false
+    label: YouTube
+  label: Social
+  description: Enter full URLs.
 pages:
 - _data/options.yml
