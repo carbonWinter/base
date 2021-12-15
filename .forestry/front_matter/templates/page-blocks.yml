@@ -100,9 +100,6 @@ fields:
       config:
         maxSize: 64
       label: Background image
-      showOnly:
-        field: background_style
-        value: image
     - name: background_video_file
       type: file
       config:
