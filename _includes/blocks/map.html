@@ -5,6 +5,23 @@
     let map;
 
     function initMap() {
+
+      var head = document.getElementsByTagName('head')[0];
+
+      // Save the original method
+      var insertBefore = head.insertBefore;
+
+      // Replace it!
+      head.insertBefore = function (newElement, referenceElement) {
+
+        if (newElement.href && ( newElement.href.indexOf('//fonts.googleapis.com/css?family=Roboto') > -1 || newElement.href.indexOf('//fonts.googleapis.com/css?family=Google+Sans+Text') > -1 )) {
+
+            return;
+        }
+
+        insertBefore.call(head, newElement, referenceElement);
+      };
+
       map = new google.maps.Map(document.getElementById("map"), {
         center: { lat: {{ block.locations[0].latitude }}, lng: {{ block.locations[0].longitude }} },
         zoom: 11,
