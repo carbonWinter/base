@@ -105,12 +105,12 @@ offer:
   heading: Default offer heading
   subheading: Default offer subheading
   disclaimer: Lorem ipsum disclaimer
-site_title: Salin Dentistry
+site_title: Base
 google_analytics: ''
 social:
-  facebook: https://www.facebook.com/pages/Salin-Dentistry/261216110668823
-  linkedin: ''
-  pinterest: https://www.pinterest.com/salindentistry/
-  twitter: https://twitter.com/SalinDentistry
-  yelp: http://www.yelp.com/biz/salin-dentistry-bakersfield-2
-  youtube: https://www.youtube.com/c/SalinDentistryBakersfield
+  facebook: "#"
+  linkedin: "#"
+  pinterest: "#"
+  twitter: "#"
+  yelp: "#"
+  youtube: "#"
