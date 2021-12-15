@@ -2,10 +2,20 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  {% seo %}
-  <meta name="keywords" content="{{ page.keywords | default: site.keywords | strip_html | normalize_whitespace | truncate: 160 | escape }}">
 
+  <title>{{ page.seo_title }} | {{ site.data.options.site_title }}</title>
+  <meta property="og:title" content="{{ page.seo_title }}">
+  <meta property="og:locale" content="en">
+  <meta name="description" content="{{ page.description }}">
+  <meta property="og:description" content="{{ page.description }}">
+  <link rel="canonical" href="{{ page.url | absolute_url }}">
+  <meta property="og:url" content="{{ page.url | absolute_url }}">
+  <meta property="og:site_name" content="{{ site.data.options.site_title }}">
+  <meta name="twitter:card" content="summary">
+  <meta property="twitter:title" content="{{ page.seo_title }}">
+  <meta name="keywords" content="{{ page.keywords | default: site.keywords | strip_html | normalize_whitespace | truncate: 160 | escape }}">
   <meta property="og:image" content="{% if site.logo contains 'http' %}{{ site.logo }}{% else %}{{ site.logo | absolute_url }}{% endif %}"/>
+  
   <link rel="apple-touch-icon" sizes="180x180" href="{{ '/assets/img/apple-touch-icon.png' | relative_url }}">
   <link rel="icon" sizes="192x192" href="{{ '/assets/img/android-chrome-192x192.png' | relative_url }}">
   <link rel="icon" type="image/png" sizes="32x32" href="{{ '/assets/img/favicon-32x32.png' | relative_url }}">
@@ -26,3 +36,5 @@
     {% include google-analytics.html %}
   {% endif %}
 </head>
+
+
