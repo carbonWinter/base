@@ -45,6 +45,7 @@ blocks:
       url: "#"
       blank: false
     phone: '5556666667'
+    appointment_button: false
   address:
     heading: Our Address
     address: "5060 California Ave. Suite   \n200 Bakersfield, CA 93309"
@@ -99,8 +100,17 @@ appointments:
   - "[7, 19]"
   - "[7, 19]"
   - "[7, 19]"
-  - "[7, 16]"  
+  - "[7, 16]"
 offer:
   heading: Default offer heading
   subheading: Default offer subheading
   disclaimer: Lorem ipsum disclaimer
+site_title: Base
+google_analytics: ''
+social:
+  facebook: "#"
+  linkedin: "#"
+  pinterest: "#"
+  twitter: "#"
+  yelp: "#"
+  youtube: "#"
