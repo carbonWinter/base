@@ -14,7 +14,7 @@
   <meta name="twitter:card" content="summary">
   <meta property="twitter:title" content="{{ page.seo_title }}">
   <meta name="keywords" content="{{ page.keywords | default: site.keywords | strip_html | normalize_whitespace | truncate: 160 | escape }}">
-  <meta property="og:image" content="{% if site.logo contains 'http' %}{{ site.logo }}{% else %}{{ site.logo | absolute_url }}{% endif %}"/>
+  <meta property="og:image" content="{{ site.data.options.logo_dark | absolute_url }}"/>
   
   <link rel="apple-touch-icon" sizes="180x180" href="{{ '/assets/img/apple-touch-icon.png' | relative_url }}">
   <link rel="icon" sizes="192x192" href="{{ '/assets/img/android-chrome-192x192.png' | relative_url }}">
