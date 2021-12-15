@@ -2,7 +2,7 @@
   <div class="uk-header uk-position-relative uk-background-cover{% if page.header.background.background_style != 'video' %} uk-background-top-center{% endif %}" 
     style="{% if page.header.background.background_color %}background-color: {{ page.header.background.background_color | default: '#ffffff' }};{% endif %}{% if page.header.background.background_image %}background-image: url({% if page.header.background.background_image contains '#' %}{{ page.header.background.background_image }}{% else %}{{ page.header.background.background_image | absolute_url }}{% endif %});{% endif %}"{% if page.header.height == 'viewport' %} data-uk-height-viewport{% endif %}>
     {%- if page.header.background.background_style == 'video' -%}
-    <div class="uk-position-cover uk-cover-container">
+    <div class="uk-position-cover uk-cover-container uk-visible@m">
       <video autoplay loop muted playsinline data-uk-cover>
         <source src="{% if page.header.background.background_video_file contains 'http' %}{{ page.header.background.background_video_file }}{% else %}{{ page.header.background.background_video_file | absolute_url }}{% endif %}" type="video/mp4">
       </video>
