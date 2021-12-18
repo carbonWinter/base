@@ -1,7 +1,7 @@
 ---
-theme: mordecai
-logo_dark: "/uploads/logo-salin-dark.svg"
-logo_light: "/uploads/logo-salin-light.svg"
+theme: wintergreen
+logo_dark: "https://via.placeholder.com/333x94/fff"
+logo_light: "https://via.placeholder.com/333x94/fff"
 sticky_cta:
   button_secondary:
     text: Appointments
@@ -13,42 +13,6 @@ sticky_cta:
     blank: true
   phone: '8885555556'
 blocks:
-- template: map
-  block: map
-  api_key: AIzaSyDgSfwIXtCUA96SxACvR-O7rU0aDg9LofE
-  locations:
-  - name: Gold Coast Dental - Tustin
-    address_1: 275 Centennial Way Ste. 109
-    address_2: Tustin, CA 92780
-    latitude: '35.3627114170714'
-    longitude: "-119.06046780228127"
-  marker: ''
-- template: contact-1
-  block: contact-1
-  background:
-    image: "/uploads/bg-1.svg"
-    color: default
-    video: ''
-    overlay:
-      color: ''
-      opacity: '0.4'
-  hours:
-    heading: Office Hours
-    hours:
-    - Monday - Friday  9am - 5pm
-    - Saturday 9am - 3pm
-    - Sunday Closed
-  appointment:
-    heading: Schedule an Appointment
-    button:
-      text: Request an Appointment
-      url: "#"
-      blank: false
-    phone: '5556666667'
-    appointment_button: false
-  address:
-    heading: Our Address
-    address: "5060 California Ave. Suite   \n200 Bakersfield, CA 93309"
 fonts:
   body: SFCompactDisplay
   heading: SFCompactDisplay

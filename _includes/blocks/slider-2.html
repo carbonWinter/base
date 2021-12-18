@@ -1,11 +1,11 @@
-<section id="block-{{ forloop.index }}" class="uk-images-1 uk-section-large uk-position-relative uk-background-cover uk-background-{{ block.background.color | default: 'default' }}" 
+<section id="block-{{ forloop.index }}" class="uk-section-large uk-position-relative uk-background-cover uk-background-{{ block.background.color | default: 'default' }}" 
   style="{% if block.background.image %}background-image: url({% if block.background.image contains '#' %}{{ block.background.image }}{% else %}{{ block.background.image | absolute_url }}{% endif %});{% endif %}">
   {%- if block.background.overlay.color != '' -%}
     <div class="uk-position-cover" style="background: {{ block.background.overlay.color }}; opacity: {{ block.background.overlay.opacity | default: '0.6' }}"></div>
   {%- endif -%}
-  <div class="uk-container uk-position-relative uk-{{ block.color | default: 'dark' }}">
+  <div class="uk-position-relative">
 
-    {% if block.heading and block.heading != empty %}
+    {% if block.heading != empty %}
       <div class="uk-section-heading-container uk-margin-large-bottom uk-container-small{% if block.align == 'center' %} uk-margin-auto{% endif %} uk-text-{{ block.align | default: 'left' }} uk-{{ block.color | default: 'dark' }}">
         {% if block.superheading != empty %}
           <div class="uk-text-superheading uk-margin-xsmall-bottom">{{ block.superheading }}</div>
@@ -21,18 +21,22 @@
         {% endif %}
       </div>
     {% endif %}
-    <div class="uk-child-width-1-2 uk-child-width-1-{{ block.columns | default: '3' }}@m uk-grid-row-large{% if block.align == 'center' %} uk-flex uk-flex-center{% endif %}" data-uk-grid>
-      {% for image in block.images %}
-        <div class="uk-text-{{ block.align | default: 'left' }}">
-          {% if image.url != empty %}
-            <a href="{{ image.url }}" target="_blank" rel="noopener noreferrer">
-              <img data-src="{% if image.image contains 'http' %}{{ image.image }}{% else %}{{ image.image | absolute_url }}{% endif %}" data-width data-height src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-uk-img alt="Gallery">
-            </a>
-          {% else %}
-            <img data-src="{% if image.image contains 'http' %}{{ image.image }}{% else %}{{ image.image | absolute_url }}{% endif %}" data-width data-height src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-uk-img alt="Gallery">
-          {% endif %}
-        </div>
-      {% endfor %}    
+
+    <div class="uk-slider-2 uk-light uk-position-relative">
+      <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" data-uk-slider="center: true">
+        <ul class="uk-slider-items uk-grid">
+          {% for slide in block.slides %}
+            <li class="uk-width-3-4">
+              <img src="{{ slide | absolute_url }}" alt="Slide">
+            </li>
+          {% endfor %}
+        </ul>
+        <a class="uk-position-center-left uk-position-small uk-hidden-hover" title="Previous" href="#" data-uk-slidenav-previous="ratio: 2"
+          data-uk-slider-item="previous"></a>
+        <a class="uk-position-center-right uk-position-small uk-hidden-hover" title="Next" href="#" data-uk-slidenav-next="ratio: 2"
+          data-uk-slider-item="next"></a>
+      </div>
     </div>
+
   </div>
 </section>

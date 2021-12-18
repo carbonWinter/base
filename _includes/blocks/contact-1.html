@@ -1,9 +1,23 @@
-<div class="uk-section-large uk-position-relative uk-background-cover uk-background-{{ block.background.color | default: 'default' }}" 
+<section class="uk-section-large uk-position-relative uk-background-cover uk-background-{{ block.background.color | default: 'default' }}" 
   style="{% if block.background.image %}background-image: url({% if block.background.image contains '#' %}{{ block.background.image }}{% else %}{{ block.background.image | absolute_url }}{% endif %});{% endif %}">
   {%- if block.background.overlay.color != '' -%}
     <div class="uk-position-cover" style="background: {{ block.background.overlay.color }}; opacity: {{ block.background.overlay.opacity | default: '0.6' }}"></div>
   {%- endif -%}
   <div class="uk-container uk-position-relative">
+
+    {% if block.heading and block.heading != empty %}
+      <div class="uk-section-heading-container uk-margin-large-bottom uk-container-small{% if block.align == 'center' %} uk-margin-auto{% endif %} uk-text-{{ block.align | default: 'left' }} uk-{{ block.color | default: 'dark' }}">
+        {% if block.superheading != empty %}
+          <div class="uk-text-superheading uk-margin-xsmall-bottom">{{ block.superheading }}</div>
+        {% endif %}        
+        {% if block.heading != empty %}
+          <h2 class="uk-section-heading uk-margin-remove">{{ block.heading }}</h2>
+        {% endif %}
+        {% if block.text != empty %}
+          <div class="uk-text-lead{% if block.heading %} uk-margin-xsmall-top{% endif %}">{{ block.text  }}</div>
+        {% endif %}
+      </div>
+    {% endif %}
 
     <div class="uk-grid-small uk-flex uk-flex-middle uk-flex-center uk-child-width-expand@m" data-uk-grid data-uk-height-match="target: > * > .uk-match">
       {% if block.hours.heading != '' %}
@@ -51,4 +65,4 @@
     </div>
 
   </div>
-</div>
+</section>

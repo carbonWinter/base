@@ -1,5 +1,5 @@
 ---
-layout: layout-1
+layout: layout-2
 phone: 8885555556
 address: "5060 California Ave. Suite 200  \nBakersfield, CA 93309"
 hours:
@@ -34,8 +34,8 @@ menus:
     url: "#"
   - text: dental inlays/onlays
     url: "#"
-color: dark
-background: "#F0E8DF"
+color: light
+background: "#444444"
 subfooter:
   background: "#000000"
   color: light

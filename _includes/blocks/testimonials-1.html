@@ -3,6 +3,26 @@
   {%- if block.background.overlay.color != '' -%}
     <div class="uk-position-cover" style="background: {{ block.background.overlay.color }}; opacity: {{ block.background.overlay.opacity | default: '0.6' }}"></div>
   {%- endif -%}
+
+  {% if block.heading and block.heading != empty %}
+    <div class="uk-container uk-text-{{ block.align }}">
+      <div class="uk-section-heading-container uk-margin-large-bottom uk-container-small{% if block.align == 'center' %} uk-margin-auto{% endif %} uk-text-{{ block.align | default: 'left' }} uk-{{ block.color | default: 'dark' }}">
+        {% if block.superheading != empty %}
+          <div class="uk-text-superheading uk-margin-xsmall-bottom">{{ block.superheading }}</div>
+        {% endif %}        
+        {% if block.heading != empty %}
+          <h2 class="uk-section-heading uk-margin-remove">{{ block.heading }}</h2>
+        {% endif %}
+        {% if block.text != empty %}
+          <div class="uk-text-lead{% if block.heading %} uk-margin-xsmall-top{% endif %}">{{ block.text  }}</div>
+        {% endif %}
+        {% if block.copy != empty %}
+          <div class="uk-text-content uk-margin-medium-top">{{ block.copy | markdownify  }}</div>
+        {% endif %}
+      </div>
+    </div>
+  {% endif %}
+  
   <div class="uk-container uk-position-relative uk-{{ block.color | default: 'dark' }}">
     <div data-uk-slider="autoplay: true; autoplay-interval: 6000; pause-on-hover: false">
 
