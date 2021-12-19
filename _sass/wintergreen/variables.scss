@@ -22,11 +22,11 @@
 
 // $grid-divider-border:                           darken($global-border, 15%);
 
-// $global-control-height:                         56px;
-// // $form-height:                                   56px;
+$global-control-height:                         56px;
+$form-height:                                   56px;
 // $form-padding-horizontal:                       20px;
 
-// // $button-line-height:                             $global-control-height !default;
+$button-line-height:                             $global-control-height;
 
 // $accordion-item-margin-top:                     0;
 // $accordion-title-font-size:                     1.5rem;
@@ -84,8 +84,8 @@ $accordion-content-margin-top:                  0;
 // // $accordion-item-margin-top:                     0;
 // // $accordion-title-line-height:                   1.4;
 
-// // // Button variables
-// // $global-control-height:                         47px;
+// Button variables
+$global-control-height:                         47px;
 // // $button-font-size:                              $xsmall-font-size;
 // $button-default-color:                          $global-dark-background;
 // // $button-default-hover-background:               $global-secondary-background;
@@ -106,35 +106,41 @@ $accordion-content-margin-top:                  0;
 // // $form-background:                               transparent;
 // // $form-focus-background:                         transparent;
 
-// // // Navigation variables
-// $navbar-nav-item-height:                        120px;
-// $navbar-nav-item-padding-horizontal:            25px;
-
+// Navigation variables
+$navbar-nav-item-height:                        160px;
+$navbar-nav-item-padding-horizontal:            10px;
+$navbar-nav-item-text-transform:                  none;
 // // $navbar-nav-item-color:                         $global-secondary-background;
 // // $navbar-nav-item-hover-color:                   $global-primary-background;
 // // $navbar-nav-item-active-color:                  $global-primary-background;
-// $navbar-nav-item-font-size:                     1.125rem;
-// // $navbar-toggle-color:                           $global-secondary-background;
-// // $navbar-toggle-hover-color:                     $global-primary-background;
-// $inverse-navbar-nav-item-color:                 #fff;
-// $inverse-navbar-nav-item-hover-color:           $global-secondary-background;
-// $inverse-navbar-nav-item-onclick-color:         $global-secondary-background;
-// $inverse-navbar-nav-item-active-color:          $global-secondary-background;
+$navbar-nav-item-font-size:                     1.125rem;
+// $navbar-toggle-color:                           $global-secondary-background;
+// $navbar-toggle-hover-color:                     $global-primary-background;
+$inverse-navbar-nav-item-color:                 #fff;
+$inverse-navbar-nav-item-hover-color:           $global-primary-background;
+$inverse-navbar-nav-item-onclick-color:         $global-primary-background;
+$inverse-navbar-nav-item-active-color:          $global-primary-background;
 // $inverse-navbar-item-color:                     #fff;
-// $inverse-navbar-toggle-color:                   #fff;
-// $inverse-navbar-toggle-hover-color:             $global-secondary-background;
+$inverse-navbar-toggle-color:                   $global-primary-background;
+$inverse-navbar-toggle-hover-color:             #fff;
 
 // $navbar-dropdown-width:                          250px;
 // $navbar-dropdown-margin:                         -40px;
-// $navbar-dropdown-padding:                        25px;
-// $navbar-dropdown-background:                     rgba($global-background, 0.9);
+// $navbar-dropdown-padding:                        45px;
+$navbar-dropdown-background:                     $global-muted-background;
 // // $navbar-dropdown-color:                          $global-color !default;
 
-// $navbar-dropdown-nav-item-color:                 darken($global-primary-background, 20%);
-// $navbar-dropdown-nav-item-hover-color:           $global-secondary-background;
-// $navbar-dropdown-nav-item-active-color:          $global-secondary-background;
-// $navbar-dropdown-nav-font-size:                  0.938rem;
-$navbar-dropbar-background:                       #fff;
+$navbar-dropdown-nav-item-color:                 $global-muted-color;
+$navbar-dropdown-nav-item-hover-color:           $global-primary-background;
+$navbar-dropdown-nav-item-active-color:          $global-primary-background;
+$navbar-dropdown-nav-font-size:                  1.125rem;
+$navbar-dropbar-background:                       $global-muted-background;
+
+// $nav-header-padding-vertical:                    $nav-item-padding-vertical !default;
+// $nav-header-padding-horizontal:                  $nav-item-padding-horizontal !default;
+$nav-header-font-size:                           1.313rem;
+$dropdown-nav-header-color:                       $global-primary-background;
+$nav-item-padding-vertical:                      10px;
 
 // // // Section variables
 // // $section-xlarge-padding-vertical:               120px;

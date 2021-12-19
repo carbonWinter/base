@@ -9,11 +9,11 @@ header:
     background_image: "https://via.placeholder.com/1600x800"
     background_video_file: "/uploads/video.mp4"
     background_slider: []
-    overlay: gradient
-    gradient: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 50%);
-    overlay_color: "#ffffff"
-    overlay_opacity: 0.1
-  transparent_navbar: true
+    overlay: color
+    gradient: 
+    overlay_color: "#000000"
+    overlay_opacity: 0.2
+  transparent_navbar: false
   layout: left
   col_one:
     heading: ''

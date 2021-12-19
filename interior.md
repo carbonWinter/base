@@ -16,7 +16,7 @@ header:
     gradient: 
     overlay_color: "#000000"
     overlay_opacity: 0.2
-  transparent_navbar: true
+  transparent_navbar: false
   layout: left
   col_one:
     heading: 'Gum disease'

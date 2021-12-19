@@ -18,14 +18,14 @@ fonts:
   heading: SFCompactDisplay
   navigation: SFCompactDisplay
 colors:
-  body: "#333333"
-  heading: "#393837"
-  muted: "#BFB8AE"
+  body: "#24221E"
+  heading: "#24221E"
+  muted: "#6E6C66"
 backgrounds:
-  primary: "#4d618f"
-  secondary: "#8EB4FF"
-  dark: "#303D4F"
-  muted: "#ECEAE6"
+  primary: "#33B9C4"
+  secondary: "#FFCE04"
+  dark: "#151411"
+  muted: "#e3e2de"
 phone: 888-555-555-5556
 appointments:
   client_id: '0000000'

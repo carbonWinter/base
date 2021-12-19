@@ -23,23 +23,23 @@
           <div class="uk-navbar-item"><a class="uk-button uk-button-default" href="#" data-uk-toggle="target: #modal-offer"">Dental Offer</a></div>
         </li>
         <li>
-          <div class="uk-navbar-item"><a class="uk-button uk-button-primary" href="#" data-uk-toggle="target: #modal-appointment"">Book Now</a></div>
+          <div class="uk-navbar-item"><a class="uk-button uk-button-primary-preserve" href="#" data-uk-toggle="target: #modal-appointment"">Book Now</a></div>
         </li>
         {% if site.data.options.phone != '' %}
           <li>
-            <a class="uk-link-phone" href="tel:{{ site.data.options.phone }}">
+            <a class="uk-link-phone uk-margin-large-right" href="tel:{{ site.data.options.phone }}">
               <span class="uk-margin-small-right">Call us:</span>
               {{ site.data.options.phone }}</a>
           </li>
         {% endif %}        
         <li>
-          <a href="#" data-uk-navbar-toggle-icon></a>
+          <a class="uk-link-primary" href="#" data-uk-navbar-toggle-icon="ratio: 1.5"></a>
           <div class="uk-navbar-dropdown uk-dropbar-width-{{ site.data.navbar.menu_right.size }}">
             <div class="uk-navbar-dropdown-grid uk-child-width-1-{{ site.data.navbar.menu_right.size }}" data-uk-grid>
               {% for link in site.data.navbar.menu_right %}
                 <div>
-                  <ul class="uk-nav uk-navbar-dropdown-nav">
-                    <li class="uk-nav-header uk-text-right">{{ link.text }}</li>
+                  <ul class="uk-nav uk-navbar-dropdown-nav uk-text-right">
+                    <li class="uk-nav-header uk-text-right uk-text-bold">{{ link.text }}</li>
                     {% for child in link.dropdown %}
                       {% if child.url contains 'http' %}
                           {% assign domain = '' %}
@@ -61,7 +61,7 @@
         </li>
       </ul>
 
-      <a class="uk-navbar-toggle uk-hidden@l" href="#nav-mobile" aria-label="Mobile Navigation" data-uk-navbar-toggle-icon data-uk-toggle></a>
+      <a class="uk-navbar-toggle uk-hidden@l" href="#nav-mobile" aria-label="Mobile Navigation" data-uk-navbar-toggle-icon="ratio: 1.5" data-uk-toggle></a>
     </div>
   </div>
 </div>

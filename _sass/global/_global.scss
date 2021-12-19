@@ -173,3 +173,22 @@ section.uk-background-secondary + section.uk-background-secondary {
     right: 20% !important;
   }
 }
+
+.uk-button-primary-preserve {
+    background-color: $button-primary-background;
+    line-height: $button-line-height !important;
+    color: $button-primary-color;
+}
+
+/* Hover */
+.uk-button-primary-preserve:hover {
+    background-color: $button-primary-hover-background;
+    color: $button-primary-hover-color;
+}
+
+/* OnClick + Active */
+.uk-button-primary-preserve:active,
+.uk-button-primary-preserve.uk-active {
+    background-color: $button-primary-active-background;
+    color: $button-primary-active-color;
+}

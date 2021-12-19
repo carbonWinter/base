@@ -88,14 +88,13 @@
     padding-right: 20px;
     padding-left: 20px;
   }
+  
 }
 
 
-// @mixin hook-navbar-dropdown(){
-//   box-shadow: $navbar-dropdown-box-shadow;
-//   border-bottom-left-radius: 20px;
-//   border-bottom-right-radius: 20px;
-// }
+@mixin hook-navbar-dropdown(){
+  padding: 40px 0;
+}
 
 @mixin hook-navbar-dropdown-nav(){ 
   font-size: $navbar-dropdown-nav-font-size; 
@@ -303,7 +302,9 @@
   // }
 
 
-
+  .uk-link-primary:not(:hover) {
+    color: $global-primary-background !important;
+  }
   // Wintergreen
   .uk-dropbar-width-1 {
     width: 16.6%;
