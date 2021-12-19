@@ -1,5 +1,5 @@
 @mixin hook-accordion-misc() {
-  .uk-accordion-faq {
+  .uk-faq-1 .uk-accordion-faq {
     li {
       border-bottom: solid 1px $global-muted-color;
 
@@ -29,8 +29,52 @@
       }
       
     }
+  }
+
+  .uk-faq-2 .uk-accordion-faq {
+    li a {
+      border-top: solid 1px $global-muted-color;
+
+      // &:first-child {
+      //   border-top: solid 1px $global-muted-color;
+      // }
+    }
+
+    li {
+      @media (min-width: $breakpoint-medium) {
+        &:nth-last-child(2) a {
+          border-bottom: solid 1px $global-muted-color;
+        }
+      }
+      &:last-child a {
+        border-bottom: solid 1px $global-muted-color;
+      }
+    }
+    
+    .uk-accordion-title {
+      padding: 30px 0;
+
+      &:before {
+        background-image: none;
+      }
+    }
+
+    .uk-accordion-content {
+      padding-bottom: 30px;
+    }
+
+    @media (min-width: $breakpoint-large) {
+      .uk-accordion-title {
+        padding: 40px 0;
+      }
+      .uk-accordion-content {
+        padding-bottom: 35px;
+      }
+      
+    }
 
   }
+  
 }
 
 @mixin hook-button-misc() {
@@ -308,6 +352,11 @@
       background-color: #fff;
       padding: 30px;
     }
+  }
+
+  // Page nav
+  .uk-nav-page {
+    background-color: $global-secondary-background;
   }
 
 

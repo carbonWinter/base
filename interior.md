@@ -1,6 +1,9 @@
 ---
 layout: blocks
 title: Home
+sticky_cta: false
+description: ''
+keywords: ''
 header:
   height: viewport
   background:
@@ -22,7 +25,11 @@ header:
     heading: ''
     text: ''
   color: light
-  page_navigation: []
+  page_navigation: 
+  - text: Link 1
+    id: 1
+  - text: Link 2
+    id: 2  
 blocks:
 - template: text-1
   block: text-1
@@ -168,256 +175,68 @@ blocks:
       text: Learn More
       url: "/bakersfield-ca/general-dentistry/childrens-dentistry/"
   background:
-    color: 'muted'
+    color: 'secondary'
     image: ''
     video: ''
     overlay:
       color: ''
       opacity: 
   color: light
-
-- template: pingpong-2
-  block: pingpong-2
+- template: faq-2
+  block: faq-2
   align: left
-  superheading: Bellflower California Premier Dentistry
-  heading: Featured services
-  text: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-  cards:
-  - heading: Cleaning & exam
-    copy: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
-      nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi
-      enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis
-      nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in
-      hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat
-      nulla facilisis at vero eros et accumsan et iusto odio
-    image: https://via.placeholder.com/840x590
-    button:
-      text: Learn More
-      url: '#'
-  - heading: Dental implants
-    copy: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
-      nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi
-      enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis
-      nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in
-      hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat
-      nulla facilisis at vero eros et accumsan et iusto odio.
-    image: https://via.placeholder.com/840x590
-    button:
-      text: Learn More
-      url: '#'
+  color: dark
+  heading: Sleep Dentistry FAQ
+  text: Stay safe and comfy and get your questions answered in Bakersfield, Ca
+  superheading: "Dentistry questions in bellflower"
+  faqs:
+  - heading: Can dentists put you to sleep for fillings?
+    content: Our dentist can help you remain relaxed and pain-free through any dental
+      work with a sedative.
+  - heading: Can dentists give you general anesthetic?
+    content: Our dental clinic provides a combination of a sedative and anesthetic
+      during your visit. Conscious sedation helps our patients remain calm and free
+      from anxiety or pain.
+  - heading: What do dentists use to sedate you?
+    content: At Salin Dentistry, we use nitrous oxide, oral sedation, or IV sedation
+      for patients with dental fears and anxiety.
+  - heading: What does nitrous at the dentist feel like?
+    content: Taking laughing gas (nitrous oxide) before starting a dental procedure
+      causes relaxation, calmness, and stress relief.
+  - heading: Do you feel pain with oral sedation?
+    content: Oral sedatives have the effect of making you feel tired and entirely
+      free from pain during your visit.
+  - heading: Is sedation dentistry dangerous?
+    content: With our experienced dentist and dental team, you are entirely safe.
+      We never leave you alone in the dentist's chair when using sedation services
+      before your dental treatment.
+  background:
+    color: muted
+    image: ''
+    video: ''
+    overlay:
+      color: ''
+      opacity: 
+- template: video-1
+  block: video-1
+  align: center
+  heading: Dental Sedation Featurette
+  text: ''
+  superheading: "Dentistry questions in bellflower"
+  video_file: "/uploads/sedation.mp4"
+  video_image: "https://via.placeholder.com/1000x800"
   button:
-    text: Request an Appointment
-    url: "#"
+    text: Request an appointment
+    url: ''
     blank: false
   background:
-    color: 'muted'
-    image: ''
-    video: ''
-    overlay:
-      color: ''
-      opacity: 
-  color: ''
-- template: team-1
-  block: team-1
-  align: left
-  columns: '3'
-  superheading: gentle & Caring dentistry in bellflower, California
-  heading: Our Dental Team
-  text: Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
-    eu fugiat nulla pariatur.
-  image: https://via.placeholder.com/1520x800
-  team:
-  - heading: Dental implants
-    copy: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
-      nibh euismod tincidunt.
-    image: https://via.placeholder.com/500
-    button:
-      text: Read More
-      url: "#"
-  - heading: Tooth restoration
-    copy: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
-      nibh euismod tincidunt.
-    image: https://via.placeholder.com/500
-    button:
-      text: Read More
-      url: "#"
-  - heading: Dental crowns
-    copy: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
-      nibh euismod tincidunt.
-    image: https://via.placeholder.com/500
-    button:
-      text: Read More
-      url: "#"
-  - heading: Cosmetic dentistry
-    copy: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
-      nibh euismod tincidunt.
-    image: https://via.placeholder.com/500
-    button:
-      text: Read More
-      url: "#"
-  - heading: Ortho & braces
-    copy: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
-      nibh euismod tincidunt.
-    image: https://via.placeholder.com/500
-    button:
-      text: Read More
-      url: "#"
-  - heading: Teeth cleaning
-    copy: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
-      nibh euismod tincidunt.
-    image: https://via.placeholder.com/500
-    button:
-      text: Read More
-      url: "#"
-  background:
-    color: ''
-    image: ''
-    video: ''
-    overlay:
-      color: ''
-      opacity: 
-  color: dark
-- template: cta-1
-  block: cta-1
-  heading: ''
-  text: ''
-  section: medium
-  button:
-    url: ''
-  appointment_button: true
-  background:
-    color: 'dark'
-    image: ''
-    video: ''
-    overlay:
-      color: ''
-      opacity: 
-  color: dark
-- template: slider-2
-  block: slider-2
-  align: center
-  heading: 'Virtual office tour'
-  text: ''
-  superheading: 'Preview our dental offices in bellflower, California'
-  copy: ''
-  background:
-    color: 'dark'
-    image: ''
-    video: ''
-    overlay:
-      color: ''
-      opacity: 
-  color: light  
-  slides:
-  - "https://via.placeholder.com/1520x900"
-  - "https://via.placeholder.com/1520x900"
-  - "https://via.placeholder.com/1520x900"
-  - "https://via.placeholder.com/1520x900"
-- template: contact-1
-  block: contact-1
-  align: center
-  heading: 'Book online today'
-  text: ''
-  superheading: 'Click to schedule now or call to speak to us in bellflower, California'
-  background:
-    image: "/uploads/bg-1.svg"
-    color: dark
-    video: ''
-    overlay:
-      color: ''
-      opacity: '0.4'
-  color: light  
-  hours:
-    heading: Office Hours
-    hours:
-    - Monday - Friday  9am - 5pm
-    - Saturday 9am - 3pm
-    - Sunday Closed
-  appointment:
-    heading: Schedule an Appointment
-    button:
-      text: Request an Appointment
-      url: "#"
-      blank: false
-    phone: '5556666667'
-    appointment_button: false
-  address:
-    heading: Our Address
-    address: "5060 California Ave. Suite   \n200 Bakersfield, CA 93309"
-- template: map
-  block: map
-  api_key: AIzaSyDgSfwIXtCUA96SxACvR-O7rU0aDg9LofE
-  locations:
-  - name: Gold Coast Dental - Tustin
-    address_1: 275 Centennial Way Ste. 109
-    address_2: Tustin, CA 92780
-    latitude: '35.3627114170714'
-    longitude: "-119.06046780228127"
-  marker: ''
-- template: testimonials-1
-  block: testimonials-1
-  align: left
-  heading: 'Patient stories'
-  text: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam.'
-  superheading: 'Dental stories in Bellflower California'
-  background:
-    image: ""
-    color: dark
-    video: ''
-    overlay:
-      color: ''
-      opacity: '0.4'
-  color: light  
-  testimonials:
-  - heading: Best cosmetic dentist in Bakersfield
-    text: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
-      nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi
-      enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis
-      nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in
-      hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu.
-    author: Carl Redburg, Bakersfield, CA
-    image: https://via.placeholder.com/400x500
-  - heading: Awesome cosmetic dentist in Bakersfield
-    text: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
-      nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi
-      enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis
-      nisl ut aliquip ex ea commodo consequat.
-    author: Johm Redburg, Bakersfield, CA
-    image: https://via.placeholder.com/400x500
-  - heading: Top cosmetic dentist in Bakersfield
-    text: Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit
-      lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure
-      dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore
-      eu.
-    author: Tom Redburg, Bakersfield, CA
-    image: https://via.placeholder.com/400x500
-- template: images-1
-  block: images-1
-  align: left
-  color: light
-  heading: Images
-  text: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam.
-  superheading: 'Dental accreditations for bellflower'
-  images:
-  - image: "https://via.placeholder.com/295x265"
-    url: http://ada.org/
-  - image: "https://via.placeholder.com/295x265"
-    url: http://www.carecredit.com/
-  - image: "https://via.placeholder.com/295x265"
-    url: http://www.cda.org/
-  - image: "https://via.placeholder.com/295x265"
-    url: http://icoi.org/
-  - image: "https://via.placeholder.com/295x265"
-    url: http://icoi.org/
-  columns: '5'
-  background:
     color: primary
-    image: ''
+    image: "https://via.placeholder.com/1800x800"
     video: ''
     overlay:
-      color: ''
-      opacity: 
-sticky_cta: false
-description: ''
-keywords: ''
+      color: '#32b9c4'
+      opacity: 0.5
+  color: light
+  appointment_button: false
+
 ---
