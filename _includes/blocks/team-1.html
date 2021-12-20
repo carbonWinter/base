@@ -26,17 +26,20 @@
       {% for card in block.team %}
         <div>
           {% if card.image != empty %}
-            <div class="uk-margin-bottom{% if block.align == 'center' %} uk-text-center{% endif %}">
+            <div class="uk-margin-medium-bottom{% if block.align == 'center' %} uk-text-center{% endif %}">
               <img src="{% if card.image contains 'http' %}{{ card.image }}{% else %}{{ card.image | absolute_url }}{% endif %}" alt="{{ card.heading }}">
             </div>
           {% endif %}
           <h3 class="uk-margin-remove uk-h4 uk-letter-spacing-medium uk-line-height-one">{{ card.heading }}</h3>
+          {% if card.title != empty %}
+            <div class="uk-margin-xsmall-top uk-{{ block.color | default: 'dark' }} uk-team-1-title">{{ card.title }}</div>
+          {% endif %}
           {% if card.copy != empty %}
             <div class="uk-margin-top uk-{{ block.color | default: 'dark' }} uk-text-content">{{ card.copy }}</div>
           {% endif %}
           {% if card.button.url != empty %}
             <div class="uk-margin-top">
-              <a class="uk-button uk-button-link" href="{% if card.button.url contains 'http' %}{{ card.button.url }}{% else %}{{ card.button.url | relative_url }}{% endif %}">{{ card.button.text }}</a>
+              <a class="uk-button uk-link-primary uk-button-link" href="{% if card.button.url contains 'http' %}{{ card.button.url }}{% else %}{{ card.button.url | relative_url }}{% endif %}">{{ card.button.text }}</a>
             </div>
           {% endif %}
         </div>

@@ -80,6 +80,7 @@ blocks:
   image: https://via.placeholder.com/1520x800
   team:
   - heading: Dental implants
+    title: Chief of Staff
     copy: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
       nibh euismod tincidunt.
     image: https://via.placeholder.com/500
@@ -87,6 +88,7 @@ blocks:
       text: Read More
       url: "#"
   - heading: Tooth restoration
+    title: Chief of Staff
     copy: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
       nibh euismod tincidunt.
     image: https://via.placeholder.com/500
@@ -153,13 +155,13 @@ blocks:
   superheading: 'Preview our dental offices in bellflower, California'
   copy: ''
   background:
-    color: 'dark'
+    color: 'muted'
     image: ''
     video: ''
     overlay:
       color: ''
       opacity: 
-  color: light  
+  color: dark  
   slides:
   - "https://via.placeholder.com/1520x900"
   - "https://via.placeholder.com/1520x900"
@@ -173,7 +175,7 @@ blocks:
   superheading: 'Click to schedule now or call to speak to us in bellflower, California'
   background:
     image: "/uploads/bg-1.svg"
-    color: dark
+    color: muted
     video: ''
     overlay:
       color: ''

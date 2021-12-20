@@ -180,9 +180,9 @@
   //   line-height: 2;
   // }
 
-  // .uk-margin-xsmall-top {
-  //   margin-top: 5px;
-  // }
+  .uk-margin-xsmall-top {
+    margin-top: 5px;
+  }
 
   // .uk-text-bold {
   //   font-weight: $base-heading-font-weight;
@@ -326,6 +326,12 @@
   //   }
   // }
 
+  .uk-button-link {
+    text-transform: none;
+    font-size: 1.125rem;
+    letter-spacing: 0;
+  }
+
 
   .uk-link-primary:not(:hover) {
     color: $global-primary-background !important;
@@ -351,14 +357,6 @@
   }
 
   // Pingpong 2
-  .uk-pingpong-2 {
-    .uk-button-link {
-      text-transform: none;
-      font-size: 1.125rem;
-      letter-spacing: 0;
-    }
-  }
-
   .uk-pingpong-2-image {
     min-height: 400px;
   }
@@ -369,6 +367,12 @@
     .uk-pingpong-2 .uk-text-content {
       margin-top: 40px !important;
     }
+  }
+
+  // Team 1
+  .uk-team-1-title {
+    font-size: 1.25rem;
+    line-height: 1.2;
   }
 
   // Testimonial 1
@@ -399,6 +403,15 @@
     background-color: $global-secondary-background;
   }
 
-  
+  // Contact 1
+  .uk-contact-1 {
+    .uk-card-default {
+      background-color: $global-dark-background;
+      color: #fff;
+      h3 {
+        color: #fff;
+      }
+    }
+  }
 
 }
