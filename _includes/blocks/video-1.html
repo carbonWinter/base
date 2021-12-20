@@ -8,10 +8,10 @@
     {% if block.heading != empty or block.text != empty %}
       <div class="uk-section-heading-container uk-margin-medium-bottom uk-container-small{% if block.align == 'center' %} uk-margin-auto{% endif %} uk-text-{{ block.align | default: 'left' }} uk-{{ block.color | default: 'dark' }}">
         {% if block.superheading != empty %}
-          <div class="uk-text-superheading uk-margin-xsmall-bottom">{{ block.superheading }}</div>
+          <div class="uk-section-superheading uk-margin-xsmall-bottom">{{ block.superheading }}</div>
         {% endif %}                        
         {% if block.heading != empty %}
-          <h2 class="uk-section-heading uk-margin-remove">{{ block.heading }}</h2>
+          <h2 class="uk-section-heading uk-margin-remove-top uk-margin-remove-bottom">{{ block.heading }}</h2>
         {% endif %}
         {% if block.text != empty %}
           <div class="uk-text-lead{% if block.heading %} uk-margin-xsmall-top{% endif %}">{{ block.text | markdownify  }}</div>

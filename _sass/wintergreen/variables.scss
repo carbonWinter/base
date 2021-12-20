@@ -142,7 +142,10 @@ $nav-header-font-size:                           1.313rem;
 $dropdown-nav-header-color:                       $global-primary-background;
 $nav-item-padding-vertical:                      10px;
 
-// // // Section variables
+// Section variables
+$section-large-padding-vertical:               40px;
+$section-large-padding-vertical-m:             70px;
+
 // // $section-xlarge-padding-vertical:               120px;
 // // $section-xlarge-padding-vertical-m:             180px;
 // // $section-default-background:                    transparent;
@@ -155,7 +158,7 @@ $nav-item-padding-vertical:                      10px;
 // $nav-primary-sublist-item-hover-color:   $global-secondary-background;
 // $nav-primary-sublist-item-active-color:  $global-secondary-background;
 
-// $text-lead-font-size:                            1.5rem;
+$text-lead-font-size:                            1rem;
 // $inverse-text-lead-color:                       #fff;
 
 // $modal-dialog-width:                             800px;

@@ -18,9 +18,9 @@ fonts:
   heading: SFCompactDisplay
   navigation: SFCompactDisplay
 colors:
-  body: "#24221E"
-  heading: "#24221E"
-  muted: "#6E6C66"
+  body: "#6E6C66"
+  heading: "#3B3831"
+  muted: "#aba89e"
 backgrounds:
   primary: "#33B9C4"
   secondary: "#FFCE04"

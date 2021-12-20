@@ -159,10 +159,10 @@
   //   font-size: 1.375rem;
   // }
 
-  // .uk-text-content {
-  //   font-size: 1.125rem;
-  //   line-height: 1.9;
-  // }
+  .uk-text-content {
+    font-size: 1.125rem;
+    line-height: 2.5;
+  }
 
   // .uk-letter-spacing-medium {
   //   letter-spacing: 1px;
@@ -188,10 +188,35 @@
   //   font-weight: $base-heading-font-weight;
   // }
 
-  // .uk-section-heading {
-  //   text-transform: uppercase;
-  //   letter-spacing: 0.08em;
-  // }
+  .uk-section-superheading {
+    color: $global-secondary-background;
+    font-size: 1.125rem;
+    text-transform: uppercase;
+    font-weight: $base-heading-font-weight;
+    margin-bottom: 20px;
+  }
+
+  .uk-section-heading {
+    text-transform: uppercase;
+    font-weight: 200;
+    font-size: 3rem;
+    margin-left: -4px;
+    line-height: .95;
+  }
+
+  @media (min-width: $breakpoint-medium) {
+    .uk-section-heading {
+      font-size: 5.75rem;
+      margin-left: -8px;
+    }
+  }
+
+  .uk-section-heading-container {
+    .uk-text-lead {
+      margin-top: 19px;
+    }
+  
+  }
 
   // .uk-section-heading-container {
   //   &:after {
@@ -326,9 +351,23 @@
   }
 
   // Pingpong 2
+  .uk-pingpong-2 {
+    .uk-button-link {
+      text-transform: none;
+      font-size: 1.125rem;
+      letter-spacing: 0;
+    }
+  }
+
+  .uk-pingpong-2-image {
+    min-height: 400px;
+  }
   @media (min-width: $breakpoint-medium) {
     .uk-width-pingpong-2-content {
       width: 45%;
+    }
+    .uk-pingpong-2 .uk-text-content {
+      margin-top: 40px !important;
     }
   }
 
@@ -360,5 +399,6 @@
     background-color: $global-secondary-background;
   }
 
+  
 
 }

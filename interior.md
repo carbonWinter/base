@@ -71,7 +71,7 @@ blocks:
     overlay:
       color: '#000000'
       opacity: '0.5'
-      size: center
+  overlay_size: center    
   heading: 'Gain A Gentle Dental Family '
   text: Our professional dental team at Salin Dentistry will help you
   button:
