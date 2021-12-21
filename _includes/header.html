@@ -1,5 +1,5 @@
 {%- if page.header.height != 'none' -%}
-  {% if page.header.transparent_navbar == false %}
+  {% unless page.header.transparent_navbar %}
     {% if site.data.navbar.sticky %}
       <div data-uk-sticky="animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive:{% if page.header.transparent_navbar %} uk-navbar-transparent{% endif %}; top: 200">
         <nav class="uk-navbar-container{% if site.data.navbar.color == 'light' %} uk-light{% endif %} uk-position-relative uk-position-z-index">
@@ -23,9 +23,9 @@
         {% endif %}
       </nav>
     {% endif %}
-  {% endif %}
+  {% endunless %}
   <div class="uk-header uk-position-relative uk-background-cover{% if page.header.background.background_style != 'video' %} uk-background-top-center{% endif %}" 
-    style="{% if page.header.background.background_color %}background-color: {{ page.header.background.background_color | default: '#ffffff' }};{% endif %}{% if page.header.background.background_image %}background-image: url({% if page.header.background.background_image contains '#' %}{{ page.header.background.background_image }}{% else %}{{ page.header.background.background_image | absolute_url }}{% endif %});{% endif %}"{% if page.header.height == 'viewport' %} data-uk-height-viewport="{% if page.header.transparent_navbar == false %}offset-top: true;{% endif %}{% if page.header.page_navigation.size !=0 %} offset-bottom: true;{% endif %}"{% endif %}>
+    style="{% if page.header.background.background_color %}background-color: {{ page.header.background.background_color | default: '#ffffff' }};{% endif %}{% if page.header.background.background_image %}background-image: url({% if page.header.background.background_image contains '#' %}{{ page.header.background.background_image }}{% else %}{{ page.header.background.background_image | absolute_url }}{% endif %});{% endif %}"{% if page.header.height == 'viewport' %} data-uk-height-viewport="{% unless page.header.transparent_navbar %}offset-top: true;{% endunless %}{% if page.header.page_navigation.size !=0 %} offset-bottom: true;{% endif %}"{% endif %}>
     {%- if page.header.background.background_style == 'video' -%}
     <div class="uk-position-cover uk-cover-container uk-visible@m">
       <video autoplay loop muted playsinline data-uk-cover>
