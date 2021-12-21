@@ -25,7 +25,7 @@
     {% endif %}
   {% endif %}
   <div class="uk-header uk-position-relative uk-background-cover{% if page.header.background.background_style != 'video' %} uk-background-top-center{% endif %}" 
-    style="{% if page.header.background.background_color %}background-color: {{ page.header.background.background_color | default: '#ffffff' }};{% endif %}{% if page.header.background.background_image %}background-image: url({% if page.header.background.background_image contains '#' %}{{ page.header.background.background_image }}{% else %}{{ page.header.background.background_image | absolute_url }}{% endif %});{% endif %}"{% if page.header.height == 'viewport' %} data-uk-height-viewport="{% if page.header.transparent_navbar == false %}offset-top: true;{% endif %}{% if page.header.page_navigation.size !=0 %}offset-bottom: true;{% endif %}"{% endif %}>
+    style="{% if page.header.background.background_color %}background-color: {{ page.header.background.background_color | default: '#ffffff' }};{% endif %}{% if page.header.background.background_image %}background-image: url({% if page.header.background.background_image contains '#' %}{{ page.header.background.background_image }}{% else %}{{ page.header.background.background_image | absolute_url }}{% endif %});{% endif %}"{% if page.header.height == 'viewport' %} data-uk-height-viewport="{% if page.header.transparent_navbar == false %}offset-top: true;{% endif %}{% if page.header.page_navigation.size !=0 %} offset-bottom: true;{% endif %}"{% endif %}>
     {%- if page.header.background.background_style == 'video' -%}
     <div class="uk-position-cover uk-cover-container uk-visible@m">
       <video autoplay loop muted playsinline data-uk-cover>
@@ -64,7 +64,7 @@
       {% endif %}
     {% endif %}
     
-    <div class="uk-container uk-position-relative uk-flex uk-flex-middle{% if page.header.layout == 'centered' %} uk-flex-center uk-text-center{% endif %}{% if page.header.color == 'light' %} uk-light{% endif %}{% if page.header.height == 'medium' %} uk-header-medium{% endif %}{% if page.header.height == 'large' %} uk-header-large{% endif %}"{% if page.header.height == 'viewport' %} data-uk-height-viewport="offset-top: true; offset-bottom: 40px"{% endif %}>
+    <div class="uk-container uk-position-relative uk-flex uk-flex-{{ page.header.vertical_align | default: 'middle' }}{% if page.header.layout == 'centered' %} uk-flex-center uk-text-center{% endif %}{% if page.header.color == 'light' %} uk-light{% endif %}{% if page.header.height == 'medium' %} uk-header-medium{% endif %}{% if page.header.height == 'large' %} uk-header-large{% endif %}"{% if page.header.height == 'viewport' %} data-uk-height-viewport="offset-top: true; offset-bottom: 70px"{% endif %}>
       {% if page.header.layout == 'centered' %}
         <div class="uk-margin-large-top uk-margin-xlarge-bottom">
           {% if page.header.col_one.heading != '' %}
@@ -123,8 +123,8 @@
 {% endif %}
 {% if page.header.page_navigation.size !=0 %}
 <div class="uk-nav-page">
-  <div class="uk-container uk-container-large uk-flex uk-flex-center">
-    <ul class="uk-subnav uk-subnav-pill" data-uk-margin>
+  <div class="uk-container uk-container-large uk-flex uk-flex-right">
+    <ul class="uk-subnav uk-subnav-divider" data-uk-margin>
       {% for item in page.header.page_navigation %}
         <li><a href="#block-{{ item.id }}" data-uk-scroll>{{ item.text }}</a></li>
       {% endfor %}

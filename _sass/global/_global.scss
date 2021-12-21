@@ -192,3 +192,168 @@ section.uk-background-secondary + section.uk-background-secondary {
     background-color: $button-primary-active-background;
     color: $button-primary-active-color;
 }
+
+// Primary outline button
+.uk-button.uk-button-primary-outline {
+background-color: #fff;
+    border: solid 1px $button-primary-background;
+    color: $button-primary-background;
+}
+
+.uk-button.uk-button-primary-outline:hover {
+    border: solid 1px $button-primary-hover-background;
+    color: $button-primary-hover-background;
+}
+
+.uk-button.uk-button-primary-outline:active,
+.uk-button.uk-button-primary-outline.uk-active {
+    border: solid 1px $button-primary-active-background;
+    color: $button-primary-active-background;
+}
+
+// Modals
+.uk-modal-appointment, .uk-modal-offer {
+  width: 960px !important;
+
+  .uk-modal-header {
+    padding: 35px;
+  }
+
+  .uk-alert {
+    border-radius: 50px;
+    padding-left: 50px;
+  }
+
+  .uk-modal-body {
+    min-height: 300px;
+  }
+
+  .uk-modal-footer {
+    padding: 26px 35px;
+  }
+
+  .uk-input, .uk-select {
+    height: 86px !important;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 1.625rem;
+    color: #3B3831;
+
+    &::placeholder {
+      color: #3B3831;
+    }  
+
+    &:not(:focus) {
+      border-color: #707070;
+    }  
+
+  }
+
+  .flatpickr-calendar, .flatpickr-day, .flatpickr-monthDropdown-months, .cur-year {
+    font-weight: bold !important;
+  }
+
+  .uk-modal-footer {
+
+    .uk-button {
+      min-width: 170px;
+    }
+
+    .uk-button-default:not(:hover) {
+      border-color: #6E6C66;
+    }
+  }
+
+  .uk-modal-close-default {
+    top: 37px;
+    right: 30px;
+  }
+
+}
+.uk-modal-appointment {
+  background-color: #f7f6f6 !important;
+
+  .uk-modal-title {
+    font-weight: 400;
+
+    span {
+      color: #A09E96;
+    }
+  }
+
+  .uk-modal-body-narrow {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .uk-button-time {
+    border-color: $global-primary-background !important;
+    line-height: 46px;
+    min-width: 137px;
+  }
+  .uk-button-time:not(.uk-active):not(:hover) {
+    background-color: #fff;
+  }
+  .uk-button-time.uk-active {
+    color: #fff;
+    background-color: $global-primary-background;
+  }
+  .uk-button-time:hover {
+    background-color: $global-primary-background;
+    color: #fff;
+  }
+
+  .flatpickr-day.selected, .flatpickr-day.startRange, .flatpickr-day.endRange, .flatpickr-day.selected.inRange, .flatpickr-day.startRange.inRange, .flatpickr-day.endRange.inRange, .flatpickr-day.selected:focus, .flatpickr-day.startRange:focus, .flatpickr-day.endRange:focus, .flatpickr-day.selected:hover, .flatpickr-day.startRange:hover, .flatpickr-day.endRange:hover, .flatpickr-day.selected.prevMonthDay, .flatpickr-day.startRange.prevMonthDay, .flatpickr-day.endRange.prevMonthDay, .flatpickr-day.selected.nextMonthDay, .flatpickr-day.startRange.nextMonthDay, .flatpickr-day.endRange.nextMonthDay {
+    background: $global-primary-background !important;
+    border-color: $global-primary-background !important;
+  }  
+}
+
+.uk-modal-offer {
+  background-color: #A09E96 !important;
+
+  .uk-modal-body {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $breakpoint-medium) {
+    .uk-modal-title {
+      font-size: 2.625rem;
+    }
+  }
+}
+
+.uk-cta-sticky {
+  .uk-button {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    margin-right: -3px;
+  }
+  .uk-button-default {
+    &:not(:hover) {
+      background-color: $global-muted-background;
+    }
+  }
+  .uk-icon-button {
+    background-color: #000;
+    width: 26px;
+    height: 26px;
+  }
+  .uk-link-phone {
+    font-family: $base-heading-font-family;
+    color: #000;
+    letter-spacing: 1px;
+
+    &:hover {
+      text-decoration: none;
+      color: $global-secondary-background;
+    }
+  }
+  @media (max-width: $breakpoint-small) {
+    .uk-button {
+      letter-spacing: 0;
+      line-height: 42px;
+    }
+  }
+}

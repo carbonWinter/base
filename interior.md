@@ -18,6 +18,7 @@ header:
     overlay_opacity: 0.2
   transparent_navbar: false
   layout: left
+  vertical_align: bottom
   col_one:
     heading: 'Gum disease'
     text: 'Sub-headline text is sometimes really long in Bellflower, Ca'
@@ -74,6 +75,7 @@ blocks:
   overlay_size: center    
   heading: 'Gain A Gentle Dental Family '
   text: Our professional dental team at Salin Dentistry will help you
+  superheading: ''
   button:
     text: Request an appointment
     url: ''
@@ -175,7 +177,7 @@ blocks:
       text: Learn More
       url: "/bakersfield-ca/general-dentistry/childrens-dentistry/"
   background:
-    color: 'secondary'
+    color: 'muted'
     image: ''
     video: ''
     overlay:
@@ -185,7 +187,7 @@ blocks:
 - template: faq-2
   block: faq-2
   align: left
-  color: dark
+  color: light
   heading: Sleep Dentistry FAQ
   text: Stay safe and comfy and get your questions answered in Bakersfield, Ca
   superheading: "Dentistry questions in bellflower"
@@ -211,7 +213,7 @@ blocks:
       We never leave you alone in the dentist's chair when using sedation services
       before your dental treatment.
   background:
-    color: muted
+    color: dark
     image: ''
     video: ''
     overlay:

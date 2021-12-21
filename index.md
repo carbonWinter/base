@@ -59,7 +59,7 @@ blocks:
       url: '#'
   button:
     text: Request an Appointment
-    url: "#"
+    url: ""
     blank: false
   background:
     color: 'muted'
@@ -174,12 +174,12 @@ blocks:
   text: ''
   superheading: 'Click to schedule now or call to speak to us in bellflower, California'
   background:
-    image: "/uploads/bg-1.svg"
-    color: muted
+    image: "/uploads/bg-mesh.svg"
+    color: default
     video: ''
     overlay:
-      color: ''
-      opacity: '0.4'
+      color: '#000000'
+      opacity: '0.7'
   color: light  
   hours:
     heading: Office Hours
@@ -191,10 +191,10 @@ blocks:
     heading: Schedule an Appointment
     button:
       text: Request an Appointment
-      url: "#"
+      url: ""
       blank: false
     phone: '5556666667'
-    appointment_button: false
+    appointment_button: true
   address:
     heading: Our Address
     address: "5060 California Ave. Suite   \n200 Bakersfield, CA 93309"

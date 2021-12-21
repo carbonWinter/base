@@ -4,7 +4,7 @@
   {% include head.html %}
 
   <body>
-    {% if page.sticky_cta %}
+    {% if site.data.options.sticky_cta.offer or site.data.options.sticky_cta.appointment or site.data.options.sticky_cta.phone %}
       {% include cta-sticky.html %}
     {% endif %}
   

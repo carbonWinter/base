@@ -3,15 +3,6 @@ theme: wintergreen
 logo_dark: "https://via.placeholder.com/333x94/fff"
 logo_light: "https://via.placeholder.com/333x94/fff"
 sticky_cta:
-  button_secondary:
-    text: Appointments
-    url: "#"
-    blank: true
-  button_primary:
-    text: Dental Offers
-    url: "#"
-    blank: true
-  phone: '8885555556'
 blocks:
 fonts:
   body: SFCompactDisplay

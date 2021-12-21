@@ -24,7 +24,7 @@ $base-h4-font-size:                             1.75rem;
 
 $global-control-height:                         56px;
 $form-height:                                   56px;
-// $form-padding-horizontal:                       20px;
+$form-padding-horizontal:                       20px;
 
 $button-line-height:                             $global-control-height;
 
@@ -142,6 +142,18 @@ $nav-header-font-size:                           1.313rem;
 $dropdown-nav-header-color:                       $global-primary-background;
 $nav-item-padding-vertical:                      10px;
 
+$subnav-item-text-transform:                    none;
+$subnav-margin-horizontal:                       36px;
+
+$subnav-item-color:                              #000;
+$subnav-item-hover-color:                        $global-color;
+$subnav-item-active-color:                       $global-color;
+
+// $subnav-divider-margin-horizontal:               $subnav-margin-horizontal !default;
+$subnav-divider-border-height:                45px;
+// $subnav-divider-border-width:                    $global-border-width !default;
+$subnav-divider-border:                         #707070;
+
 // Section variables
 $section-large-padding-vertical:               40px;
 $section-large-padding-vertical-m:             70px;
@@ -161,9 +173,9 @@ $section-large-padding-vertical-m:             70px;
 $text-lead-font-size:                            1rem;
 // $inverse-text-lead-color:                       #fff;
 
-// $modal-dialog-width:                             800px;
-// $modal-body-padding-horizontal:                  40px;
-// $modal-body-padding-vertical:                    40px;
+$modal-dialog-width:                             800px;
+$modal-body-padding-horizontal:                  50px;
+$modal-body-padding-vertical:                    50px;
 
 // $notification-width:                             430px;
 

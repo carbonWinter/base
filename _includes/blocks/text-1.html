@@ -29,7 +29,7 @@
     {% if block.lists.size != 0 %}
       <div class="uk-grid-large uk-child-width-expand@m uk-margin-medium-top uk-text-content" data-uk-grid>
         {% for ul in block.lists %}
-          <div class="uk-flex uk-flex-center">
+          <div class="uk-flex uk-flex-left uk-flex-center@m">
             <ul class="uk-list{% if ul.icon != 'none' %} uk-list-icon{% endif %}">
               {% for item in ul.list %}
                 <li>{% if ul.icon != 'none' %}<span data-uk-icon="{{ .ul.icon | default: 'minus' }}" style="color: {{ .ul.icon_color | default: 'black' }}"></span>{% endif %}{{ item }}</li>

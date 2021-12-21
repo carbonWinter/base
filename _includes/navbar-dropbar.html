@@ -51,7 +51,7 @@
                       {% else %}
                           {% assign current = null %}
                       {% endif %}
-                      <li{{ current }}><a class="uk-flex-right" href="{{ domain }}{{ child.url }}">{{ child.text }}</a></li>
+                      <li{{ current }}><a class="uk-flex-right" href="{{ domain }}{{ child.url }}" {% if child.blank %}target="_blank" rel="noopener" {% endif %}>{{ child.text }}</a></li>
                     {% endfor %}
                   </ul>
                 </div>
