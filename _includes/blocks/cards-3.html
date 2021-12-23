@@ -19,7 +19,7 @@
       </div>
     {% endif %}
 
-    <div class="uk-flex-center uk-child-width-1-2s uk-child-width-1-{{ block.columns | default: '3' }}@m" data-uk-grid data-uk-height-match=" > * > .uk-cards-3-body">
+    <div class="uk-flex-center uk-child-width-1-2s uk-child-width-1-{{ block.columns | default: '3' }}@m uk-grid-{{ block.gutter | default: 'medium' }}" data-uk-grid data-uk-height-match=" > * > .uk-cards-3-body">
       {% for card in block.cards %}
         <div>
           {% if card.image != empty %}

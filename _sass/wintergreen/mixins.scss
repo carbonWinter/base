@@ -327,6 +327,10 @@
     letter-spacing: 0;
   }
 
+  .uk-heading-large {
+    font-weight: 200;
+    text-transform: uppercase;
+  }
 
   .uk-link-primary:not(:hover) {
     color: $global-primary-background !important;
