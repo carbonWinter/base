@@ -195,9 +195,9 @@
   //   letter-spacing: 2px;
   // }
 
-  // .uk-line-height-one {
-  //   line-height: 1;
-  // }
+  .uk-line-height-one {
+    line-height: 1;
+  }
 
   // .uk-line-height-medium {
   //   line-height: 2;
@@ -317,7 +317,9 @@
   //   }
   // }
 
-
+  .uk-text-bold {
+    font-weight: $base-strong-font-weight;
+  }
 
   .uk-button-link {
     text-transform: none;
@@ -368,17 +370,79 @@
     line-height: 1.2;
   }
 
-  // Testimonial 1
-  @media (min-width: $breakpoint-medium) {
-    .uk-testimonials-1 {
+  // Testimonial 2
+  .uk-testimonials-2 {
+    overflow: hidden;
+    .uk-slider-nav {
+      li:not(.uk-active) a {
+        background-color: #fff;
+        border-color: #fff;
+      }
+      .uk-active a {
+        background-color: $base-heading-color;
+        border-color: $base-heading-color;
+      }
+    }
+    h3 {
+      font-weight: 400;
+      text-transform: uppercase;
+      position: relative;
+      font-style: italic;
+
       &:before {
-        content: "";
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        top: 40%;
-        background-color: $global-secondary-background;
+        content: "\201C";
+      }
+      &:after {
+        content: "\201D";
+      }
+      
+    }
+    .uk-h5 {
+      color: #000;
+    }
+    .uk-text-content {
+      color: $base-heading-color;
+      font-style: italic;
+    }
+    @media (min-width: $breakpoint-medium) {
+      h3 {
+        font-size: 3.625rem;
+        margin-left: -5px;
+
+        &:before {
+          content: "\201C";
+          position: absolute;
+          top: 0;
+          left: -18px;
+        }
+        
+      }
+    }
+  }
+
+  .uk-testimonials-2-background {
+    position: relative;
+    &:before {
+      content: "";
+      position: absolute;
+      bottom: -100px;
+      left: 0;
+      right: 0;
+      top: -25px;
+      background-color: $global-secondary-background;
+    }
+  }
+
+  @media (min-width: $breakpoint-medium) {
+    .uk-testimonials-2-background {
+      &:before {
+        top: 85px;
+      }
+    }
+  
+    .uk-testimonials-2 {
+      .uk-stars {
+        margin-top: 155px;
       }
     }
   }

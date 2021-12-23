@@ -47,6 +47,7 @@ $navbar-nav-item-font-family:     "{{ site.data.options.fonts.navigation | defau
 
 {% if site.data.options.fonts.body == 'SFCompactDisplay' or site.data.options.fonts.heading == 'SFCompactDisplay' or site.data.options.fonts.navigation == 'SFCompactDisplay' %}
 $base-heading-font-weight: 600;
+$base-strong-font-weight: 600;
 {% endif %}
 
 // 1. Custom variables and variable overwrites.

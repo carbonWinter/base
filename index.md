@@ -208,8 +208,8 @@ blocks:
     latitude: '35.3627114170714'
     longitude: "-119.06046780228127"
   marker: ''
-- template: testimonials-1
-  block: testimonials-1
+- template: testimonials-2
+  block: testimonials-2
   align: left
   heading: 'Patient stories'
   text: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam.'
@@ -230,21 +230,21 @@ blocks:
       nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in
       hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu.
     author: Carl Redburg, Bakersfield, CA
-    image: https://via.placeholder.com/400x500
+    image: https://via.placeholder.com/450x500
   - heading: Awesome cosmetic dentist in Bakersfield
     text: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
       nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi
       enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis
       nisl ut aliquip ex ea commodo consequat.
     author: Johm Redburg, Bakersfield, CA
-    image: https://via.placeholder.com/400x500
+    image: https://via.placeholder.com/450x500
   - heading: Top cosmetic dentist in Bakersfield
     text: Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit
       lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure
       dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore
       eu.
     author: Tom Redburg, Bakersfield, CA
-    image: https://via.placeholder.com/400x500
+    image: https://via.placeholder.com/450x500
 - template: images-1
   block: images-1
   align: left
