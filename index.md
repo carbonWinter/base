@@ -167,8 +167,8 @@ blocks:
   - "https://via.placeholder.com/1520x900"
   - "https://via.placeholder.com/1520x900"
   - "https://via.placeholder.com/1520x900"
-- template: contact-1
-  block: contact-1
+- template: contact-2
+  block: contact-2
   align: center
   heading: 'Book online today'
   text: ''
