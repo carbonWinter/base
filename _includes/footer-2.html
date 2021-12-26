@@ -26,7 +26,7 @@
         </div>
       </div>
       {% if site.data.footer.copyright != '' %}
-        <div class="uk-margin-medium-top uk-text-center uk-text-medium">
+        <div class="uk-margin-medium-top uk-text-center uk-text-medium uk-text-uppercase">
           {{ site.data.footer.copyright }}
           {% if site.data.footer.privacy_link.url != '' %}
             | <a href="{% if site.data.footer.privacy_link.url contains 'http' %}{{ site.data.footer.privacy_link.url }}{% else %}{{ site.data.footer.privacy_link.url | relative_url }}{% endif %}">{{ site.data.footer.privacy_link.text }}</a>
