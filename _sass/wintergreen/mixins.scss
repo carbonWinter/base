@@ -331,6 +331,10 @@
     font-weight: 200;
     text-transform: uppercase;
   }
+  
+  .uk-button-min-width {
+    min-width: 180px;
+  }
 
   .uk-link-primary:not(:hover) {
     color: $global-primary-background !important;
