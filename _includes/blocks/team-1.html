@@ -30,7 +30,7 @@
               <img src="{% if card.image contains 'http' %}{{ card.image }}{% else %}{{ card.image | absolute_url }}{% endif %}" alt="{{ card.heading }}">
             </div>
           {% endif %}
-          <h3 class="uk-margin-remove uk-h4 uk-letter-spacing-medium uk-line-height-one">{{ card.heading }}</h3>
+          <h3 class="uk-margin-remove uk-h4 uk-letter-spacing-medium uk-line-height-one">{{ card.name }}</h3>
           {% if card.title != empty %}
             <div class="uk-margin-xsmall-top uk-{{ block.color | default: 'dark' }} uk-team-1-title">{{ card.title }}</div>
           {% endif %}
