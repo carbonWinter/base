@@ -158,6 +158,20 @@ fields:
       color_format: Hex
     default: "#ECEAE6"
   label: Backgrounds
+- name: sticky_cta
+  type: field_group
+  config: {}
+  fields:
+  - name: appointment
+    type: boolean
+    label: Appointment
+  - name: offer
+    type: boolean
+    label: Offer
+  - name: phone
+    type: boolean
+    label: Phone
+  label: Sticky CTA
 - name: appointments
   type: field_group
   config: {}
