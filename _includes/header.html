@@ -106,6 +106,8 @@
       <nav class="uk-navbar-container{% if site.data.navbar.color == 'light' %} uk-light{% endif %} uk-position-relative uk-position-z-index">
         {% if site.data.navbar.layout == 'center' %}
           {% include navbar-center.html %}
+        {% elsif site.data.navbar.layout == 'dropbar' %}
+            {% include navbar-dropbar.html %}
         {% else %}
           {% include navbar-default.html %}
         {% endif %}
@@ -115,6 +117,8 @@
     <nav class="uk-navbar-container{% if site.data.navbar.color == 'light' %} uk-light{% endif %} uk-position-relative uk-position-z-index">
       {% if site.data.navbar.layout == 'center' %}
         {% include navbar-center.html %}
+      {% elsif site.data.navbar.layout == 'dropbar' %}
+        {% include navbar-dropbar.html %}
       {% else %}
         {% include navbar-default.html %}
       {% endif %}
