@@ -3,7 +3,7 @@
   {%- if block.background.overlay.color != '' -%}
     <div class="uk-position-cover" style="background: {{ block.background.overlay.color }}; opacity: {{ block.background.overlay.opacity | default: '0.6' }}"></div>
   {%- endif -%}
-  <div class="uk-container uk-position-relative">
+  <div class="uk-container uk-container-small uk-position-relative">
 
     {% if block.heading and block.heading != empty %}
       <div class="uk-section-heading-container uk-margin-large-bottom uk-container-small{% if block.align == 'center' %} uk-margin-auto{% endif %} uk-text-{{ block.align | default: 'left' }} uk-{{ block.color | default: 'dark' }}">
@@ -24,7 +24,7 @@
         <div>
           <div class="uk-card uk-card-default uk-card-body uk-match uk-text-center uk-text-left@m uk-text-content">
             <h3 class="uk-text-uppercase uk-letter-spacing-medium uk-margin-medium-top uk-h5 uk-text-muted">{{ block.hours.heading }}</h3>
-            <ul class="uk-list uk-text-medium uk-margin-large-bottom uk-margin-medium-top uk-line-height-one">
+            <ul class="uk-list uk-text-medium uk-margin-large-bottom uk-margin-medium-top">
               {% for item in block.hours.hours %}
                 <li>{{ item }}</li>
               {% endfor %}

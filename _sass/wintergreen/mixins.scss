@@ -484,11 +484,20 @@
   }
   // Contact 2
   .uk-contact-2 {
+    .uk-container {
+      max-width: 1100px;
+    }
     .uk-card-default {
       background-color: $global-dark-background;
       color: #fff;
       h3 {
         color: #fff;
+      }
+    }
+    address {
+      p {
+        margin: 0;
+        line-height: 3.1;
       }
     }
   }
