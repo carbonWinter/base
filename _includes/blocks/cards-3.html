@@ -23,7 +23,7 @@
       {% for card in block.cards %}
         <div>
           {% if card.image != empty %}
-            <div>
+            <div class="uk-cards-3-image uk-flex uk-flex-center uk-flex-middle">
               <img src="{% if card.image contains 'http' %}{{ card.image }}{% else %}{{ card.image | absolute_url }}{% endif %}" alt="{{ card.heading }}">
             </div>
           {% endif %}
