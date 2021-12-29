@@ -213,6 +213,11 @@ background-color: #fff;
 }
 
 // Modals
+.uk-modal-nav {
+  .uk-logo img {
+    max-height: 80px;
+  }
+}
 .uk-modal-appointment, .uk-modal-offer {
   width: 960px !important;
 
