@@ -463,7 +463,11 @@
     }
     .uk-cards-3-image {
       margin-bottom: 20px;
-      max-height: 280px;
+
+      img {
+        min-height: 280px;
+        max-height: 280px;      
+      }
     }
   }
 
