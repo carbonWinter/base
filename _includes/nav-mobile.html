@@ -72,6 +72,15 @@
                 {% endif %}
               </li>
             {% endfor %}
+
+            <li>
+              <a class="uk-button uk-button-default" href="#" data-uk-toggle="target: #modal-offer">Dental Offer</a>
+            </li>
+            <li>
+              <a class="uk-button uk-button-primary" href="#" data-uk-toggle="target: #modal-appointment">Book Now</a>
+            </li>
+
+
             {% if site.data.options.phone != '' %}
               <li>
                 <a class="uk-link-phone" href="tel:{{ site.data.options.phone }}">

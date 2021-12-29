@@ -95,12 +95,12 @@ $global-control-height:                         47px;
 // // $button-default-hover-color:                    $global-background;
 // // $button-default-active-background:              $global-secondary-background;
 // // $button-default-active-color:                   $global-background;
-// $button-default-border:                         $global-dark-background;
-// $button-default-hover-border:                   $global-dark-background;
-// $button-default-active-border:                  $global-dark-background;
-// $button-default-hover-background:               $global-dark-background;
-// $button-default-hover-color:                    #fff;
-// $button-default-active-background:              $global-dark-background;
+$button-default-border:                         $global-dark-background;
+$button-default-hover-border:                   $global-dark-background;
+$button-default-active-border:                  $global-dark-background;
+$button-default-hover-background:               $global-dark-background;
+$button-default-hover-color:                    #fff;
+$button-default-active-background:              $global-dark-background;
 
 // // $inverse-button-default-hover-background:       $global-background;
 // // $inverse-button-default-hover-color:            $global-secondary-background;
@@ -173,7 +173,7 @@ $section-large-padding-vertical-m:             70px;
 // $nav-primary-sublist-item-hover-color:   $global-secondary-background;
 // $nav-primary-sublist-item-active-color:  $global-secondary-background;
 
-$text-lead-font-size:                            1rem;
+$text-lead-font-size:                            1.5rem;
 // $inverse-text-lead-color:                       #fff;
 
 $modal-dialog-width:                             800px;
