@@ -24,7 +24,7 @@
 
     {% for card in block.cards %}
       {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
-      <div class="uk-grid-match uk-grid-small" data-uk-grid>
+      <div class="uk-grid-match uk-grid-small {% if thecycle == 'odd' %} odd{% else %} even{% endif %}" data-uk-grid>
         <div class="uk-width-pingpong-2-content">
           <div class="uk-background-default uk-padding-large uk-flex uk-flex-column">
             <div class="uk-margin-bottom">
