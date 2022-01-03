@@ -6,7 +6,7 @@
   <div class="uk-container uk-position-relative uk-{{ block.color | default: 'dark' }}">
 
     {% if block.heading != empty %}
-      <div class="uk-section-heading-container uk-margin-large-bottom uk-container-small{% if block.align == 'center' %} uk-margin-auto{% endif %} uk-{{ block.color | default: 'dark' }}">
+      <div class="uk-section-heading-container uk-margin-large-bottom uk-container-small{% if block.align == 'center' %} uk-margin-auto uk-text-center{% endif %} uk-{{ block.color | default: 'dark' }}">
         {% if block.superheading != empty %}
           <div class="uk-section-superheading uk-margin-xsmall-bottom">{{ block.superheading }}</div>
         {% endif %}                
