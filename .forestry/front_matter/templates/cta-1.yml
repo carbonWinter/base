@@ -9,11 +9,40 @@ fields:
   label: Block
   hidden: true
   default: cta-1
+- name: section
+  type: select
+  default: large
+  config:
+    required: false
+    options:
+    - small
+    - large
+    - xlarge
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Section
 - name: background
   type: include
   config: {}
   template: partial-background
   label: Background
+- name: overlay_size
+  type: select
+  default: full
+  config:
+    required: false
+    options:
+    - full
+    - center
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Overlay size
 - name: heading
   type: include
   config: {}

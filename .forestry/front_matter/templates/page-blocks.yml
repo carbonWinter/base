@@ -178,6 +178,21 @@ fields:
         file: 
         path: 
     label: Layout
+  - name: vertical_align
+    type: select
+    default: middle
+    config:
+      required: false
+      options:
+      - top
+      - middle
+      - bottom
+      source:
+        type: simple
+        section: 
+        file: 
+        path: 
+    label: Vertical align
   - name: color
     type: select
     default: dark
@@ -260,23 +275,27 @@ fields:
   - before-after-1
   - before-after-2
   - cards-1
-  - cards-2
+  - cards-3
   - contact-1
+  - contact-2
   - cta-1
   - faq-1
+  - faq-2
   - gallery-1
   - images-1
   - map
+  - cards-2
+  - pingpong-2
   - slider-1
+  - slider-2
+  - team-1
   - testimonials-1
+  - testimonials-2
   - text-1
   - video-1
+  - video-2
   config:
     min: 
     max: 
 pages:
-- cleaning-and-exam.md
-- dr.dimitri-salin.md
-- index.md
-- our-team.md
-- terms-of-use.md
+- exam-and-cleaning.md

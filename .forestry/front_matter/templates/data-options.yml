@@ -236,6 +236,11 @@ fields:
     config:
       required: false
     label: Facebook
+  - name: instagram
+    type: text
+    config:
+      required: false
+    label: Instagram
   - name: linkedin
     type: text
     config:

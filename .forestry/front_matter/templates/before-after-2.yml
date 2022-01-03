@@ -14,6 +14,11 @@ fields:
   config: {}
   template: partial-heading
   label: Heading
+- name: background
+  type: include
+  config: {}
+  template: partial-background
+  label: Background
 - name: cards
   type: field_group_list
   fields:
