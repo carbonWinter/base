@@ -4,7 +4,7 @@
       <ul class="uk-slideshow-items">
         {% for slide in block.slides %}
           <li>
-            <img src="{{ slide | absolute_url }}" alt="Slide" data-uk-cover>
+            <img data-src="{{ slide | absolute_url }}" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-uk-img alt="Slide" data-uk-cover>
           </li>
         {% endfor %}
       </ul>
