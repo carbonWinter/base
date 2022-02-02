@@ -48,7 +48,13 @@
   }
   
 }
-
+a.uk-cta-call {
+  color: $global-primary-background;
+  &:hover {
+    text-decoration: none;
+    color: #000;
+  }
+}
 
 .uk-back-top-top {
   a {
