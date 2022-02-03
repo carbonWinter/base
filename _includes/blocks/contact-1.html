@@ -48,7 +48,7 @@
             {% endif %}
             {% if site.data.options.phone != '' %}
               <div class="uk-margin-medium-top uk-text-medium uk-margin-large-bottom">
-                or call: <a class="uk-link-text" href="tel:{{ site.data.options.phone }}">{{ site.data.options.phone }}</a>
+                {% if block.appointment.button.url != '' %}or{% endif %} call: <a class="uk-link-text" href="tel:{{ site.data.options.phone }}">{{ site.data.options.phone }}</a>
               </div>
             {% endif %}
           </div>
