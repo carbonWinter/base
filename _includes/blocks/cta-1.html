@@ -10,7 +10,9 @@
         {% if block.image != empty %}
           <img class="uk-margin-medium-bottom" data-src="{% if block.image contains 'http' %}{{ block.image }}{% else %}{{ block.image | absolute_url }}{% endif %}" data-width data-height src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-uk-img alt="{{ block.heading }}">
         {% endif %}
-          <div class="uk-section-superheading uk-margin-xsmall-bottom">{{ block.superheading }}xxx</div>
+        {% if block.superheading != empty %}
+          <div class="uk-section-superheading uk-margin-xsmall-bottom">{{ block.superheading }}</div>
+        {% endif %}                
         {% if block.heading != empty %}
           <h2 class="uk-margin-remove uk-section-heading">{{ block.heading }}</h2>
         {% endif %}
