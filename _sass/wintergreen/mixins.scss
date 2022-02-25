@@ -214,6 +214,7 @@
   .uk-dropbar-width-6 {
     width: 100%;
   }
+  
 
   // Pingpong 2
   .uk-pingpong-2-image {
@@ -365,6 +366,29 @@
       }
     }
   }
+
+  // Before after 1
+  .uk-pointer {
+    cursor: pointer;
+  }
+
+  .uk-before-after-1-wrapper {
+    >div {
+      transition: all .2s ease-in;
+    }
+    >div:last-child {
+      margin-left: -40%;
+    }
+  }
+
+  .uk-reverse > div:first-child {
+    transform: translateX(40%);
+    z-index: 1;
+  }
+
+  .uk-reverse > div:last-child {
+    transform: translateX(-40%);
+  }  
 
   // Before after 2
   .uk-before-after-2 {
